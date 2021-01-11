@@ -51,7 +51,7 @@ I'm a developer passionate about self studying all things machine learning and s
   <br>
   Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani 
   <br>
-  January 2021 [[Notes/Code](https://people.mpi-inf.mpg.de/~yaliu/files/learning-to-self-train-slides.pdf)]
+  January 2021 [[Notes/Code](https://github.com/DavidZhongtai/islr-notes)]
 
 - **Artificial Intelligence: A Modern Approach**
   <br>
