@@ -20,12 +20,13 @@ I'm a developer passionate about self studying all things machine learning and s
 
 - **Fake News Detection: Using NLP in the Detection Process (FaDe-Net)**
   <br>
-  **David An***
+  **Publish Pending**
   <br>
   - Developing an approach to effectively detect fake news in mainstream media using natural language processing
-  Advanced Placement Research. **Publish Pending**.
   <br>
-  [[Code](https://github.com/DavidZhongtai/fade-net)] <strong><i style="color:#e74d3c">Oral Presentation</i></strong>
+  - Anticipated model will use a Convolutional Neural Network for detection by fitting articles to embeddings 
+  <br>
+  [[Code](https://github.com/DavidZhongtai/fade-net)] 
 
 <!-- - **Learning to Self-Train for Semi-Supervised Few-Shot Classification**
   <br>
@@ -52,7 +53,7 @@ I'm a developer passionate about self studying all things machine learning and s
   <br>
   January 2021 [[Notes/Code](https://people.mpi-inf.mpg.de/~yaliu/files/learning-to-self-train-slides.pdf)]
 
-- **Multi-Class Incremental Learning**
+<!-- - **Multi-Class Incremental Learning**
   <br>
   School of Computer Science and Engineering, Nanyang Technological University
   <br>
@@ -62,10 +63,13 @@ I'm a developer passionate about self studying all things machine learning and s
   <br>
   School of Computing, National University of Singapore
   <br>
-  Singapore, April 2019 [[Slides](https://people.mpi-inf.mpg.de/~yaliu/files/meta-transfer-learning-slides.pdf)]
+  Singapore, April 2019 [[Slides](https://people.mpi-inf.mpg.de/~yaliu/files/meta-transfer-learning-slides.pdf)] -->
 
-## Services
+## Tech Stack
+- Jupyter Notebooks 
+- Python
+- Java 
 
-- Co-organizer: [ACM MM Asia 2020](https://mmasia2020.org/).
+<!-- - Co-organizer: [ACM MM Asia 2020](https://mmasia2020.org/).
 - Conference Reviewers: [NeurIPS 2020](https://neurips.cc/Conferences/2020), and [CVPR 2020](http://cvpr2020.thecvf.com/).
-- Journal Reviewers: [T-PAMI](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34), and [IJCV](https://www.springer.com/journal/11263).
+- Journal Reviewers: [T-PAMI](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34), and [IJCV](https://www.springer.com/journal/11263). -->
