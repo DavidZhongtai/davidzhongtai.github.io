@@ -9,7 +9,7 @@ I'm a developer passionate about self studying all things machine learning and s
 ## Field Interests
 
 - **Machine Learning:** image classification, neural network mechanisms, computer vision
-- **Natural Language Processing:** text classification, information extraction, textual-based fake detection
+- **Natural Language Processing:** text classification, information extraction, text detection
 
 ## Education
 
