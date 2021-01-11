@@ -45,7 +45,7 @@ I'm a developer passionate about self studying all things machine learning and s
   [[PDF](http://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Meta-Transfer_Learning_for_Few-Shot_Learning_CVPR_2019_paper.pdf)] [[Code](https://github.com/yaoyao-liu/meta-transfer-learning)] [[Project](https://mtl.yyliu.net/)]
 
 
-## Selected Talks
+## Current Reads 
 
 - **Learning to Self-Train for Semi-Supervised Few-Shot Classification**
   <br>
