@@ -6,7 +6,7 @@ layout: homepage
 
 I am a Ph.D. student at ...
 
-## Research Interests
+## Field Interests
 
 - **Computer Vision:** image recognition, image generation, video captioning
 - **Machine Learning:** text classification, natural language processing, deep networks
