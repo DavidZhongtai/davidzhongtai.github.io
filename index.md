@@ -20,7 +20,7 @@ I'm a developer passionate about self studying all things machine learning and s
 
 - **Fake News Detection: Using NLP in the Detection Process (FaDe-Net)**
   <br>
-  **Publish Pending** [[Code](https://github.com/DavidZhongtai/fade-net)] 
+  <strong><i style="color:#e74d3c">Publish Pending</i></strong>[[Code](https://github.com/DavidZhongtai/fade-net)] 
   <br>
   - Developing an approach to effectively detect fake news in mainstream media using natural language processing
   <br>
