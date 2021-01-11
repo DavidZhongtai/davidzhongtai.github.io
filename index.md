@@ -14,7 +14,7 @@ I'm a developer passionate about self studying all things machine learning and s
 ## Education
 
 - **[Jun 2021]** Greater Latrobe Senior High - High School Diploma 
-- **[Feb 2020]** We will host the [ACM Multimedia Asia 2020](https://mmasia2020.org/) conference in Singapore!
+- **[May 2020]** Westmoreland County Community College - Associate of Applied Science, Computer Science
 - **[Sep 2019]** Our paper about few-shot learning is accepted to [NeurIPS 2019](https://nips.cc/Conferences/2019).
 - **[Mar 2019]** Our paper about few-shot learning is accepted to [CVPR 2019](http://cvpr2019.thecvf.com/).
 
