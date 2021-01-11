@@ -53,6 +53,12 @@ I'm a developer passionate about self studying all things machine learning and s
   <br>
   January 2021 [[Notes/Code](https://people.mpi-inf.mpg.de/~yaliu/files/learning-to-self-train-slides.pdf)]
 
+- **Artificial Intelligence: A Modern Approach**
+  <br>
+  Stuart Russell, Peter Norvig
+  <br>
+  June 2020 
+
 <!-- - **Multi-Class Incremental Learning**
   <br>
   School of Computer Science and Engineering, Nanyang Technological University
