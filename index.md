@@ -27,7 +27,15 @@ I'm a developer passionate about self studying all things machine learning and s
   - Anticipated model will use a Convolutional Neural Network for detection by fitting articles to embeddings 
   <br>
   
-
+- **Study of Supervised Learning: Image Recognition**
+  <br>
+  <strong><i style="color:#e74d3c">School Project </i></strong> [[Code Coming Soon]] 
+  <br>
+  - The efficiency of supervised learning on the benchmark dataset MNIST is analyzed with various learning algorithms 
+  <br>
+  - The study will analyze the efficiency of such methods and the "Why?" behind them  
+  <br>
+  
 <!-- - **Learning to Self-Train for Semi-Supervised Few-Shot Classification**
   <br>
   Xinzhe Li, Qianru Sun, **Yaoyao Liu**, Shibao Zheng, Qin Zhou, Tat-Seng Chua, Bernt Schiele
@@ -35,7 +43,6 @@ I'm a developer passionate about self studying all things machine learning and s
   33rd Conference on Neural Information Processing Systems. **NeurIPS 2019**.
   <br>
   [[PDF](http://papers.nips.cc/paper/9216-learning-to-self-train-for-semi-supervised-few-shot-classification.pdf)] [[Code](https://github.com/xinzheli1217/learning-to-self-train)]
-
 - **Meta-Transfer Learning for Few-Shot Learning**
   <br>
   Qianru Sun\*, **Yaoyao Liu\***, Tat-Seng Chua, Bernt Schiele
@@ -64,7 +71,6 @@ I'm a developer passionate about self studying all things machine learning and s
   School of Computer Science and Engineering, Nanyang Technological University
   <br>
   Singapore, July 2019 [[Slides](https://people.mpi-inf.mpg.de/~yaliu/files/multi-class-incremental-learning.pdf)]
-
 - **Meta-Transfer Learning for Few-Shot Learning**
   <br>
   School of Computing, National University of Singapore
