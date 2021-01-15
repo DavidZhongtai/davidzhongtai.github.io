@@ -33,7 +33,7 @@ I'm a developer passionate about self studying all things machine learning and s
   <br>
   - The efficiency of supervised learning on the benchmark dataset MNIST is analyzed with various learning algorithms 
   <br>
-  - The study will analyze the efficiency of such methods and the "Why?" behind them  
+  - The study will analyze the efficiency of such methods and the "Why?" behind such methods
   <br>
   
 <!-- - **Learning to Self-Train for Semi-Supervised Few-Shot Classification**
