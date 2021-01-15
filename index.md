@@ -29,7 +29,7 @@ I'm a developer passionate about self studying all things machine learning and s
   
 - **Study of Supervised Learning: Image Recognition**
   <br>
-  <strong><i style="color:#e74d3c">School Project </i></strong> [[Code Coming Soon]] 
+  <strong><i style="color:#e74d3c">School Project </i></strong> [Paper Coming Soon] 
   <br>
   - The efficiency of supervised learning on the benchmark dataset MNIST is analyzed with various learning algorithms 
   <br>
