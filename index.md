@@ -35,6 +35,17 @@ I'm a developer passionate about self studying all things machine learning and s
   <br>
   - The study will analyze the efficiency of such methods and the "Why?" behind such methods
   <br>
+
+- **Defeating the Digital Divide**
+  <br>
+  <strong>David An, </strong>Dominick Robinson, Alexa Carl, Geina Shaker, Noah Johnson 
+  <br>
+  2021 Mathworks Mathemical Modeling Challenge <strong>M3C 2021</strong>
+  <br>
+  - Given three problem scenarios, the team was tasked to develop three models in each problem  
+  <br>
+  - The models developed ranged from various complexities
+  <br>
   
 <!-- - **Learning to Self-Train for Semi-Supervised Few-Shot Classification**
   <br>
