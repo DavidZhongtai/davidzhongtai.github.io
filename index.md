@@ -24,8 +24,10 @@ I'm a developer passionate about self studying all things machine learning and s
   <br>
   - Developing an approach to effectively detect fake news in mainstream media using natural language processing
   <br>
-  - Anticipated model will use a Convolutional Neural Network for detection by fitting articles to embeddings 
+  - Anticipated model will use a Bi-LSTM network architecture for detection by fitting articles to embeddings 
   <br>
+  - The Bahdanau Attention Mechanism will be incorporated
+  
   
 - **Study of Supervised Learning: Image Recognition**
   <br>
