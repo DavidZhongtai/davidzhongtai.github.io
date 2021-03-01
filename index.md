@@ -43,7 +43,6 @@ I'm a developer passionate about self studying all things machine learning and s
   2021 Mathworks Mathemical Modeling Challenge-<strong>M3C 2021</strong>
   <br>
   - Given three problem scenarios, the team was tasked to develop three models in each problem  
-  <br>
   - The models developed ranged from various complexities
   <br>
   
