@@ -43,7 +43,7 @@ I'm a developer passionate about self studying all things machine learning and s
   <br>
   <strong>David An, </strong>Dominick Robinson, Alexa Carl, Geina Shaker, Noah Johnson 
   <br>
-  2021 Mathworks Mathemical Modeling Challenge-<strong>M3C 2021</strong>
+  2021 Mathworks Mathemical Modeling Challenge -<strong> M3C 2021</strong>
   <br>
   - Developed a model to estimate average internet usage for the United States and the United Kingdom
   - Graphed visualizations of the data and model over a five-year trend
@@ -72,7 +72,7 @@ I'm a developer passionate about self studying all things machine learning and s
   <br>
   Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani 
   <br>
-  January 2021 [[Notes/Code](https://github.com/DavidZhongtai/islr-notes)]
+  April 2021
 
 - **Artificial Intelligence: A Modern Approach**
   <br>
