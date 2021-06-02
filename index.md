@@ -20,13 +20,13 @@ I'm a developer passionate about self studying all things machine learning and s
 
 - **Fake News Detection: Using NLP in the Detection Process (FaDe-Net)**
   <br>
-  <strong><i style="color:#e74d3c">Publish Pending </i></strong> [[Draft](https://drive.google.com/file/d/18JsS8ExNCIvcR8NtLn8_wDqjz_K8C_aG/view)] [[Code](https://github.com/DavidZhongtai/fade-net)] 
+  [[Paper](https://drive.google.com/file/d/1xobyQPVNrV2efXit-l_nLdQXtmONve_q/view?usp=sharing)] [[Code](https://github.com/DavidZhongtai/fade-net)] 
   <br>
   - Developing an approach to effectively detect fake news in mainstream media using natural language processing
   <br>
   - Anticipated model will use a Bi-LSTM network architecture for detection by fitting articles to embeddings 
   <br>
-  - The Bahdanau Attention Mechanism will be incorporated
+  - The Bahdanau Attention Mechanism will be incorporated into the model
   
   
 - **Study of Supervised Learning: Image Recognition**
@@ -44,8 +44,9 @@ I'm a developer passionate about self studying all things machine learning and s
   <br>
   2021 Mathworks Mathemical Modeling Challenge-<strong>M3C 2021</strong>
   <br>
-  - Given three problem scenarios, the team was tasked to develop three models in each problem  
-  - The models developed ranged from various complexities
+  - Developed a model to estimate average internet usage for the United States and the United Kingdom
+  - Graphed visualizations of the data and model over a five-year trend
+  - Created an optimal signal tower placement algorithm
   <br>
   
 <!-- - **Learning to Self-Train for Semi-Supervised Few-Shot Classification**
