@@ -13,7 +13,8 @@ I'm a developer passionate about self studying all things machine learning and s
 
 ## Education
 
-- **[Jun 2021]** Greater Latrobe Senior High - High School Diploma 
+- **[June 2025]** University of Illinois at Urbana Champaign - B.S. Mathematics
+- **[June 2021]** Greater Latrobe Senior High - High School Diploma 
 - **[May 2020]** Westmoreland County Community College - A.A.S, Computer Science
 
 ## Projects 
