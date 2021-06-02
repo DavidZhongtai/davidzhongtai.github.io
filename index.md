@@ -32,7 +32,7 @@ I'm a developer passionate about self studying all things machine learning and s
   
 - **Study of Supervised Learning: Image Recognition**
   <br>
-  <strong><i>School Project </i></strong> [Paper Coming Soon] [[Code](https://github.com/DavidZhongtai/supervised-learning-study)] 
+  <strong><i>School Project </i></strong> [Code Coming Soon]
   <br>
   - The efficiency of supervised learning on the benchmark dataset MNIST is analyzed with various learning algorithms 
   <br>
