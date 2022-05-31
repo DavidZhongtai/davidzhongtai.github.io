@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Researches on David An</title>
+    <link>https://testingwebsitess.github.io/research/</link>
+    <description>Recent content in Researches on David An</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://testingwebsitess.github.io/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://testingwebsitess.github.io/research/fadenet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://testingwebsitess.github.io/research/fadenet/</guid>
+      <description>FaDe-Net </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://testingwebsitess.github.io/research/m3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://testingwebsitess.github.io/research/m3/</guid>
+      <description>Defeating the Digital Divide </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://testingwebsitess.github.io/research/nlpsearch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://testingwebsitess.github.io/research/nlpsearch/</guid>
+      <description>Building an NLP-Powered Repository for Cyber Risk Literature [Poster] David An, Linfeng Zheng, Zhiqu (Frank) Quan
+Abstract With the large and growing body of cyber risk literature, we see three major challenges faced by the actuarial research community: there is no context aware tool for finding cyber literature, no central repository of cyber risk resources, and a lack of accounting of literature trends. To address the abovementioned challenges, we propose to build a repository of cyber-risk articles with an NLP powered search tool that can easily be used by researchers to find relevant materials.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://testingwebsitess.github.io/research/uconnscrape/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://testingwebsitess.github.io/research/uconnscrape/</guid>
+      <description>Scraping Web Data for Academic Literature </description>
+    </item>
+    
+  </channel>
+</rss>
