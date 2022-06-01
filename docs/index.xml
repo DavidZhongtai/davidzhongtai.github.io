@@ -1,82 +1,76 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Index on David An</title>
-    <link>https://testingwebsitess.github.io/</link>
-    <description>Recent content in Index on David An</description>
+    <title>David An</title>
+    <link>https://davidzhongtai.com/</link>
+    <description>Recent content on David An</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://testingwebsitess.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://davidzhongtai.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://testingwebsitess.github.io/blog/</link>
+      <link>https://davidzhongtai.com/blog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://testingwebsitess.github.io/blog/</guid>
-      <description>hello </description>
+      <guid>https://davidzhongtai.com/blog/</guid>
+      <description>Random Thoughts Here are some random tidbits that (hopefully) pique your interest. The main inspiration of stems from the boredom of summer. Come back later for some articles!
+The need for a unified cataloging system for academic literature 05-03-2022 Looking back on a semester of undergraduate research 05-03-2022 </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://testingwebsitess.github.io/professional/ameren/</link>
+      <link>https://davidzhongtai.com/professional/ameren/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://testingwebsitess.github.io/professional/ameren/</guid>
+      <guid>https://davidzhongtai.com/professional/ameren/</guid>
       <description>Data Scientist Intern @ Ameren Innovation Center </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://testingwebsitess.github.io/professional/asa/</link>
+      <link>https://davidzhongtai.com/professional/asa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://testingwebsitess.github.io/professional/asa/</guid>
+      <guid>https://davidzhongtai.com/professional/asa/</guid>
       <description>Business Analyst @ D.NEXT Lab </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://testingwebsitess.github.io/research/fadenet/</link>
+      <link>https://davidzhongtai.com/research/fadenet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://testingwebsitess.github.io/research/fadenet/</guid>
+      <guid>https://davidzhongtai.com/research/fadenet/</guid>
       <description>FaDe-Net </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://testingwebsitess.github.io/research/m3/</link>
+      <link>https://davidzhongtai.com/research/nlpsearch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://testingwebsitess.github.io/research/m3/</guid>
-      <description>Defeating the Digital Divide </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://testingwebsitess.github.io/research/nlpsearch/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://testingwebsitess.github.io/research/nlpsearch/</guid>
+      <guid>https://davidzhongtai.com/research/nlpsearch/</guid>
       <description>Building an NLP-Powered Repository for Cyber Risk Literature [Poster] David An, Linfeng Zheng, Zhiqu (Frank) Quan
 Abstract With the large and growing body of cyber risk literature, we see three major challenges faced by the actuarial research community: there is no context aware tool for finding cyber literature, no central repository of cyber risk resources, and a lack of accounting of literature trends. To address the abovementioned challenges, we propose to build a repository of cyber-risk articles with an NLP powered search tool that can easily be used by researchers to find relevant materials.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://testingwebsitess.github.io/research/uconnscrape/</link>
+      <link>https://davidzhongtai.com/research/uconnscrape/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://testingwebsitess.github.io/research/uconnscrape/</guid>
-      <description>Scraping Web Data for Academic Literature </description>
+      <guid>https://davidzhongtai.com/research/uconnscrape/</guid>
+      <description>Scraping Web Data for Academic Literature Done in collaboration with Dr. Emiliano Valdez, University of Connecticut
+Goals How obvious are actual trends in academic literature and how can we easily gather academic literature metadata? The purpose of the exploratory study was to develop and analyze different methods of data retrieval from multiple sources.
+Given a text search within context, we should be able to retrieve a list of articles that contain that segment of text.</description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>https://testingwebsitess.github.io/contact/</link>
+      <link>https://davidzhongtai.com/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://testingwebsitess.github.io/contact/</guid>
-      <description> Email: davidzhongtaian at gmail dot com Phone: 878-295-0080 Resume: Social Linkedin </description>
+      <guid>https://davidzhongtai.com/contact/</guid>
+      <description> Email: davidzhongtaian at gmail dot com Phone: 878-295-0080 Resume: Some things I do Social Linkedin </description>
     </item>
     
   </channel>

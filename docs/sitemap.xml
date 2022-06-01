@@ -2,31 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://testingwebsitess.github.io/blog/</loc>
+    <loc>https://davidzhongtai.com/blog/</loc>
     <priority>0</priority>
   </url><url>
-    <loc>https://testingwebsitess.github.io/professional/ameren/</loc>
+    <loc>https://davidzhongtai.com/professional/ameren/</loc>
   </url><url>
-    <loc>https://testingwebsitess.github.io/professional/asa/</loc>
+    <loc>https://davidzhongtai.com/professional/asa/</loc>
   </url><url>
-    <loc>https://testingwebsitess.github.io/research/fadenet/</loc>
+    <loc>https://davidzhongtai.com/research/fadenet/</loc>
   </url><url>
-    <loc>https://testingwebsitess.github.io/research/m3/</loc>
+    <loc>https://davidzhongtai.com/research/nlpsearch/</loc>
   </url><url>
-    <loc>https://testingwebsitess.github.io/research/nlpsearch/</loc>
+    <loc>https://davidzhongtai.com/research/uconnscrape/</loc>
   </url><url>
-    <loc>https://testingwebsitess.github.io/research/uconnscrape/</loc>
+    <loc>https://davidzhongtai.com/categories/</loc>
   </url><url>
-    <loc>https://testingwebsitess.github.io/categories/</loc>
+    <loc>https://davidzhongtai.com/contact/</loc>
   </url><url>
-    <loc>https://testingwebsitess.github.io/contact/</loc>
+    <loc>https://davidzhongtai.com/</loc>
   </url><url>
-    <loc>https://testingwebsitess.github.io/</loc>
+    <loc>https://davidzhongtai.com/professional/</loc>
   </url><url>
-    <loc>https://testingwebsitess.github.io/professional/</loc>
+    <loc>https://davidzhongtai.com/research/</loc>
   </url><url>
-    <loc>https://testingwebsitess.github.io/research/</loc>
-  </url><url>
-    <loc>https://testingwebsitess.github.io/tags/</loc>
+    <loc>https://davidzhongtai.com/tags/</loc>
   </url>
 </urlset>

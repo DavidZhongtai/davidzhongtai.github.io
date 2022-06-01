@@ -48,7 +48,7 @@ $y-medium: 1.0rem;
 * {
     color: $black;
     font-family: $font-family;
-    line-height: 1.2;
+    
 }
 .container {
     max-width: $max-width;
@@ -65,6 +65,7 @@ $y-medium: 1.0rem;
         @extend %link-default;
     }
     p {
+        line-height: 1.37;
         margin-bottom: $y-small;
     }
     h1, h2, h3, h4, h5, h6 {
@@ -111,6 +112,7 @@ $y-medium: 1.0rem;
         list-style: inside;
         padding-left: 2rem;
         & > li {
+            
             list-style-position: outside;
             margin-left: 1em;
         }
@@ -122,10 +124,13 @@ $y-medium: 1.0rem;
         margin: $y-medium auto;
         width: 100%;
         & th {
+            border: none!important;
             @extend %table-cell;
             font-weight: bold;
         }
         & td {
+            border: none!important;
+            line-height: 1;
             @extend %table-cell;
         }
         & tr:nth-child(2n) {

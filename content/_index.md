@@ -1,5 +1,5 @@
 +++
-title = "Index"
+title = "David An"
 +++
 
 ## Hi, I'm David! 
@@ -15,12 +15,12 @@ In chronological order:
 1. [D.An, L.Zheng, Z.Quan: Building an NLP-Powered Repository for Cyber Risk Literature](/research/nlpsearch)
 2. [Scraping Web Data for Academic Literature](/research/uconnscrape)
 3. [Fake News Detection: Using NLP in the Detection Process (FaDe-Net)](research/fadenet)
-4. [Defeating the Digital Divide](research/m3)
+4. Defeating the Digital Divide
 
 ## Professional Experience
 
-1. [Data Scientist Intern @ Ameren Innovation Center](/professional/ameren)
-2. [Business Analyst @ American Supply Association D.NEXT Lab](/professional/asa)
+- [Data Scientist Intern @ Ameren Innovation Center](/professional/ameren)
+- [Business Analyst @ American Supply Association D.NEXT Lab](/professional/asa)
 
 ## Exciting Things! 
 
@@ -34,6 +34,8 @@ Date | Event
 05-13-2022 | Gave a talk on creating NLP-backed search systems for academic literature
 04-27-2022 | Presented [1] at the Illinois Undergraduate Research Symposium
 02-22-2022 | Invited to talk on a panel about internships for Liberal Arts students
+01-16-2022 | Accepted as a researcher at the Illinois Risk Lab
+11-01-2021 | Started working as a business analyst in the D.NEXT Lab 
 <!-- 
 Here is a horizontal rule:
 
