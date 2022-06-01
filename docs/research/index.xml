@@ -12,7 +12,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://davidzhongtai.com/research/fadenet/</guid>
-      <description>FaDe-Net </description>
+      <description>FaDe-Net [Writeup] David An - AP Research Project
+Abstract The rapid development of social media and online news outlets has accelerated the spread of fake news across the internet. The accessibility and convenience of social media has further driven the drastic change of information consumption. As a consequence, fake news has become a significant concern because of 1) its inevitable exposure to large populations and 2) the potential to cause significant damage in modern society.</description>
     </item>
     
     <item>
@@ -21,7 +22,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://davidzhongtai.com/research/nlpsearch/</guid>
-      <description>Building an NLP-Powered Repository for Cyber Risk Literature [Poster] David An, Linfeng Zheng, Zhiqu (Frank) Quan
+      <description>Building an NLP-Powered Repository for Cyber Risk Literature [Poster] David An, Linfeng Zheng, Zhiyu (Frank) Quan
 Abstract With the large and growing body of cyber risk literature, we see three major challenges faced by the actuarial research community: there is no context aware tool for finding cyber literature, no central repository of cyber risk resources, and a lack of accounting of literature trends. To address the abovementioned challenges, we propose to build a repository of cyber-risk articles with an NLP powered search tool that can easily be used by researchers to find relevant materials.</description>
     </item>
     
