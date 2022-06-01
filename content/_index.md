@@ -8,14 +8,12 @@ title = "David An"
 
 I am an undergraduate student at the University of Illinois at Urbana-Champaign where I study Mathematics and conduct research at the Illinois Risk Lab. Currently, I'm working as a data scientist intern at the Ameren Innovation Center. 
 
-
 ## Research Experience
 
 In chronological order:
 1. [D.An, L.Zheng, Z.Quan: Building an NLP-Powered Repository for Cyber Risk Literature](/research/nlpsearch)
 2. [Scraping Web Data for Academic Literature](/research/uconnscrape)
 3. [Fake News Detection: Using NLP in the Detection Process (FaDe-Net)](research/fadenet)
-4. Defeating the Digital Divide
 
 ## Professional Experience
 
@@ -32,7 +30,7 @@ Date | Event
 -----|-------
 05-19-2022 | Started working as a data scientist intern at the Ameren iCenter   
 05-13-2022 | Gave a talk on creating NLP-backed search systems for academic literature
-04-27-2022 | Presented [1] at the Illinois Undergraduate Research Symposium
+04-27-2022 | Presented [[1]](/research/nlpsearch) at the Illinois Undergraduate Research Symposium
 02-22-2022 | Invited to talk on a panel about internships for Liberal Arts students
 01-16-2022 | Accepted as a researcher at the Illinois Risk Lab
 11-01-2021 | Started working as a business analyst in the D.NEXT Lab 
