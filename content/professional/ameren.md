@@ -1,1 +1,3 @@
 ## Data Scientist Intern @ Ameren Innovation Center
+
+### ⚡️Check back for updates on the awesome things I'm doing at Ameren...

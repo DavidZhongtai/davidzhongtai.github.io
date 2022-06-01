@@ -5,6 +5,8 @@ theme = "researcher"
 publishDir = "docs"
 
 [menu]
+
+
   [[menu.main]]
     name = "Blog"
     url = "/blog"
@@ -13,4 +15,9 @@ publishDir = "docs"
   [[menu.main]]
     name = "Contact"
     url = "/contact"
+    weight = 2
+
+  [[menu.main]]
+    name = "Nav"
+    url = "/sitemap"
     weight = 3

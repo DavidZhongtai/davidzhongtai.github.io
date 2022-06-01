@@ -18,11 +18,29 @@ The need for a unified cataloging system for academic literature 05-03-2022 Look
     
     <item>
       <title></title>
+      <link>https://davidzhongtai.com/posts/firstsem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidzhongtai.com/posts/firstsem/</guid>
+      <description>First Sem Research </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://davidzhongtai.com/posts/unified/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidzhongtai.com/posts/unified/</guid>
+      <description>Unified System </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://davidzhongtai.com/professional/ameren/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://davidzhongtai.com/professional/ameren/</guid>
-      <description>Data Scientist Intern @ Ameren Innovation Center </description>
+      <description>Data Scientist Intern @ Ameren Innovation Center ⚡️Check back for updates on the awesome things I&amp;rsquo;m doing at Ameren&amp;hellip; </description>
     </item>
     
     <item>
@@ -59,9 +77,19 @@ Abstract With the large and growing body of cyber risk literature, we see three 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://davidzhongtai.com/research/uconnscrape/</guid>
-      <description>Scraping Web Data for Academic Literature Done in collaboration with Dr. Emiliano Valdez, University of Connecticut
+      <description>Scraping Web Data for Academic Literature Done in collaboration with Dr. Emiliano Valdez1, University of Connecticut
 Goals How obvious are actual trends in academic literature and how can we easily gather academic literature metadata? The purpose of the exploratory study was to develop and analyze different methods of data retrieval from multiple sources.
 Given a text search within context, we should be able to retrieve a list of articles that contain that segment of text.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://davidzhongtai.com/sitemap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidzhongtai.com/sitemap/</guid>
+      <description>Links Down below, you&amp;rsquo;ll find links to every possible page on this site. Feel free to explore!
+Professional Data Scientist Intern @ Ameren Innovation Center Business Analyst @ American Supply Association D.NEXT Lab Research D.An, L.Zheng, Z.Quan: Building an NLP-Powered Repository for Cyber Risk Literature Scraping Web Data for Academic Literature Fake News Detection: Using NLP in the Detection Process (FaDe-Net) Blog The need for a unified cataloging system for academic literature Looking back on a semester of undergraduate research </description>
     </item>
     
     <item>
