@@ -6,7 +6,7 @@ title = "David An"
 
 {{< figure class="avatar" src="/avatar.jpg" alt="avatar">}}
 
-I am an undergraduate student at the University of Illinois at Urbana-Champaign where I study Mathematics and conduct research at the Illinois Risk Lab. Currently, I'm working as a data scientist intern at the Ameren Innovation Center. 
+I am an undergraduate student at the University of Illinois at Urbana-Champaign where I study Mathematics and conduct research at the Illinois Risk Lab. Currently, I'm working as a data scientist intern at the Ameren Innovation Center.
 
 ## Research Experience
 

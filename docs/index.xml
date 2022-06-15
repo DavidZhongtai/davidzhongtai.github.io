@@ -13,7 +13,7 @@
       
       <guid>https://davidzhongtai.com/blog/</guid>
       <description>Random Thoughts Here are some random tidbits that (hopefully) pique your interest. The main inspiration of stems from the boredom of summer. Come back later for some articles!
-The need for a unified cataloging system for academic literature 05-03-2022 Looking back on a semester of undergraduate research 05-03-2022 </description>
+The need for a unified cataloging system for academic literature 05-03-2022 A Semester of Research 06-06-2022 </description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@ The need for a unified cataloging system for academic literature 05-03-2022 Look
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://davidzhongtai.com/posts/firstsem/</guid>
-      <description>First Sem Research Check back later! </description>
+      <description>A Semester of Research All of this comes together for a Fake Detection Network, or FaDe-Net. In order to validate and benchmark our results, we performed a series of metric tests on the MIT Fake News Dataset1 and achieved a precision rate of 90.31% as well as an accuracy rate of 88.56%. Our experiments indicate the model is more effective at fake news detection. However, this model still has a significant amount of room to improve in future research.</description>
     </item>
     
     <item>
