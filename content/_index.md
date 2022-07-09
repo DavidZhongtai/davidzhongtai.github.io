@@ -28,7 +28,7 @@ Here is a table: -->
 
 Date | Event 
 -----|-------
-05-19-2022 | Started working as a data scientist intern at the Ameren iCenter   
+05-19-2022 | Started working as a data scientist intern at the Ameren iCenter
 05-13-2022 | Gave a talk on creating NLP-backed search systems for academic literature
 04-27-2022 | Presented [[1]](/research/nlpsearch) at the Illinois Undergraduate Research Symposium
 02-22-2022 | Invited to talk on a panel about internships for Liberal Arts students
