@@ -30,7 +30,7 @@ However, what makes CORD-19 stand out is the generation of a “harmonized and d
 
 Building upon the success of the CORD-19 initiative, future researchers can take upon the methodology and direction and construct similar corpuses for other fields as well, not only COVID. While some traditions are tried and true and cannot be changed until the next generation of researchers eclipse, we can learn from the current trends to build a better future in not only academia, but information as well.
 
-[Back to writing](../../content/blog.md)
+[Back to writing](../../blog)
 
 #### External Resources and References
 1. [Publisso: A difference between a preprint and postprint](https://www.publisso.de/en/advice/publishing-advice-faqs/preprint-and-postprint/)

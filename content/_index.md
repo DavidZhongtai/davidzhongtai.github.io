@@ -6,7 +6,7 @@ title = "David An"
 
 {{< figure class="avatar" src="/avatar.jpg" alt="avatar">}}
 
-I am an undergraduate student at the University of Illinois at Urbana-Champaign where I study Mathematics and conduct research at the Illinois Risk Lab. Currently, I'm working as a data scientist intern at the Ameren Innovation Center.
+I am an undergraduate student at the University of Illinois at Urbana-Champaign where I study Mathematics and conduct research at the Illinois Risk Lab. 
 
 ## Research Experience
 
@@ -28,6 +28,7 @@ Here is a table: -->
 
 Date | Event 
 -----|-------
+07-29-2022 | Research Park Undergraduate Awards
 05-19-2022 | Started working as a data scientist intern at the Ameren iCenter
 05-13-2022 | Gave a talk on creating NLP-backed search systems for academic literature
 04-27-2022 | Presented [[1]](/research/nlpsearch) at the Illinois Undergraduate Research Symposium
