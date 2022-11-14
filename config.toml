@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'David An'
 theme = "researcher"
 publishDir = "docs"
+math = true
 
 [menu]
 
