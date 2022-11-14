@@ -34,11 +34,6 @@ Here is a table: -->
 | 07-29-2022 | Received the 2022 Most Outstanding Undergraduate Intern Award                         |
 | 04-27-2022 | Presented [[1]](/research/nlpsearch) at the Illinois Undergraduate Research Symposium |
 
-<!-- | 11-01-2021 | Started working as a business analyst in the D.NEXT Lab                               | -->
-<!-- | 01-16-2022 | Accepted as a researcher at the Illinois Risk Lab                                     | -->
-<!-- | 05-19-2022 | Started working as a data scientist intern at the Ameren iCenter                      | -->
-<!-- | 02-22-2022 | Invited to talk on a panel about internships for Liberal Arts students                | -->
-<!-- | 05-13-2022 | Gave a talk on creating NLP-backed search systems for academic literature             | -->
 <!--
 Here is a horizontal rule:
 
