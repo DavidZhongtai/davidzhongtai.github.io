@@ -22,3 +22,7 @@ math = true
     name = "Nav"
     url = "/sitemap"
     weight = 3
+
+[markup.goldmark.parser.attribute]
+  block = true
+  title = true

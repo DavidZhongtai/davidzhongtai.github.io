@@ -4,7 +4,9 @@
 
 <!-- Script to enable inline math expressions -->
 <script>
+    
     document.addEventListener("DOMContentLoaded", function() {
+        katex.__setFontMetrics("custom-Regular", {});
         renderMathInElement(document.body, {
             delimiters: [
                 {left: "$$", right: "$$", display: true},

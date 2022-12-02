@@ -45,11 +45,20 @@ $y-medium: 1.0rem;
 }
 
 // Style
-* {
-    color: $black;
-    font-family: $font-family;
+// * {
+//     color: $black;
+//     font-family: $font-family;
     
+// }
+body {
+    font-family: $font-family;
 }
+// :not(.katex){
+//     color: $black;
+//     font-family: $font-family;
+// }
+// .katex { font-size: 1.1em; 
+//     font-family: "Computer Modern" !important;}
 .container {
     max-width: $max-width;
 }
