@@ -1,4 +1,4 @@
-### A Semester of Research
+# A Semester of Research
 
 > All of this comes together for a Fake Detection Network, or FaDe-Net. In order to validate and benchmark our results, we performed a series of metric tests on the MIT Fake News Dataset1 and achieved a precision rate of 90.31% as well as an accuracy rate of 88.56%. Our experiments indicate the model is more effective at fake news detection. However, this model still has a significant amount of room to improve in future research.
 

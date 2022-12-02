@@ -15,6 +15,7 @@ Down below, you'll find links to every possible page on this site. Feel free to 
 
 #### Blog
 
+- [A Discussion on Harmonic Functions (WIP)](/posts/harmonic)
 - [Donuts](/posts/donut)
 - [The need for a unified cataloging system for academic literature](/posts/unified)
 - [Looking back on a semester of undergraduate research](/posts/firstsem)
