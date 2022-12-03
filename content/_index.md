@@ -6,7 +6,12 @@ title = "David An"
 
 {{< figure class="avatar" src="/avatar.jpg" alt="avatar">}}
 
-I am an undergraduate student at the University of Illinois at Urbana-Champaign where I study Mathematics. I have had experience working with large database systems, text mining, and data visualization.
+I am an undergraduate student at the University of Illinois at Urbana-Champaign where I study Mathematics. I have had experience working with large database systems, text mining, and data visualization. Over Summer 2022, I worked as a [Data Science Intern @ Ameren](/professional/ameren). Before that, I interned as a [Business Analyst @ American Supply Association D.Next Lab](/professional/asa) during 2021-2022.
+
+## Latest Articles
+
+- [A (Fun) Discussion on Harmonic Functions](/posts/harmonic)
+- [Unification in Academic Literature](/posts/unified)
 
 ## Research Experience
 
@@ -16,10 +21,10 @@ In chronological order:
 2. [Scraping Web Data for Academic Literature](/research/uconnscrape)
 3. [Fake News Detection: Using NLP in the Detection Process (FaDe-Net)](research/fadenet)
 
-## Professional Experience
+<!-- ## Professional Experience
 
 - [Data Scientist Intern @ Ameren Innovation Center](/professional/ameren)
-- [Business Analyst @ American Supply Association D.NEXT Lab](/professional/asa)
+- [Business Analyst @ American Supply Association D.NEXT Lab](/professional/asa) -->
 
 ## Exciting Things!
 
