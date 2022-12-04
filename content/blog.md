@@ -1,3 +1,7 @@
+---
+title: "Blog"
+---
+
 ## Random Thoughts
 
 Some excursions into different spaces

@@ -2,17 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://davidzhongtai.com/blog/</loc>
-    <priority>0</priority>
-  </url><url>
-    <loc>https://davidzhongtai.com/posts/donut/</loc>
-  </url><url>
-    <loc>https://davidzhongtai.com/posts/firstsem/</loc>
-  </url><url>
-    <loc>https://davidzhongtai.com/posts/harmonic/</loc>
-  </url><url>
-    <loc>https://davidzhongtai.com/posts/unified/</loc>
-  </url><url>
     <loc>https://davidzhongtai.com/professional/ameren/</loc>
   </url><url>
     <loc>https://davidzhongtai.com/professional/asa/</loc>
@@ -23,8 +12,9 @@
   </url><url>
     <loc>https://davidzhongtai.com/research/uconnscrape/</loc>
   </url><url>
-    <loc>https://davidzhongtai.com/sitemap/</loc>
-    <priority>0</priority>
+    <loc>https://davidzhongtai.com/posts/firstsem/</loc>
+  </url><url>
+    <loc>https://davidzhongtai.com/blog/</loc>
   </url><url>
     <loc>https://davidzhongtai.com/categories/</loc>
   </url><url>
@@ -32,12 +22,20 @@
   </url><url>
     <loc>https://davidzhongtai.com/</loc>
   </url><url>
+    <loc>https://davidzhongtai.com/posts/donut/</loc>
+  </url><url>
+    <loc>https://davidzhongtai.com/posts/harmonic/</loc>
+  </url><url>
     <loc>https://davidzhongtai.com/posts/</loc>
   </url><url>
     <loc>https://davidzhongtai.com/professional/</loc>
   </url><url>
     <loc>https://davidzhongtai.com/research/</loc>
   </url><url>
+    <loc>https://davidzhongtai.com/sitemap/</loc>
+  </url><url>
     <loc>https://davidzhongtai.com/tags/</loc>
+  </url><url>
+    <loc>https://davidzhongtai.com/posts/unified/</loc>
   </url>
 </urlset>

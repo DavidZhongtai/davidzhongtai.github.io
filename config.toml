@@ -5,6 +5,11 @@ theme = "researcher"
 publishDir = "docs"
 math = true
 
+[params]
+  author = "David An"
+  description = "David An" 
+  favicon = "favicon.ico"
+
 [menu]
 
 

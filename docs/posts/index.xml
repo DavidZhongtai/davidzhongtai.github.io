@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://davidzhongtai.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
+      <title>A Semester of Research</title>
+      <link>https://davidzhongtai.com/posts/firstsem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidzhongtai.com/posts/firstsem/</guid>
+      <description>A Semester of Research All of this comes together for a Fake Detection Network, or FaDe-Net. In order to validate and benchmark our results, we performed a series of metric tests on the MIT Fake News Dataset1 and achieved a precision rate of 90.31% as well as an accuracy rate of 88.56%. Our experiments indicate the model is more effective at fake news detection. However, this model still has a significant amount of room to improve in future research.</description>
+    </item>
+    
+    <item>
+      <title>Donuts</title>
       <link>https://davidzhongtai.com/posts/donut/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -17,16 +26,7 @@ These are the same words I hear every Friday morning from the woman behind the c
     </item>
     
     <item>
-      <title></title>
-      <link>https://davidzhongtai.com/posts/firstsem/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://davidzhongtai.com/posts/firstsem/</guid>
-      <description>A Semester of Research All of this comes together for a Fake Detection Network, or FaDe-Net. In order to validate and benchmark our results, we performed a series of metric tests on the MIT Fake News Dataset1 and achieved a precision rate of 90.31% as well as an accuracy rate of 88.56%. Our experiments indicate the model is more effective at fake news detection. However, this model still has a significant amount of room to improve in future research.</description>
-    </item>
-    
-    <item>
-      <title></title>
+      <title>Harmonic Functions</title>
       <link>https://davidzhongtai.com/posts/harmonic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -36,7 +36,7 @@ These are the same words I hear every Friday morning from the woman behind the c
     </item>
     
     <item>
-      <title></title>
+      <title>Unification in Academic Literature</title>
       <link>https://davidzhongtai.com/posts/unified/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

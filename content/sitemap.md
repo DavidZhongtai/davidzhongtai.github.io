@@ -1,3 +1,7 @@
+---
+title: "Sitemap"
+---
+
 ## Links
 
 Down below, you'll find links to every possible page on this site. Feel free to explore!

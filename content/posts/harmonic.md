@@ -1,3 +1,7 @@
+---
+title: "Harmonic Functions"
+---
+
 # A (Fun) Discussion on Harmonic Functions
 
 Some introductions into harmonic functions. This post is meant to be an approchable read into these phenomena.
@@ -21,7 +25,7 @@ In its essence, the equation merely states that the sum of second partial deriva
 {{< /math >}}
 
 Interestingly enough, while \\(\sin(x)\\) and \\(\cos(x)\\) describe harmonic functions graphically, they do not explicitly satisfy the conditions of a harmonic function. However, they are only defined as harmonic at certain points. However, this is only for two dimensions (\\(\mathbb{R}^2\\)). in a more general term, a harmonic function in \\(\mathbb{R}^n\\) satisfies the condition where:
-$$ \Delta f(x_1, x_2,\dots, x_n) = \sum^n\_{i = 1}\frac{\partial^2f}{\partial x_i^2}$$
+$$ \Delta f(x_1, x_2,\dots, x_n) = \sum^n\_{i = 1}\frac{\partial^2f}{\partial x_i^2} = 0$$
 
 ## 2. Properties of Harmonic Functions
 

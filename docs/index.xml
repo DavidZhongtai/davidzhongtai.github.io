@@ -8,56 +8,6 @@
     <language>en-us</language><atom:link href="https://davidzhongtai.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://davidzhongtai.com/blog/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://davidzhongtai.com/blog/</guid>
-      <description>Random Thoughts Some excursions into different spaces
-A (Fun) Discussion on Harmonic Functions 12-03-2022 Donuts 11-12-2022 Unification in Academic Literature 07-07-2022 A Semester of Research 06-15-2022 </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://davidzhongtai.com/posts/donut/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://davidzhongtai.com/posts/donut/</guid>
-      <description>Donuts &amp;ldquo;$7.13 is your total sir.&amp;rdquo;
-These are the same words I hear every Friday morning from the woman behind the counter. Her eyes weary from the same cycle day over day; something that has become a habit over years of monotony. However, it’s not her which gives the donut shop the character it possesses; instead, it’s moreso the cacophony of hearing the ovens blaring, cash registers ringing, and blenders blending which gives this donut shop its character.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://davidzhongtai.com/posts/firstsem/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://davidzhongtai.com/posts/firstsem/</guid>
-      <description>A Semester of Research All of this comes together for a Fake Detection Network, or FaDe-Net. In order to validate and benchmark our results, we performed a series of metric tests on the MIT Fake News Dataset1 and achieved a precision rate of 90.31% as well as an accuracy rate of 88.56%. Our experiments indicate the model is more effective at fake news detection. However, this model still has a significant amount of room to improve in future research.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://davidzhongtai.com/posts/harmonic/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://davidzhongtai.com/posts/harmonic/</guid>
-      <description>A (Fun) Discussion on Harmonic Functions Some introductions into harmonic functions. This post is meant to be an approchable read into these phenomena.
-1. Introduction on Harmonic Functions A mass on a spring, measuring fluid flow, even the cosine wave, are all examples of where harmonic functions can be found within our world. The name itself stems from an object or force going through some type of harmonic (or oscillating) motion from a steady state equilibrium.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://davidzhongtai.com/posts/unified/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://davidzhongtai.com/posts/unified/</guid>
-      <description>Unification in Academic Literature Libraries store the energy that fuels the imagination. They open up windows to the world and inspire us to explore and acheive, and contribute to improving our quality of life -Sidney Sheldon
-Chaos is always present. Whether it&amp;rsquo;s in the weather or in crowds, things always tend to be in disarray. The same can be said for data storage and retrieval systems as well.
-The concept of data is odd.</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://davidzhongtai.com/professional/ameren/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -106,13 +56,22 @@ Given a text search within context, we should be able to retrieve a list of arti
     </item>
     
     <item>
-      <title></title>
-      <link>https://davidzhongtai.com/sitemap/</link>
+      <title>A Semester of Research</title>
+      <link>https://davidzhongtai.com/posts/firstsem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidzhongtai.com/sitemap/</guid>
-      <description>Links Down below, you&amp;rsquo;ll find links to every possible page on this site. Feel free to explore!
-Professional Data Scientist Intern @ Ameren Innovation Center Business Analyst @ American Supply Association D.NEXT Lab Research D.An, L.Zheng, Z.Quan: Building an NLP-Powered Repository for Cyber Risk Literature Scraping Web Data for Academic Literature Fake News Detection: Using NLP in the Detection Process (FaDe-Net) Blog A (Fun) Discussion on Harmonic Functions Donuts The need for a unified cataloging system for academic literature Looking back on a semester of undergraduate research </description>
+      <guid>https://davidzhongtai.com/posts/firstsem/</guid>
+      <description>A Semester of Research All of this comes together for a Fake Detection Network, or FaDe-Net. In order to validate and benchmark our results, we performed a series of metric tests on the MIT Fake News Dataset1 and achieved a precision rate of 90.31% as well as an accuracy rate of 88.56%. Our experiments indicate the model is more effective at fake news detection. However, this model still has a significant amount of room to improve in future research.</description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://davidzhongtai.com/blog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidzhongtai.com/blog/</guid>
+      <description>Random Thoughts Some excursions into different spaces
+A (Fun) Discussion on Harmonic Functions 12-03-2022 Donuts 11-12-2022 Unification in Academic Literature 07-07-2022 A Semester of Research 06-15-2022 </description>
     </item>
     
     <item>
@@ -122,6 +81,47 @@ Professional Data Scientist Intern @ Ameren Innovation Center Business Analyst @
       
       <guid>https://davidzhongtai.com/contact/</guid>
       <description> Email: davidzhongtaian at gmail dot com Phone: 878-295-0080 Resume: Some things I do Social Linkedin </description>
+    </item>
+    
+    <item>
+      <title>Donuts</title>
+      <link>https://davidzhongtai.com/posts/donut/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidzhongtai.com/posts/donut/</guid>
+      <description>Donuts &amp;ldquo;$7.13 is your total sir.&amp;rdquo;
+These are the same words I hear every Friday morning from the woman behind the counter. Her eyes weary from the same cycle day over day; something that has become a habit over years of monotony. However, it’s not her which gives the donut shop the character it possesses; instead, it’s moreso the cacophony of hearing the ovens blaring, cash registers ringing, and blenders blending which gives this donut shop its character.</description>
+    </item>
+    
+    <item>
+      <title>Harmonic Functions</title>
+      <link>https://davidzhongtai.com/posts/harmonic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidzhongtai.com/posts/harmonic/</guid>
+      <description>A (Fun) Discussion on Harmonic Functions Some introductions into harmonic functions. This post is meant to be an approchable read into these phenomena.
+1. Introduction on Harmonic Functions A mass on a spring, measuring fluid flow, even the cosine wave, are all examples of where harmonic functions can be found within our world. The name itself stems from an object or force going through some type of harmonic (or oscillating) motion from a steady state equilibrium.</description>
+    </item>
+    
+    <item>
+      <title>Sitemap</title>
+      <link>https://davidzhongtai.com/sitemap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidzhongtai.com/sitemap/</guid>
+      <description>Links Down below, you&amp;rsquo;ll find links to every possible page on this site. Feel free to explore!
+Professional Data Scientist Intern @ Ameren Innovation Center Business Analyst @ American Supply Association D.NEXT Lab Research D.An, L.Zheng, Z.Quan: Building an NLP-Powered Repository for Cyber Risk Literature Scraping Web Data for Academic Literature Fake News Detection: Using NLP in the Detection Process (FaDe-Net) Blog A (Fun) Discussion on Harmonic Functions Donuts The need for a unified cataloging system for academic literature Looking back on a semester of undergraduate research </description>
+    </item>
+    
+    <item>
+      <title>Unification in Academic Literature</title>
+      <link>https://davidzhongtai.com/posts/unified/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidzhongtai.com/posts/unified/</guid>
+      <description>Unification in Academic Literature Libraries store the energy that fuels the imagination. They open up windows to the world and inspire us to explore and acheive, and contribute to improving our quality of life -Sidney Sheldon
+Chaos is always present. Whether it&amp;rsquo;s in the weather or in crowds, things always tend to be in disarray. The same can be said for data storage and retrieval systems as well.
+The concept of data is odd.</description>
     </item>
     
   </channel>
