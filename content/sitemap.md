@@ -19,6 +19,7 @@ Down below, you'll find links to every possible page on this site. Feel free to 
 
 #### Blog
 
+- [Inequality Fun and Their Applications](/posts/inequalities)
 - [A (Fun) Discussion on Harmonic Functions](/posts/harmonic)
 - [Donuts](/posts/donut)
 - [The need for a unified cataloging system for academic literature](/posts/unified)

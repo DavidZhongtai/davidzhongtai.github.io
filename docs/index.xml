@@ -71,7 +71,7 @@ Given a text search within context, we should be able to retrieve a list of arti
       
       <guid>https://davidzhongtai.com/blog/</guid>
       <description>Random Thoughts Some excursions into different spaces
-A (Fun) Discussion on Harmonic Functions 12-03-2022 Donuts 11-12-2022 Unification in Academic Literature 07-07-2022 A Semester of Research 06-15-2022 </description>
+Inequality Fun and Their Applications (WIP) 12-09-2022 A (Fun) Discussion on Harmonic Functions 12-03-2022 Donuts 11-12-2022 Unification in Academic Literature 07-07-2022 A Semester of Research 06-15-2022 </description>
     </item>
     
     <item>
@@ -94,6 +94,16 @@ These are the same words I hear every Friday morning from the woman behind the c
     </item>
     
     <item>
+      <title>Fun with Inequalities</title>
+      <link>https://davidzhongtai.com/posts/inequalities/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidzhongtai.com/posts/inequalities/</guid>
+      <description>Inequality Fun and Their Applications (WIP) Article is in WIP. This article assumes the reader has basic knowledge of calculus, analysis, and statistics. Covers topics ranging from basic Cauchy Schwarz to Lipschitz, culminating in us pulling out a mathematical rabbit out of an algebraic hat.
+1. What is an Inequality? An inequality compares two values, showing if one is less than, greater than, or simply not equal to another value. Literally, it does not get more simpler than that.</description>
+    </item>
+    
+    <item>
       <title>Harmonic Functions</title>
       <link>https://davidzhongtai.com/posts/harmonic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -110,7 +120,7 @@ These are the same words I hear every Friday morning from the woman behind the c
       
       <guid>https://davidzhongtai.com/sitemap/</guid>
       <description>Links Down below, you&amp;rsquo;ll find links to every possible page on this site. Feel free to explore!
-Professional Data Scientist Intern @ Ameren Innovation Center Business Analyst @ American Supply Association D.NEXT Lab Research D.An, L.Zheng, Z.Quan: Building an NLP-Powered Repository for Cyber Risk Literature Scraping Web Data for Academic Literature Fake News Detection: Using NLP in the Detection Process (FaDe-Net) Blog A (Fun) Discussion on Harmonic Functions Donuts The need for a unified cataloging system for academic literature Looking back on a semester of undergraduate research </description>
+Professional Data Scientist Intern @ Ameren Innovation Center Business Analyst @ American Supply Association D.NEXT Lab Research D.An, L.Zheng, Z.Quan: Building an NLP-Powered Repository for Cyber Risk Literature Scraping Web Data for Academic Literature Fake News Detection: Using NLP in the Detection Process (FaDe-Net) Blog Inequality Fun and Their Applications A (Fun) Discussion on Harmonic Functions Donuts The need for a unified cataloging system for academic literature Looking back on a semester of undergraduate research </description>
     </item>
     
     <item>

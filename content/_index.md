@@ -10,6 +10,7 @@ I am an undergraduate student at the University of Illinois at Urbana-Champaign 
 
 ## Latest Articles
 
+- [Inequality Fun and Their Applications (WIP)](/posts/inequalities)
 - [A (Fun) Discussion on Harmonic Functions](/posts/harmonic)
 - [Unification in Academic Literature](/posts/unified)
 
@@ -32,13 +33,13 @@ In chronological order:
 
 Here is a table: -->
 
-| Date       | Event                                                                                                                                                                     |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 12-05-2022 | Featured on the Innovations at Research Park Podcast [Listen Here!](https://podcasts.apple.com/us/podcast/celebrating-research-park-interns/id1557285742?i=1000588843218) |
-| 08-15-2022 | Presented about SOSP22 at the Illinois CS Teaching Workshop (iCSTW22)                                                                                                     |
-| 08-03-2022 | Presented [[1]](/research/nlpsearch) at the Actuarial Research Conference 22 (ARC22)                                                                                      |
-| 07-29-2022 | Received the 2022 Most Outstanding Undergraduate Intern Award                                                                                                             |
-| 04-27-2022 | Presented [[1]](/research/nlpsearch) at the Illinois Undergraduate Research Symposium                                                                                     |
+| Date       | Event                                                                                                                                                                    |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 12-05-2022 | Featured on the Innovations @ Research Park Podcast [Listen Here!](https://podcasts.apple.com/us/podcast/celebrating-research-park-interns/id1557285742?i=1000588843218) |
+| 08-15-2022 | Presented about SOSP22 at the Illinois CS Teaching Workshop (iCSTW22)                                                                                                    |
+| 08-03-2022 | Presented [[1]](/research/nlpsearch) at the Actuarial Research Conference 22 (ARC22)                                                                                     |
+| 07-29-2022 | Received the 2022 Most Outstanding Undergraduate Intern Award                                                                                                            |
+| 04-27-2022 | Presented [[1]](/research/nlpsearch) at the Illinois Undergraduate Research Symposium                                                                                    |
 
 <!--
 Here is a horizontal rule:
