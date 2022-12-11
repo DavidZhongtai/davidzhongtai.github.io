@@ -67,6 +67,6 @@ List how it ties w cauchy schwarz
 
 #### 4.3 Chebyshev's Inequality (Revisited)
 
-## 5. Conclusion
+## 5. Conclusions
 
 #### 5.1 A Mathematical Rabbit out of an Algebraic Hat
