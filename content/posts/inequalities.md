@@ -40,10 +40,12 @@ We see that the maximal value is obtained at:
 $$x = \frac{1}{\sqrt{14}}\quad y = \frac{2}{\sqrt{14}} \quad z = \frac{3}{\sqrt{14}}$$
 which satisfies the constraint as well. One can also note that when plugging in generic variables, a general form of the equation can be found with the constraint \\(x^2 + y^2 + z^2 = 1\\) to maximum \\(ax + by + cz\\) where \\(x,y,z\\) are:
 $$x = \frac{a}{\sqrt{a^2 + b^2 + c^2}}\quad y = \frac{b}{\sqrt{a^2 + b^2 + c^2}} \quad z = \frac{c}{\sqrt{a^2 + b^2 + c^2}}$$
+Now, we continue onto the triangle inequality; another fun application.
 
 #### 2.2 Triangle Inequality
 
-List how it ties w cauchy schwarz
+The triangle inequality is also an extremely well known inequality in math. Geometrically, it states that the sum of the lengths two sides of the triangle cannot exceed the length of the largest side. Through the triangle inequality, one can find a reasonable range of distances and quantities something can be given knowns and unknowns. For example, given the unknown difference between two cities, one can use the triangle inequality to indirectly calculate the distances between two cities.
+![distances]("content/posts/distance.png")
 
 #### 2.3 Chebyshev's Inequality
 
@@ -67,6 +69,6 @@ List how it ties w cauchy schwarz
 
 #### 4.3 Chebyshev's Inequality (Revisited)
 
-## 5. Conclusions
+## 5. Conclusion
 
 #### 5.1 A Mathematical Rabbit out of an Algebraic Hat
