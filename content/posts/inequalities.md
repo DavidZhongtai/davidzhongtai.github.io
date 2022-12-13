@@ -54,9 +54,19 @@ Another fun inequality is also a pretty important tool for solving Math Olympiad
 $$n\sum^n\_{i=1}x_iy_i \geq \sum^n\_{i=1}x_i\sum^n\_{i=1}y_i$$
 If the two sequences are oppositely ordered, then we get the result of
 $$n\sum^n\_{i=1}x_iy_i \leq \sum^n\_{i=1}x_i\sum^n\_{i=1}y_i$$
-When both sequences are constants, then the sums are equal. To use this, we can explore a similar problem.
+When both sequences are constants, then the sums are equal. To use this, we can explore a similar problem. Assume that \\(a,b,c \in \mathbb{R}\\), then we want to show the following result:
+$$\frac{ab}{a+b}+\frac{bc}{b+c}+\frac{ca}{c+a}\leq\frac{3(ab+bc+ca)}{2(a+b+c)}$$
+We assume that \\(a,b,c\\) all belong to a monotonic sequence (i.e. \\(a\geq b\geq c\\)). Thus, we can use a form of Chebyshev's Inequality. We note that:
+$$a +b \geq a + c \geq b+c$$
+Because of the properties of fractions, we can also see that
+$$\frac{ab}{a+b}\geq \frac{ac}{a+c} \geq \frac{bc}{b+c}$$
+Combining both sequences, we see that the desired quantity is acheived:
+$$\frac{ab}{a+b}+\frac{bc}{b+c}+\frac{ca}{c+a}\leq\frac{3(ab+bc+ca)}{2(a+b+c)}$$
 
-#### 2.4 Inequality of Arithmetic and Geometric Means
+#### 2.4 All Things Means
+
+One last type of inequality (more of a subsection that deserves its own article potentially later) is the concept of a mean. We will only discuss a few main means, however, the methods of averaging a set are endless. Usually, most people are familiar with the following mean: add a number of items up, then divide by the number of items \\(n\\). In mathematical notation, that is described as:
+$$\frac{1}{n}\sum^nx_i = \text{the Arithmatic Mean}$$
 
 ## 3. Inequalities in Analysis
 
