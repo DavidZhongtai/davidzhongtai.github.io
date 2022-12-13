@@ -44,10 +44,17 @@ Now, we continue onto the triangle inequality; another fun application.
 
 #### 2.2 Triangle Inequality
 
-The triangle inequality is also an extremely well known inequality in math. Geometrically, it states that the sum of the lengths two sides of the triangle cannot exceed the length of the largest side. Through the triangle inequality, one can find a reasonable range of distances and quantities something can be given knowns and unknowns. For example, given the unknown difference between two cities, one can use the triangle inequality to indirectly calculate the distances between two cities.
-![distances]("content/posts/distance.png")
+The triangle inequality is also an extremely well known inequality in math. Geometrically, it states that the sum of the lengths two sides of the triangle cannot exceed the length of the largest side. Through the triangle inequality, one can find a reasonable range of distances and quantities something can be given knowns and unknowns. For example, given the unknown difference between two cities, one can use the triangle inequality to indirectly calculate the distances between two cities. For example, below, one can use the triangle inequality to get a rough estimate of the distance between two cities without knowing the true distance.
+
+<!-- ![distances](/distance.png) -->
 
 #### 2.3 Chebyshev's Inequality
+
+Another fun inequality is also a pretty important tool for solving Math Olympiad similar problems. This is known as Chebyshev's inequality. If we are given two monotone sequences (sequences constantly increasing and decreasing): \\(\left\\{x_i\right\\}, \left\\{y_i\right\\}\\) and the sequences are similarly ordered, then:
+$$n\sum^n\_{i=1}x_iy_i \geq \sum^n\_{i=1}x_i\sum^n\_{i=1}y_i$$
+If the two sequences are oppositely ordered, then we get the result of
+$$n\sum^n\_{i=1}x_iy_i \leq \sum^n\_{i=1}x_i\sum^n\_{i=1}y_i$$
+When both sequences are constants, then the sums are equal. To use this, we can explore a similar problem.
 
 #### 2.4 Inequality of Arithmetic and Geometric Means
 
