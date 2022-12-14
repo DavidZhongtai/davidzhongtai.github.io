@@ -4,7 +4,7 @@ title: "Fun with Inequalities"
 
 # Inequality Fun and Their Applications
 
-Article is in WIP. This article assumes the reader has basic knowledge of calculus and analysis. Covers topics ranging from basic Cauchy Schwarz to Lipschitz, culminating in us pulling out a mathematical rabbit out of an algebraic hat.
+This article assumes the reader has basic knowledge of calculus and analysis. Covers topics ranging from basic Cauchy Schwarz to Lipschitz, culminating in us pulling out a mathematical rabbit out of an algebraic hat.
 
 ## 1. What is an Inequality?
 
