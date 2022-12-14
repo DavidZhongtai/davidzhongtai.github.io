@@ -2,9 +2,9 @@
 title: "Fun with Inequalities"
 ---
 
-# Inequality Fun and Their Applications (WIP)
+# Inequality Fun and Their Applications
 
-Article is in WIP. This article assumes the reader has basic knowledge of calculus, analysis, and statistics. Covers topics ranging from basic Cauchy Schwarz to Lipschitz, culminating in us pulling out a mathematical rabbit out of an algebraic hat.
+Article is in WIP. This article assumes the reader has basic knowledge of calculus and analysis. Covers topics ranging from basic Cauchy Schwarz to Lipschitz, culminating in us pulling out a mathematical rabbit out of an algebraic hat.
 
 ## 1. What is an Inequality?
 
@@ -63,29 +63,61 @@ $$\frac{ab}{a+b}\geq \frac{ac}{a+c} \geq \frac{bc}{b+c}$$
 Combining both sequences, we see that the desired quantity is acheived:
 $$\frac{ab}{a+b}+\frac{bc}{b+c}+\frac{ca}{c+a}\leq\frac{3(ab+bc+ca)}{2(a+b+c)}$$
 
-#### 2.4 All Things Means
+#### 2.4 All Things Means (and Inequalities)
 
-One last type of inequality (more of a subsection that deserves its own article potentially later) is the concept of a mean. We will only discuss a few main means, however, the methods of averaging a set are endless. Usually, most people are familiar with the following mean: add a number of items up, then divide by the number of items \\(n\\). In mathematical notation, that is described as:
-$$\frac{1}{n}\sum^nx_i = \text{the Arithmatic Mean}$$
+One last type of inequality (more of a subsection that deserves its own article potentially later) tying together a few different means. We will only discuss a few main means, however, the methods of averaging a set are endless. Thus, we will only discuss the most basic properties and applications in means. Usually, most people are familiar with the following mean: add a number of items up, then divide by the number of items \\(n\\). In mathematical notation, that is described as:
+$$\text{Arithmatic Mean} = \frac{1}{n}\sum^nx_i = \frac{x_1+x_2+...+x_n}{n}$$
+The applications of this usually arise in the case of data collection or basic statistics. Frequently, this comes in the form of describing results from a survey. One downfall of this is that it is not usualy a robust (or dynamic) statsitics: meaning it can be influenced greatly by the presence of outliers. Two more means are the geometric mean and the harmonic mean which will be discussed up next.
+
+The geometric mean usually arises in cases of natural numbers and is calculated with their product (not their sum like arithmatic mean). Usually, the geometric mean is used in cases where the numbers one is dealing with is exponential in nature or are meant to be multiplied. Values like these are usually growth rates (human growth rate, banking rates). The geometric mean is defined as follows:
+$$\text{Geometric Mean}=\left(\prod_{i=1}^n x_i\right)^\frac{1}{n}=\sqrt[n]{x_1x_2x_3...x_n}$$
+
+Finally, we look at the harmonic mean. This is (yet) another form of average that can be useful in certain contexts. In the case of numbers defined in relation to a unit or rates such as, speed, acceleration, force, etc., the harmonic average provides a better and more accurate estimate than the other two. The harmonic mean is defined as follows:
+$$\text{Harmonic Mean}=\frac{n}{\sum_{i=1}^n\frac{1}{x_i}} = \frac{n}{\frac{1}{x_1}+\frac{1}{x_2}+\frac{1}{x_3}+\frac{1}{x_n}}$$
+Knowing these three means, we can define the following inequality:
+$$\text{Arithmatic Mean}\geq \text{Geometric Mean} \geq \text{Harmonic Mean}$$
+When all of the samples are equal in count and measure, then we have equality. The proof of this is left as an exploration for the reader. Usually, this property has no real life application (as far as I know), and most of their applications tend to shine in doing math olympiad and Art Of Problem Solving-esque problems (AOPS).
 
 ## 3. Inequalities in Analysis
 
+Moving past the world of calculus, one can start looking into the branch of mathematics known as 'analysis'. On a high level, real analysis relates to studying the real number line and the reals (\\(\mathbb{R}\\)). There is also complex analysis which studies complex number plane (\\(\mathbb{C}\\)). We only look at applications of inequalities within analysis. In real analysis, most of the more-studied topics include sequences, series, functions, integration, and power series. Since we covered the triangle inequality in an earlier section, we revisit it now in the following to see its applications inside of analysis.
+
 #### 3.1 Triangle Inequality Applications
+
+First, we redefine the triangle inequality as \\(|x + y| \leq |x| + |y|\\) i.e. the length of the largest side cannot exceed the sum of the lengths of the two smaller sides. Next, we visit a useful property inside of analysis known as the Archimedean property. The Archimedean property states that for any number \\(x \in \mathbb{R}\\), there exists a number \\(n \in \mathbb{N}\\) such that \\(n>x\\). Simply put that for _any_ real number on the line, there _always_ exists a natural number that is larger than it.
+
+Another thing we define is the Cauchy sequence. A Cauchy sequence is a sequence of real numbers \\(\\{a_n\\}\\) such that for every \\(\epsilon > 0\\) there exists a positive integer \\(N\\) such that
+$$|a_m - a_n|< \epsilon \quad \text{when}\quad m,n\geq N$$
+Stripping away the mathematical jargon from there, a cauchy sequence is one where the farther we go along the sequence, the closer the points get to each other. Until there is an \\(N\\) index where all of the points past that grow an epsilon distance close to one another.
+![A visual representation of Cauchy Sequences](/cauchy.png "Source: Wikipedia article on Cauchy Sequences")
+Now, knowing the definition of various terms and with our triangle inequality, equipped, we can take on a simple proof involving the previous tools. In this case, we want to show that a Cauchy sequence is bounded.
+
+To do this, we first suppose \\(\\{a_n\\}\\) is a Cauchy sequence. We take \\(\epsilon = 1\\) means that there is some index \\(N\\) where \\(|a_m - a_n|< 1 \\;\forall\\; m,n \geq N\\). Thus, seeing this, we are able to split up our series into two pieces. One up to \\(N\\), and one from \\(N\\) onwards. We now see that the finite piece is also bounded by \\(M\\), with this in hand, combining the sequence and the triangle inequality, we see that:
+$$|a_n| = |a_n + a_N - a_N| \leq |a_n - a_N| + |a_N| < 1 + M$$
+Thus, it obviously follows that the Cauchy sequence is bounded by \\(1+M\\), thus concluding our proof. This is an elegant way of seeing how we can use the triangle inequality to help us prove things. Now, this is merely a simple example of an application of such inequality. Moving deeper into analysis, the concept of a metric space is observed. A metric space \\((X,d)\\) is a set \\(X\\) and distance measure \\(d(x,y)\\;\forall\\; x,y\in X\\) on that set. Without diving in too deep and deviating from the original purpose of the article, one can use many types of inequalities within a metric space to help prove different results.
 
 #### 3.2 Lipschitz Functions
 
-## 4. Inequalities in Statistics
+One more fun excursion into metric spaces and all things analysis, we cover the concept of a Lipschitz function. This is a strong form of continuity (uniform to be exact) for functions. For a function to be Lipschitz continuous, we invoke the following definition (and inequality). Given two metric spaces \\((X,d)\\) and \\((Y,d)\\) with corresponding distance metrics, a function \\(f: X\rightarrow Y\\)is Lipschitz continuous if the following is satisfied:
+$$d_Y(f(x_1), f(x_2))\leq Kd_X(x_1, x_2)$$
+where \\(K\\) is known as the _Lipschitz constant_. In a simpler case of a function that maps the reals to the reals, a function \\(f: \mathbb{R}\rightarrow\mathbb{R}\\) is Lipschitz continuous if the following is satisfied:
+$$|f(x_1) - f(x_2)|\leq K|x_1 - x_2|$$
+and \\(K\\) is the same Lipschitz constant. This proves to be much more powerful for us as Lipschitz implies continuity and a whole other slew of properties which can be helpful in many scenarios.
 
-#### 4.1 Estimation
+## 4. Conclusion
 
-###### 4.1.1 Method of Moments
+Throughout the article we see the power of many inequalities and their applications as well. From real life applications to alot more on the theoretical side, the inequality is something that is pervasive throughout every branch of mathematics. Approxamating a distance between two points? Use a series of triangle inequalities! Proving function continuity? See if it is Lipschitz first! The use cases are endless. For those who want to read on, here is a fun application of inequalities and the means discussed in the article.
 
-###### 4.1.2 Maximum Likelihood Estimation
+#### 4.1 A Mathematical Rabbit out of an Algebraic Hat
 
-#### 4.2 Jensen's Inequality for Estimators
+From [Cut The Knot](https://www.cut-the-knot.org/arithmetic/algebra/RabbitOutOfHat.shtml), the describe an interesting way to pull the mathematical rabbit out of a metaphorical hat in some sense (i.e. pulling a result from thin air). We want to prove a 3 term AM-GM inequality. We seek to prove that
+$$\sqrt[3]{abc} \leq \frac{a+b+c}{3}$$
+We can see that:
+{{<math>}}
+\begin{align*}
+x^3 + y^3 + z^3 - 3xyz =\frac{1}{2}(x+y+z)((x-y)^2 + (y-z)^2 + (z-x)^2)
+\end{align*}
+{{</math>}}
+Plugging in \\(a=x^3,\\; b=y^3,\\; c =z^3\\), we get our desired result. It is up to the reader how we got the following equality :)
 
-#### 4.3 Chebyshev's Inequality (Revisited)
-
-## 5. Conclusion
-
-#### 5.1 A Mathematical Rabbit out of an Algebraic Hat
+[Back to writing](../../blog)

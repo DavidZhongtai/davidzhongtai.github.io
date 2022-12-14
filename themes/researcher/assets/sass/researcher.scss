@@ -1,5 +1,5 @@
 // Sizes
-$max-width: {{ .Param "style.pageWidth" | default "750px;" }};
+$max-width: {{ .Param "style.pageWidth" | default "760px;" }};
 $avatar-size: {{ .Param "style.avatarSize" | default "90px;" }};
 
 // Colors
@@ -76,6 +76,7 @@ body {
     p {
         line-height: 1.37;
         margin-bottom: $y-small;
+        text-align: justify;
     }
     h1, h2, h3, h4, h5, h6 {
         font-size: medium;
@@ -90,7 +91,7 @@ body {
     img {
         display: block;
         margin: $y-medium auto;
-        max-width: 100%;
+        max-width: 45%;
     }
     .avatar > img {
         border-radius: 50%;
@@ -139,7 +140,7 @@ body {
         }
         & td {
             border: none!important;
-            line-height: 1;
+            line-height: 1.1;
             @extend %table-cell;
         }
         & tr:nth-child(2n) {

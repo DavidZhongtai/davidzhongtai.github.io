@@ -28,6 +28,8 @@ After talking about all of this, I’ll leave with some of my tips for those who
 
 As I would say, if you are unsure about such things, just full send.
 
+[Back to writing](../../blog)
+
 #### External Resources
 
 1. [A Guide to Undergraduate Research](https://www.nature.com/articles/d41586-019-00871-x)
