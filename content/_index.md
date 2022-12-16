@@ -3,8 +3,8 @@ title = "David An"
 +++
 
 <!-- ## Hi, I'm David! -->
-
-{{< figure class="avatar" src="/avatar.jpg" alt="avatar">}}
+<!--
+{{< figure class="avatar" src="/avatar.jpg" alt="avatar">}} -->
 
 I am currently an undergraduate student at the University of Illinois at Urbana-Champaign studying Mathematics. I work with large database systems and text mining. Over Summer 2022, I worked as a [Data Science Intern @ Ameren](/professional/ameren). Before that, I interned as a Business Analyst @ ASA D.Next Lab. Check out my [blog](/blog) where I write about research and excursions into different topics
 
@@ -12,9 +12,9 @@ I am currently an undergraduate student at the University of Illinois at Urbana-
 
 ## Latest Articles
 
+- [Revisiting a Summer of Side Projects](/posts/sosp)
 - [Inequality Fun and Their Applications](/posts/inequalities)
 - [A (Fun) Discussion on Harmonic Functions](/posts/harmonic)
-- [Unification in Academic Literature](/posts/unified)
 
 <!-- ## Research Experience
 

@@ -43,7 +43,10 @@ $y-medium: 1.0rem;
     padding: 6px 12px;
     text-align: left;
 }
-
+.dark-mode {
+    background-color: black;
+    color: white;
+}
 // Style
 // * {
 //     color: $black;
@@ -74,7 +77,7 @@ body {
         @extend %link-default;
     }
     p {
-        line-height: 1.37;
+        line-height: 1.35;
         margin-bottom: $y-small;
         text-align: justify;
     }
@@ -91,7 +94,7 @@ body {
     img {
         display: block;
         margin: $y-medium auto;
-        max-width: 45%;
+        max-width: 70%;
     }
     .avatar > img {
         border-radius: 50%;

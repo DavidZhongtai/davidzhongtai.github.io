@@ -7,6 +7,7 @@ title: "Blog"
 Some excursions into different spaces. I occasionally write about math and computers.
 |||
 | :------| -----------:|
+| [Revisiting a Summer of Side Projects](/posts/sosp) | 12-16-2022 |
 | [Inequality Fun and Their Applications](/posts/inequalities) | 12-14-2022 |
 | [A (Fun) Discussion on Harmonic Functions](/posts/harmonic) | 12-03-2022 |
 | [Donuts](/posts/donut) | 11-12-2022 |

@@ -71,7 +71,7 @@ Given a text search within context, we should be able to retrieve a list of arti
       
       <guid>https://davidzhongtai.com/blog/</guid>
       <description>Random Thoughts Some excursions into different spaces. I occasionally write about math and computers.
-Inequality Fun and Their Applications 12-14-2022 A (Fun) Discussion on Harmonic Functions 12-03-2022 Donuts 11-12-2022 Unification in Academic Literature 07-07-2022 A Semester of Research 06-15-2022 Building an NLP-Powered Repository for Cyber Risk Literature 05-13-2022 Scraping Web Data for Academic Literature 02-01-2022 Fake News Detection: Using NLP in the Detection Process (FaDe-Net) 05-12-2021 </description>
+Revisiting a Summer of Side Projects 12-16-2022 Inequality Fun and Their Applications 12-14-2022 A (Fun) Discussion on Harmonic Functions 12-03-2022 Donuts 11-12-2022 Unification in Academic Literature 07-07-2022 A Semester of Research 06-15-2022 Building an NLP-Powered Repository for Cyber Risk Literature 05-13-2022 Scraping Web Data for Academic Literature 02-01-2022 Fake News Detection: Using NLP in the Detection Process (FaDe-Net) 05-12-2021 </description>
     </item>
     
     <item>
@@ -121,6 +121,16 @@ These are the same words I hear every Friday morning from the woman behind the c
       <guid>https://davidzhongtai.com/sitemap/</guid>
       <description>Links Down below, you&amp;rsquo;ll find links to every possible page on this site. Feel free to explore!
 Professional Data Scientist Intern @ Ameren Innovation Center Business Analyst @ American Supply Association D.NEXT Lab Research D.An, L.Zheng, Z.Quan: Building an NLP-Powered Repository for Cyber Risk Literature Scraping Web Data for Academic Literature Fake News Detection: Using NLP in the Detection Process (FaDe-Net) Blog Inequality Fun and Their Applications A (Fun) Discussion on Harmonic Functions Donuts The need for a unified cataloging system for academic literature Looking back on a semester of undergraduate research </description>
+    </item>
+    
+    <item>
+      <title>Summer of Side Projects</title>
+      <link>https://davidzhongtai.com/posts/sosp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidzhongtai.com/posts/sosp/</guid>
+      <description>Revisiting a Summer of Side Projects This is a long overdue writeup with open source learning and Summer of Side Projects 2022 &amp;ldquo;Go do a project.&amp;rdquo;
+Sure, that’s what everyone talks about and describes as the optimal way to break into the tech space. Nowadays, tech seems to be all the rage, co-inflating into this large bubble of glamorous perks and lifestyles. Silicon Valley and other areas have become the new meccas for innovation, all sought after by anyone who wants to go into big tech.</description>
     </item>
     
     <item>
