@@ -12,6 +12,7 @@ I am currently an undergraduate student at the University of Illinois at Urbana-
 
 ## Latest Articles
 
+- [A Discussion on Pandas and Data Mining (WIP)](/posts/datamining)
 - [Revisiting a Summer of Side Projects](/posts/sosp)
 - [Inequality Fun and Their Applications](/posts/inequalities)
 - [A (Fun) Discussion on Harmonic Functions](/posts/harmonic)

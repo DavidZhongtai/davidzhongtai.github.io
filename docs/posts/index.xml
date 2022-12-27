@@ -2,65 +2,74 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on David An</title>
-    <link>https://davidzhongtai.com/posts/</link>
+    <link>https://davidan.dev/posts/</link>
     <description>Recent content in Posts on David An</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://davidzhongtai.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://davidan.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Semester of Research</title>
-      <link>https://davidzhongtai.com/posts/firstsem/</link>
+      <link>https://davidan.dev/posts/firstsem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidzhongtai.com/posts/firstsem/</guid>
+      <guid>https://davidan.dev/posts/firstsem/</guid>
       <description>A Semester of Research All of this comes together for a Fake Detection Network, or FaDe-Net. In order to validate and benchmark our results, we performed a series of metric tests on the MIT Fake News Dataset1 and achieved a precision rate of 90.31% as well as an accuracy rate of 88.56%. Our experiments indicate the model is more effective at fake news detection. However, this model still has a significant amount of room to improve in future research.</description>
     </item>
     
     <item>
       <title>Donuts</title>
-      <link>https://davidzhongtai.com/posts/donut/</link>
+      <link>https://davidan.dev/posts/donut/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidzhongtai.com/posts/donut/</guid>
+      <guid>https://davidan.dev/posts/donut/</guid>
       <description>Donuts &amp;ldquo;$7.13 is your total sir.&amp;rdquo;
 These are the same words I hear every Friday morning from the woman behind the counter. Her eyes weary from the same cycle day over day; something that has become a habit over years of monotony. However, it’s not her which gives the donut shop the character it possesses; instead, it’s moreso the cacophony of hearing the ovens blaring, cash registers ringing, and blenders blending which gives this donut shop its character.</description>
     </item>
     
     <item>
       <title>Fun with Inequalities</title>
-      <link>https://davidzhongtai.com/posts/inequalities/</link>
+      <link>https://davidan.dev/posts/inequalities/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidzhongtai.com/posts/inequalities/</guid>
+      <guid>https://davidan.dev/posts/inequalities/</guid>
       <description>Inequality Fun and Their Applications This article assumes the reader has basic knowledge of calculus and analysis. Covers topics ranging from basic Cauchy Schwarz to Lipschitz, culminating in us pulling out a mathematical rabbit out of an algebraic hat.
 1. What is an Inequality? An inequality compares two values, showing if one is less than, greater than, or simply not equal to another value. Literally, it does not get more simpler than that.</description>
     </item>
     
     <item>
       <title>Harmonic Functions</title>
-      <link>https://davidzhongtai.com/posts/harmonic/</link>
+      <link>https://davidan.dev/posts/harmonic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidzhongtai.com/posts/harmonic/</guid>
+      <guid>https://davidan.dev/posts/harmonic/</guid>
       <description>A (Fun) Discussion on Harmonic Functions Some introductions into harmonic functions. This post is meant to be an approchable read into these phenomena.
 1. Introduction on Harmonic Functions A mass on a spring, measuring fluid flow, even the cosine wave, are all examples of where harmonic functions can be found within our world. The name itself stems from an object or force going through some type of harmonic (or oscillating) motion from a steady state equilibrium.</description>
     </item>
     
     <item>
-      <title>Summer of Side Projects</title>
-      <link>https://davidzhongtai.com/posts/sosp/</link>
+      <title>Pandas and Data Mining</title>
+      <link>https://davidan.dev/posts/datamining/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidzhongtai.com/posts/sosp/</guid>
+      <guid>https://davidan.dev/posts/datamining/</guid>
+      <description>A Discussion on Pandas and Data Mining (WIP) At the beginning of any data analytics/data science project, the most usual case is utilizing Pandas to load the data into a object called a DataFrame and perform preprocessing tasks on it. While the Pandas library is convenient and comes with a trove of useful analytic tools, it does have some inefficiencies, many due to the nature of Python. To investigate this, let&amp;rsquo;s look at how Pandas actually works on top of Python.</description>
+    </item>
+    
+    <item>
+      <title>Summer of Side Projects</title>
+      <link>https://davidan.dev/posts/sosp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidan.dev/posts/sosp/</guid>
       <description>Revisiting a Summer of Side Projects This is a long overdue writeup with open source learning and Summer of Side Projects 2022 &amp;ldquo;Go do a project.&amp;rdquo;
 Sure, that’s what everyone talks about and describes as the optimal way to break into the tech space. Nowadays, tech seems to be all the rage, co-inflating into this large bubble of glamorous perks and lifestyles. Silicon Valley and other areas have become the new meccas for innovation, all sought after by anyone who wants to go into big tech.</description>
     </item>
     
     <item>
       <title>Unification in Academic Literature</title>
-      <link>https://davidzhongtai.com/posts/unified/</link>
+      <link>https://davidan.dev/posts/unified/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidzhongtai.com/posts/unified/</guid>
+      <guid>https://davidan.dev/posts/unified/</guid>
       <description>Unification in Academic Literature Libraries store the energy that fuels the imagination. They open up windows to the world and inspire us to explore and acheive, and contribute to improving our quality of life -Sidney Sheldon
 Chaos is always present. Whether it&amp;rsquo;s in the weather or in crowds, things always tend to be in disarray. The same can be said for data storage and retrieval systems as well.
 The concept of data is odd.</description>

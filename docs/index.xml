@@ -2,54 +2,54 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>David An</title>
-    <link>https://davidzhongtai.com/</link>
+    <link>https://davidan.dev/</link>
     <description>Recent content on David An</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://davidzhongtai.com/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://davidan.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://davidzhongtai.com/professional/ameren/</link>
+      <link>https://davidan.dev/professional/ameren/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidzhongtai.com/professional/ameren/</guid>
+      <guid>https://davidan.dev/professional/ameren/</guid>
       <description>Data Scientist Intern @ Ameren Innovation Center ⚡️Check back for updates on the awesome things I&amp;rsquo;m doing at Ameren&amp;hellip; </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://davidzhongtai.com/professional/asa/</link>
+      <link>https://davidan.dev/professional/asa/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidzhongtai.com/professional/asa/</guid>
+      <guid>https://davidan.dev/professional/asa/</guid>
       <description>Business Analyst @ D.NEXT Lab 🚚 Check back later for some cool things I did at D.NEXT! </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://davidzhongtai.com/research/fadenet/</link>
+      <link>https://davidan.dev/research/fadenet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidzhongtai.com/research/fadenet/</guid>
+      <guid>https://davidan.dev/research/fadenet/</guid>
       <description>FaDe-Net [Writeup] David An - AP Research Project
 Abstract The rapid development of social media and online news outlets has accelerated the spread of fake news across the internet. The accessibility and convenience of social media has further driven the drastic change of information consumption. As a consequence, fake news has become a significant concern because of 1) its inevitable exposure to large populations and 2) the potential to cause significant damage in modern society.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://davidzhongtai.com/research/nlpsearch/</link>
+      <link>https://davidan.dev/research/nlpsearch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidzhongtai.com/research/nlpsearch/</guid>
+      <guid>https://davidan.dev/research/nlpsearch/</guid>
       <description>Building an NLP-Powered Repository for Cyber Risk Literature [Poster] David An, Linfeng Zheng, Zhiyu (Frank) Quan
 Abstract With the large and growing body of cyber risk literature, we see three major challenges faced by the actuarial research community: there is no context aware tool for finding cyber literature, no central repository of cyber risk resources, and a lack of accounting of literature trends. To address the abovementioned challenges, we propose to build a repository of cyber-risk articles with an NLP powered search tool that can easily be used by researchers to find relevant materials.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://davidzhongtai.com/research/uconnscrape/</link>
+      <link>https://davidan.dev/research/uconnscrape/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidzhongtai.com/research/uconnscrape/</guid>
+      <guid>https://davidan.dev/research/uconnscrape/</guid>
       <description>Scraping Web Data for Academic Literature Done in collaboration with Dr. Emiliano Valdez1, University of Connecticut
 Goals How obvious are actual trends in academic literature and how can we easily gather academic literature metadata? The purpose of the exploratory study was to develop and analyze different methods of data retrieval from multiple sources.
 Given a text search within context, we should be able to retrieve a list of articles that contain that segment of text.</description>
@@ -57,88 +57,97 @@ Given a text search within context, we should be able to retrieve a list of arti
     
     <item>
       <title>A Semester of Research</title>
-      <link>https://davidzhongtai.com/posts/firstsem/</link>
+      <link>https://davidan.dev/posts/firstsem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidzhongtai.com/posts/firstsem/</guid>
+      <guid>https://davidan.dev/posts/firstsem/</guid>
       <description>A Semester of Research All of this comes together for a Fake Detection Network, or FaDe-Net. In order to validate and benchmark our results, we performed a series of metric tests on the MIT Fake News Dataset1 and achieved a precision rate of 90.31% as well as an accuracy rate of 88.56%. Our experiments indicate the model is more effective at fake news detection. However, this model still has a significant amount of room to improve in future research.</description>
     </item>
     
     <item>
       <title>Blog</title>
-      <link>https://davidzhongtai.com/blog/</link>
+      <link>https://davidan.dev/blog/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidzhongtai.com/blog/</guid>
+      <guid>https://davidan.dev/blog/</guid>
       <description>Random Thoughts Some excursions into different spaces. I occasionally write about math and computers.
-Revisiting a Summer of Side Projects 12-16-2022 Inequality Fun and Their Applications 12-14-2022 A (Fun) Discussion on Harmonic Functions 12-03-2022 Donuts 11-12-2022 Unification in Academic Literature 07-07-2022 A Semester of Research 06-15-2022 Building an NLP-Powered Repository for Cyber Risk Literature 05-13-2022 Scraping Web Data for Academic Literature 02-01-2022 Fake News Detection: Using NLP in the Detection Process (FaDe-Net) 05-12-2021 </description>
+A Discussion on Pandas and Data Mining (WIP) 12-17-2022 Revisiting a Summer of Side Projects 12-16-2022 Inequality Fun and Their Applications 12-14-2022 A (Fun) Discussion on Harmonic Functions 12-03-2022 Donuts 11-12-2022 Unification in Academic Literature 07-07-2022 A Semester of Research 06-15-2022 Building an NLP-Powered Repository for Cyber Risk Literature 05-13-2022 Scraping Web Data for Academic Literature 02-01-2022 Fake News Detection: Using NLP in the Detection Process (FaDe-Net) 05-12-2021 </description>
     </item>
     
     <item>
       <title>Contact</title>
-      <link>https://davidzhongtai.com/contact/</link>
+      <link>https://davidan.dev/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidzhongtai.com/contact/</guid>
+      <guid>https://davidan.dev/contact/</guid>
       <description> Email: davidzhongtaian at gmail dot com Phone: 878-295-0080 Resume: Some things I do Social Linkedin Twitter </description>
     </item>
     
     <item>
       <title>Donuts</title>
-      <link>https://davidzhongtai.com/posts/donut/</link>
+      <link>https://davidan.dev/posts/donut/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidzhongtai.com/posts/donut/</guid>
+      <guid>https://davidan.dev/posts/donut/</guid>
       <description>Donuts &amp;ldquo;$7.13 is your total sir.&amp;rdquo;
 These are the same words I hear every Friday morning from the woman behind the counter. Her eyes weary from the same cycle day over day; something that has become a habit over years of monotony. However, it’s not her which gives the donut shop the character it possesses; instead, it’s moreso the cacophony of hearing the ovens blaring, cash registers ringing, and blenders blending which gives this donut shop its character.</description>
     </item>
     
     <item>
       <title>Fun with Inequalities</title>
-      <link>https://davidzhongtai.com/posts/inequalities/</link>
+      <link>https://davidan.dev/posts/inequalities/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidzhongtai.com/posts/inequalities/</guid>
+      <guid>https://davidan.dev/posts/inequalities/</guid>
       <description>Inequality Fun and Their Applications This article assumes the reader has basic knowledge of calculus and analysis. Covers topics ranging from basic Cauchy Schwarz to Lipschitz, culminating in us pulling out a mathematical rabbit out of an algebraic hat.
 1. What is an Inequality? An inequality compares two values, showing if one is less than, greater than, or simply not equal to another value. Literally, it does not get more simpler than that.</description>
     </item>
     
     <item>
       <title>Harmonic Functions</title>
-      <link>https://davidzhongtai.com/posts/harmonic/</link>
+      <link>https://davidan.dev/posts/harmonic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidzhongtai.com/posts/harmonic/</guid>
+      <guid>https://davidan.dev/posts/harmonic/</guid>
       <description>A (Fun) Discussion on Harmonic Functions Some introductions into harmonic functions. This post is meant to be an approchable read into these phenomena.
 1. Introduction on Harmonic Functions A mass on a spring, measuring fluid flow, even the cosine wave, are all examples of where harmonic functions can be found within our world. The name itself stems from an object or force going through some type of harmonic (or oscillating) motion from a steady state equilibrium.</description>
     </item>
     
     <item>
-      <title>Sitemap</title>
-      <link>https://davidzhongtai.com/sitemap/</link>
+      <title>Pandas and Data Mining</title>
+      <link>https://davidan.dev/posts/datamining/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidzhongtai.com/sitemap/</guid>
+      <guid>https://davidan.dev/posts/datamining/</guid>
+      <description>A Discussion on Pandas and Data Mining (WIP) At the beginning of any data analytics/data science project, the most usual case is utilizing Pandas to load the data into a object called a DataFrame and perform preprocessing tasks on it. While the Pandas library is convenient and comes with a trove of useful analytic tools, it does have some inefficiencies, many due to the nature of Python. To investigate this, let&amp;rsquo;s look at how Pandas actually works on top of Python.</description>
+    </item>
+    
+    <item>
+      <title>Sitemap</title>
+      <link>https://davidan.dev/sitemap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidan.dev/sitemap/</guid>
       <description>Links Down below, you&amp;rsquo;ll find links to every possible page on this site. Feel free to explore!
-Professional Data Scientist Intern @ Ameren Innovation Center Business Analyst @ American Supply Association D.NEXT Lab Research D.An, L.Zheng, Z.Quan: Building an NLP-Powered Repository for Cyber Risk Literature Scraping Web Data for Academic Literature Fake News Detection: Using NLP in the Detection Process (FaDe-Net) Blog Inequality Fun and Their Applications A (Fun) Discussion on Harmonic Functions Donuts The need for a unified cataloging system for academic literature Looking back on a semester of undergraduate research </description>
+Professional Data Scientist Intern @ Ameren Innovation Center Business Analyst @ American Supply Association D.NEXT Lab Research D.An, L.Zheng, Z.Quan: Building an NLP-Powered Repository for Cyber Risk Literature Scraping Web Data for Academic Literature Fake News Detection: Using NLP in the Detection Process (FaDe-Net) Blog A Discussion on Pandas and Data Mining (WIP) Revisiting a Summer of Side Projects Inequality Fun and Their Applications A (Fun) Discussion on Harmonic Functions Donuts The need for a unified cataloging system for academic literature Looking back on a semester of undergraduate research </description>
     </item>
     
     <item>
       <title>Summer of Side Projects</title>
-      <link>https://davidzhongtai.com/posts/sosp/</link>
+      <link>https://davidan.dev/posts/sosp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidzhongtai.com/posts/sosp/</guid>
+      <guid>https://davidan.dev/posts/sosp/</guid>
       <description>Revisiting a Summer of Side Projects This is a long overdue writeup with open source learning and Summer of Side Projects 2022 &amp;ldquo;Go do a project.&amp;rdquo;
 Sure, that’s what everyone talks about and describes as the optimal way to break into the tech space. Nowadays, tech seems to be all the rage, co-inflating into this large bubble of glamorous perks and lifestyles. Silicon Valley and other areas have become the new meccas for innovation, all sought after by anyone who wants to go into big tech.</description>
     </item>
     
     <item>
       <title>Unification in Academic Literature</title>
-      <link>https://davidzhongtai.com/posts/unified/</link>
+      <link>https://davidan.dev/posts/unified/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidzhongtai.com/posts/unified/</guid>
+      <guid>https://davidan.dev/posts/unified/</guid>
       <description>Unification in Academic Literature Libraries store the energy that fuels the imagination. They open up windows to the world and inspire us to explore and acheive, and contribute to improving our quality of life -Sidney Sheldon
 Chaos is always present. Whether it&amp;rsquo;s in the weather or in crowds, things always tend to be in disarray. The same can be said for data storage and retrieval systems as well.
 The concept of data is odd.</description>

@@ -2,44 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://davidzhongtai.com/professional/ameren/</loc>
+    <loc>https://davidan.dev/professional/ameren/</loc>
   </url><url>
-    <loc>https://davidzhongtai.com/professional/asa/</loc>
+    <loc>https://davidan.dev/professional/asa/</loc>
   </url><url>
-    <loc>https://davidzhongtai.com/research/fadenet/</loc>
+    <loc>https://davidan.dev/research/fadenet/</loc>
   </url><url>
-    <loc>https://davidzhongtai.com/research/nlpsearch/</loc>
+    <loc>https://davidan.dev/research/nlpsearch/</loc>
   </url><url>
-    <loc>https://davidzhongtai.com/research/uconnscrape/</loc>
+    <loc>https://davidan.dev/research/uconnscrape/</loc>
   </url><url>
-    <loc>https://davidzhongtai.com/posts/firstsem/</loc>
+    <loc>https://davidan.dev/posts/firstsem/</loc>
   </url><url>
-    <loc>https://davidzhongtai.com/blog/</loc>
+    <loc>https://davidan.dev/blog/</loc>
   </url><url>
-    <loc>https://davidzhongtai.com/categories/</loc>
+    <loc>https://davidan.dev/categories/</loc>
   </url><url>
-    <loc>https://davidzhongtai.com/contact/</loc>
+    <loc>https://davidan.dev/contact/</loc>
   </url><url>
-    <loc>https://davidzhongtai.com/</loc>
+    <loc>https://davidan.dev/</loc>
   </url><url>
-    <loc>https://davidzhongtai.com/posts/donut/</loc>
+    <loc>https://davidan.dev/posts/donut/</loc>
   </url><url>
-    <loc>https://davidzhongtai.com/posts/inequalities/</loc>
+    <loc>https://davidan.dev/posts/inequalities/</loc>
   </url><url>
-    <loc>https://davidzhongtai.com/posts/harmonic/</loc>
+    <loc>https://davidan.dev/posts/harmonic/</loc>
   </url><url>
-    <loc>https://davidzhongtai.com/posts/</loc>
+    <loc>https://davidan.dev/posts/datamining/</loc>
   </url><url>
-    <loc>https://davidzhongtai.com/professional/</loc>
+    <loc>https://davidan.dev/posts/</loc>
   </url><url>
-    <loc>https://davidzhongtai.com/research/</loc>
+    <loc>https://davidan.dev/professional/</loc>
   </url><url>
-    <loc>https://davidzhongtai.com/sitemap/</loc>
+    <loc>https://davidan.dev/research/</loc>
   </url><url>
-    <loc>https://davidzhongtai.com/posts/sosp/</loc>
+    <loc>https://davidan.dev/sitemap/</loc>
   </url><url>
-    <loc>https://davidzhongtai.com/tags/</loc>
+    <loc>https://davidan.dev/posts/sosp/</loc>
   </url><url>
-    <loc>https://davidzhongtai.com/posts/unified/</loc>
+    <loc>https://davidan.dev/tags/</loc>
+  </url><url>
+    <loc>https://davidan.dev/posts/unified/</loc>
   </url>
 </urlset>

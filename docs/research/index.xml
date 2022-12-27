@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Researches on David An</title>
-    <link>https://davidzhongtai.com/research/</link>
+    <link>https://davidan.dev/research/</link>
     <description>Recent content in Researches on David An</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://davidzhongtai.com/research/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://davidan.dev/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>https://davidzhongtai.com/research/fadenet/</link>
+      <link>https://davidan.dev/research/fadenet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidzhongtai.com/research/fadenet/</guid>
+      <guid>https://davidan.dev/research/fadenet/</guid>
       <description>FaDe-Net [Writeup] David An - AP Research Project
 Abstract The rapid development of social media and online news outlets has accelerated the spread of fake news across the internet. The accessibility and convenience of social media has further driven the drastic change of information consumption. As a consequence, fake news has become a significant concern because of 1) its inevitable exposure to large populations and 2) the potential to cause significant damage in modern society.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://davidzhongtai.com/research/nlpsearch/</link>
+      <link>https://davidan.dev/research/nlpsearch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidzhongtai.com/research/nlpsearch/</guid>
+      <guid>https://davidan.dev/research/nlpsearch/</guid>
       <description>Building an NLP-Powered Repository for Cyber Risk Literature [Poster] David An, Linfeng Zheng, Zhiyu (Frank) Quan
 Abstract With the large and growing body of cyber risk literature, we see three major challenges faced by the actuarial research community: there is no context aware tool for finding cyber literature, no central repository of cyber risk resources, and a lack of accounting of literature trends. To address the abovementioned challenges, we propose to build a repository of cyber-risk articles with an NLP powered search tool that can easily be used by researchers to find relevant materials.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://davidzhongtai.com/research/uconnscrape/</link>
+      <link>https://davidan.dev/research/uconnscrape/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://davidzhongtai.com/research/uconnscrape/</guid>
+      <guid>https://davidan.dev/research/uconnscrape/</guid>
       <description>Scraping Web Data for Academic Literature Done in collaboration with Dr. Emiliano Valdez1, University of Connecticut
 Goals How obvious are actual trends in academic literature and how can we easily gather academic literature metadata? The purpose of the exploratory study was to develop and analyze different methods of data retrieval from multiple sources.
 Given a text search within context, we should be able to retrieve a list of articles that contain that segment of text.</description>

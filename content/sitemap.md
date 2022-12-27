@@ -19,6 +19,8 @@ Down below, you'll find links to every possible page on this site. Feel free to 
 
 #### Blog
 
+- [A Discussion on Pandas and Data Mining (WIP)](/posts/datamining)
+- [Revisiting a Summer of Side Projects](/posts/sosp)
 - [Inequality Fun and Their Applications](/posts/inequalities)
 - [A (Fun) Discussion on Harmonic Functions](/posts/harmonic)
 - [Donuts](/posts/donut)
