@@ -10,12 +10,36 @@ I am currently an undergraduate student at the University of Illinois at Urbana-
 
 <!-- [Business Analyst @ American Supply Association D.Next Lab](/professional/asa) -->
 
-## Latest Articles
+{{< rawhtml >}}
+
+<div class="container">
+  <div class="row">
+    <div class="col" style="margin-left: -1rem;">
+    <h2 class = "text-left">Latest Articles</h2>
+    <ul>
+<li style="margin-left: -1rem;"><a href="/posts/sosp">Revisiting a Summer of Side Projects</a></li>
+<li style="margin-left: -1rem;"><a href="/posts/inequalities">Inequality Fun and Their Applications</a></li>
+<li style="margin-left: -1rem;"><a href="/posts/harmonic">A (Fun) Discussion on Harmonic Functions</a></li>
+</ul>
+    </div>
+    <div class="col" style="margin-left: -1rem;">
+    <h2 class = "text-left">Things I've made</h2>
+    <ul>
+<li style="margin-left: -1rem;"><a href="https://bit.ly/rp-guide22">Guide to Research Park v1.0</a></li>
+<li style="margin-left: -1rem;"><a href="https://r.davidan.dev">R Guide For Statistics</a></li>
+<li style="margin-left: -1rem;"><a href="https://sosp22.com">Summer of Side Projects 2022</a></li>
+</ul>
+    </div>
+  </div>
+</div>
+{{< /rawhtml >}}
+
+<!-- ## Latest Articles
 
 - [A Discussion on Pandas and Data Mining (WIP)](/posts/datamining)
 - [Revisiting a Summer of Side Projects](/posts/sosp)
 - [Inequality Fun and Their Applications](/posts/inequalities)
-- [A (Fun) Discussion on Harmonic Functions](/posts/harmonic)
+- [A (Fun) Discussion on Harmonic Functions](/posts/harmonic) -->
 
 <!-- ## Research Experience
 
@@ -38,8 +62,8 @@ Here is a table: -->
 | 08-15-2022 | Presented about SOSP22 at the Illinois CS Teaching Workshop [(iCSTW22)](https://mediaspace.illinois.edu/playlist/dedicated/269362552/1_uvpti661/1_ez05ctmp)              |
 | 08-03-2022 | Presented [[1]](/research/nlpsearch) at the Actuarial Research Conference 22 (ARC22)                                                                                     |
 | 07-29-2022 | Received the 2022 Most Outstanding Undergraduate Intern Award                                                                                                            |
-| 04-27-2022 | Presented [[1]](/research/nlpsearch) at the Illinois Undergraduate Research Symposium                                                                                    |
 
+<!-- 04-27-2022 Presented [[1]](/research/nlpsearch) at the Illinois Undergraduate Research Symposium  -->
 <!--
 Here is a horizontal rule:
 
