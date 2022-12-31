@@ -7,8 +7,9 @@ math = true
 
 [params]
   author = "David An"
-  description = "David An" 
+  description = "Welcome to my life" 
   favicon = "favicon.ico"
+  googleAnalytics = "G-84P0KS3QHB"
 
 [menu]
 
