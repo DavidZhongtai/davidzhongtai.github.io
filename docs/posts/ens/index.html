@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang=""><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZLYXKRVG2"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-84P0KS3QHB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-84P0KS3QHB');
+    </script>
+    <title></title>
+    <meta name="description" content="Welcome to my life">
+    <meta name="author" content='David An'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css" integrity="sha384-Juol1FqnotbkyZUT5Z7gUPjQ9gzlwCENvUZTpQBAPxtusdwFLRy382PSDx5UUJ4/" crossorigin="anonymous">
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js" integrity="sha384-97gW6UIJxnlKemYavrqDHSX3SiygeOwIZhwyOKRfSaf0JWKRVj9hLASHgFTzT+0O" crossorigin="anonymous"></script>
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
+
+    
+    <link rel="stylesheet" href="/sass/researcher.min.css">
+
+    
+        <link rel="icon" type="image/ico" href="https://davidan.dev/favicon.ico">
+    
+
+    
+        
+    
+</head>
+
+    <body>
+
+
+
+<div class="container mt-5">
+    <nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
+        <a class="navbar-brand mx-0 mr-sm-auto" href="https://davidan.dev/" title="David An">
+          
+          David An
+        </a>
+        <div class="navbar-nav flex-row flex-wrap justify-content-center">
+            
+                
+                
+                    <a class="nav-item nav-link" href="/blog" title="Blog">
+                        Blog
+                    </a>
+                    
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    
+                
+                    <a class="nav-item nav-link" href="/contact" title="Contact">
+                        Contact
+                    </a>
+                    
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    
+                
+                    <a class="nav-item nav-link" href="/sitemap" title="Nav">
+                        Nav
+                    </a>
+                    
+                
+            
+        </div>
+    </nav>
+</div>
+<hr>
+<div id="content">
+<div class="container">
+    <h2 id="this-post-was-forked-from-a-github-log-this-is-simply-for-reference-in-a-nice-to-read-format-as-the-original-link-is-dead">This post was forked from a github log. This is simply for reference in a nice to read format as the original link is dead</h2>
+<p>We will cover the following:
+​</p>
+<ol>
+<li>Basic ENS architecture</li>
+<li>Setting up ENS: Deploying the registry, registrar, and resolver contracts</li>
+<li>Writing to ENS: Registering a name and storing data</li>
+<li>Reading data from ENS, both on- and off-chain
+​</li>
+</ol>
+<h2 id="1-introduction-to-the-ens-architecture">1. Introduction to the ENS architecture</h2>
+<p>Before going into the technical details, let&rsquo;s briefly recap how the ENS contracts work.
+​</p>
+<h3 id="terminologyhttpsdocsensdomainsterminology"><a href="https://docs.ens.domains/terminology">Terminology</a></h3>
+<p>A complete ENS identifier such as &ldquo;test.eth&rdquo; is uniquely identifiable by its node. The node is the result of applying the <a href="https://docs.ens.domains/#namehash">namehash</a>, which hashes the domain components recursively (e.g. <code>namehash(&quot;test.eth&quot;) = keccak256(namehash(&quot;eth&quot;), keccak256(&quot;test&quot;))</code>).
+​
+A label is a component of an ENS identifier such as &ldquo;test&rdquo; in the previous example. Within contracts this usually refers to the hash of the label, <code>keccak256(&quot;test&quot;)</code>. When you register the label &ldquo;test&rdquo; with the &ldquo;eth&rdquo; registrar you become the owner of &ldquo;test.eth&rdquo;. Once a label is registered, the resulting node is how the domain is identified.
+​</p>
+<h3 id="ens-registry">ENS Registry</h3>
+<p>This is the central smart contract and stores ownership information as well as the address of a resolver (which we will get to a bit later) for each node.
+​</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">mapping</span> (<span style="color:#a6e22e">bytes32</span> =&gt; <span style="color:#a6e22e">Record</span>) <span style="color:#a6e22e">records</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">struct</span> <span style="color:#a6e22e">Record</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">address</span> <span style="color:#a6e22e">owner</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">address</span> <span style="color:#a6e22e">resolver</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">uint64</span> <span style="color:#a6e22e">ttl</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>​
+The remainder of the functionality of the registry is primarily getters and setters for those values.
+​</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">pragma</span> <span style="color:#a6e22e">solidity</span> <span style="color:#f92672">&gt;=</span><span style="color:#ae81ff">0.4</span>.<span style="color:#ae81ff">24</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">ENS</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Logged when the owner of a node assigns a new owner to a subnode.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">event</span> <span style="color:#a6e22e">NewOwner</span>(<span style="color:#a6e22e">bytes32</span> <span style="color:#a6e22e">indexed</span> <span style="color:#a6e22e">node</span>, <span style="color:#a6e22e">bytes32</span> <span style="color:#a6e22e">indexed</span> <span style="color:#a6e22e">label</span>, <span style="color:#a6e22e">address</span> <span style="color:#a6e22e">owner</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Logged when the owner of a node transfers ownership to a new account.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">event</span> <span style="color:#a6e22e">Transfer</span>(<span style="color:#a6e22e">bytes32</span> <span style="color:#a6e22e">indexed</span> <span style="color:#a6e22e">node</span>, <span style="color:#a6e22e">address</span> <span style="color:#a6e22e">owner</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Logged when the resolver for a node changes.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">event</span> <span style="color:#a6e22e">NewResolver</span>(<span style="color:#a6e22e">bytes32</span> <span style="color:#a6e22e">indexed</span> <span style="color:#a6e22e">node</span>, <span style="color:#a6e22e">address</span> <span style="color:#a6e22e">resolver</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Logged when the TTL of a node changes
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#a6e22e">event</span> <span style="color:#a6e22e">NewTTL</span>(<span style="color:#a6e22e">bytes32</span> <span style="color:#a6e22e">indexed</span> <span style="color:#a6e22e">node</span>, <span style="color:#a6e22e">uint64</span> <span style="color:#a6e22e">ttl</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setSubnodeOwner</span>(<span style="color:#a6e22e">bytes32</span> <span style="color:#a6e22e">node</span>, <span style="color:#a6e22e">bytes32</span> <span style="color:#a6e22e">label</span>, <span style="color:#a6e22e">address</span> <span style="color:#a6e22e">owner</span>) <span style="color:#a6e22e">external</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setResolver</span>(<span style="color:#a6e22e">bytes32</span> <span style="color:#a6e22e">node</span>, <span style="color:#a6e22e">address</span> <span style="color:#a6e22e">resolver</span>) <span style="color:#a6e22e">external</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setOwner</span>(<span style="color:#a6e22e">bytes32</span> <span style="color:#a6e22e">node</span>, <span style="color:#a6e22e">address</span> <span style="color:#a6e22e">owner</span>) <span style="color:#a6e22e">external</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setTTL</span>(<span style="color:#a6e22e">bytes32</span> <span style="color:#a6e22e">node</span>, <span style="color:#a6e22e">uint64</span> <span style="color:#a6e22e">ttl</span>) <span style="color:#a6e22e">external</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">owner</span>(<span style="color:#a6e22e">bytes32</span> <span style="color:#a6e22e">node</span>) <span style="color:#a6e22e">external</span> <span style="color:#a6e22e">view</span> <span style="color:#a6e22e">returns</span> (<span style="color:#a6e22e">address</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">resolver</span>(<span style="color:#a6e22e">bytes32</span> <span style="color:#a6e22e">node</span>) <span style="color:#a6e22e">external</span> <span style="color:#a6e22e">view</span> <span style="color:#a6e22e">returns</span> (<span style="color:#a6e22e">address</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">ttl</span>(<span style="color:#a6e22e">bytes32</span> <span style="color:#a6e22e">node</span>) <span style="color:#a6e22e">external</span> <span style="color:#a6e22e">view</span> <span style="color:#a6e22e">returns</span> (<span style="color:#a6e22e">uint64</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="registrar">Registrar</h3>
+<p>Since the registry contains only basic access control (only the owner of a node can create subnodes, initially the deployer owns the root node) it only allows manual domain allocation.
+Fortunately, contracts can also own nodes.
+This means we can set up a registrar contract as the owner of a node, e.g. &ldquo;eth&rdquo;, in the registry which enables it to distribute subdomains such as &ldquo;test.eth&rdquo;.
+It allows us to have custom, on-chain logic which governs domain allocation.
+Once we own a (sub-)node we are free to repeat this process and set up another registrar.
+If you are part of the &rsquo;test&rsquo; organisation you could register &rsquo;test.eth&rsquo; and let it point to your custom registrar which only allows certified members of your organisation to claim subdomains such as &lsquo;bob.test.eth&rsquo;.
+Until May 2019 the mainnet used an auction-based registrar. On a private net, however, a &lsquo;first come, first served&rsquo; registrar is sufficient, because there is no need to prevent squatting.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">pragma</span> <span style="color:#a6e22e">solidity</span> <span style="color:#f92672">^</span><span style="color:#ae81ff">0.5</span>.<span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;./ENS.sol&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * A registrar that allocates subdomains to the first person to claim them.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">contract</span> <span style="color:#a6e22e">FIFSRegistrar</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">ENS</span> <span style="color:#a6e22e">ens</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">bytes32</span> <span style="color:#a6e22e">rootNode</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">modifier</span> <span style="color:#a6e22e">only_owner</span>(<span style="color:#a6e22e">bytes32</span> <span style="color:#a6e22e">label</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">address</span> <span style="color:#a6e22e">currentOwner</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ens</span>.<span style="color:#a6e22e">owner</span>(<span style="color:#a6e22e">keccak256</span>(<span style="color:#a6e22e">abi</span>.<span style="color:#a6e22e">encodePacked</span>(<span style="color:#a6e22e">rootNode</span>, <span style="color:#a6e22e">label</span>)));
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">require</span>(<span style="color:#a6e22e">currentOwner</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">address</span>(<span style="color:#ae81ff">0x0</span>) <span style="color:#f92672">||</span> <span style="color:#a6e22e">currentOwner</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">msg</span>.<span style="color:#a6e22e">sender</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">_</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * Constructor.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * @param ensAddr The address of the ENS registry.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * @param node The node that this registrar administers.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">ENS</span> <span style="color:#a6e22e">ensAddr</span>, <span style="color:#a6e22e">bytes32</span> <span style="color:#a6e22e">node</span>) <span style="color:#66d9ef">public</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">ens</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ensAddr</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">rootNode</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">node</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * Register a name, or change the owner of an existing registration.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * @param label The hash of the label to register.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * @param owner The address of the new owner.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">register</span>(<span style="color:#a6e22e">bytes32</span> <span style="color:#a6e22e">label</span>, <span style="color:#a6e22e">address</span> <span style="color:#a6e22e">owner</span>) <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">only_owner</span>(<span style="color:#a6e22e">label</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">ens</span>.<span style="color:#a6e22e">setSubnodeOwner</span>(<span style="color:#a6e22e">rootNode</span>, <span style="color:#a6e22e">label</span>, <span style="color:#a6e22e">owner</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="resolver">Resolver</h3>
+<p>While the registry only contains ownership information about nodes and a pointer to the resolver, the resolver is where detailed information about a node is actually stored. The core use-case is to have the resolver store a node&rsquo;s account address, but it could also store a contract ABI, custom text, and more.
+Resolvers can also implement authorization schemes of who can modify the stored information.
+Usually there is either a single owner of the resolver that may modify it, or more simple: the resolver relies on the node ownership information of the registrar.
+The PublicResolver used here provides this authorization scheme and brings several specialized resolvers such as the ABIResolver or AddrResolver together. Similar to the registry, their logic is very simple. Usually they just contain a mapping from node to whatever information they store and the corresponding getters and setters.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">pragma</span> <span style="color:#a6e22e">solidity</span> <span style="color:#f92672">^</span><span style="color:#ae81ff">0.5</span>.<span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;@ensdomains/ens/contracts/ENS.sol&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;./profiles/ABIResolver.sol&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;./profiles/AddrResolver.sol&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;./profiles/ContentHashResolver.sol&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;./profiles/InterfaceResolver.sol&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;./profiles/NameResolver.sol&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;./profiles/PubkeyResolver.sol&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;./profiles/TextResolver.sol&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * A simple resolver anyone can use; only allows the owner of a node to set its
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> * address.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">contract</span> <span style="color:#a6e22e">PublicResolver</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">ABIResolver</span>, <span style="color:#a6e22e">AddrResolver</span>, <span style="color:#a6e22e">ContentHashResolver</span>, <span style="color:#a6e22e">InterfaceResolver</span>, <span style="color:#a6e22e">NameResolver</span>, <span style="color:#a6e22e">PubkeyResolver</span>, <span style="color:#a6e22e">TextResolver</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">ENS</span> <span style="color:#a6e22e">ens</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * A mapping of authorisations. An address that is authorised for a name
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * may make any changes to the name that the owner could, but may not update
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * the set of authorisations.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * (node, owner, caller) =&gt; isAuthorised
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mapping</span>(<span style="color:#a6e22e">bytes32</span>=&gt;<span style="color:#a6e22e">mapping</span>(<span style="color:#a6e22e">address</span>=&gt;<span style="color:#a6e22e">mapping</span>(<span style="color:#a6e22e">address</span>=&gt;<span style="color:#a6e22e">bool</span>))) <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">authorisations</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">event</span> <span style="color:#a6e22e">AuthorisationChanged</span>(<span style="color:#a6e22e">bytes32</span> <span style="color:#a6e22e">indexed</span> <span style="color:#a6e22e">node</span>, <span style="color:#a6e22e">address</span> <span style="color:#a6e22e">indexed</span> <span style="color:#a6e22e">owner</span>, <span style="color:#a6e22e">address</span> <span style="color:#a6e22e">indexed</span> <span style="color:#a6e22e">target</span>, <span style="color:#a6e22e">bool</span> <span style="color:#a6e22e">isAuthorised</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">constructor</span>(<span style="color:#a6e22e">ENS</span> <span style="color:#a6e22e">_ens</span>) <span style="color:#66d9ef">public</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">ens</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">_ens</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * @dev Sets or clears an authorisation.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * Authorisations are specific to the caller. Any account can set an authorisation
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * for any name, but the authorisation that is checked will be that of the
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * current owner of a name. Thus, transferring a name effectively clears any
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * existing authorisations, and new authorisations can be set in advance of
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * an ownership transfer if desired.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     *
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * @param node The name to change the authorisation on.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * @param target The address that is to be authorised or deauthorised.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * @param isAuthorised True if the address should be authorised, or false if it should be deauthorised.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setAuthorisation</span>(<span style="color:#a6e22e">bytes32</span> <span style="color:#a6e22e">node</span>, <span style="color:#a6e22e">address</span> <span style="color:#a6e22e">target</span>, <span style="color:#a6e22e">bool</span> <span style="color:#a6e22e">isAuthorised</span>) <span style="color:#a6e22e">external</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">authorisations</span>[<span style="color:#a6e22e">node</span>][<span style="color:#a6e22e">msg</span>.<span style="color:#a6e22e">sender</span>][<span style="color:#a6e22e">target</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">isAuthorised</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">emit</span> <span style="color:#a6e22e">AuthorisationChanged</span>(<span style="color:#a6e22e">node</span>, <span style="color:#a6e22e">msg</span>.<span style="color:#a6e22e">sender</span>, <span style="color:#a6e22e">target</span>, <span style="color:#a6e22e">isAuthorised</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">isAuthorised</span>(<span style="color:#a6e22e">bytes32</span> <span style="color:#a6e22e">node</span>) <span style="color:#a6e22e">internal</span> <span style="color:#a6e22e">view</span> <span style="color:#a6e22e">returns</span>(<span style="color:#a6e22e">bool</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">address</span> <span style="color:#a6e22e">owner</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">ens</span>.<span style="color:#a6e22e">owner</span>(<span style="color:#a6e22e">node</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">owner</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">msg</span>.<span style="color:#a6e22e">sender</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">authorisations</span>[<span style="color:#a6e22e">node</span>][<span style="color:#a6e22e">owner</span>][<span style="color:#a6e22e">msg</span>.<span style="color:#a6e22e">sender</span>];
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">pragma</span> <span style="color:#a6e22e">solidity</span> <span style="color:#f92672">^</span><span style="color:#ae81ff">0.5</span>.<span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;../ResolverBase.sol&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">contract</span> <span style="color:#a6e22e">AddrResolver</span> <span style="color:#a6e22e">is</span> <span style="color:#a6e22e">ResolverBase</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">bytes4</span> <span style="color:#a6e22e">constant</span> <span style="color:#66d9ef">private</span> <span style="color:#a6e22e">ADDR_INTERFACE_ID</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x3b3b57de</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">event</span> <span style="color:#a6e22e">AddrChanged</span>(<span style="color:#a6e22e">bytes32</span> <span style="color:#a6e22e">indexed</span> <span style="color:#a6e22e">node</span>, <span style="color:#a6e22e">address</span> <span style="color:#a6e22e">a</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">mapping</span>(<span style="color:#a6e22e">bytes32</span>=&gt;<span style="color:#a6e22e">address</span>) <span style="color:#a6e22e">addresses</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * Sets the address associated with an ENS node.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * May only be called by the owner of that node in the ENS registry.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * @param node The node to update.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * @param addr The address to set.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setAddr</span>(<span style="color:#a6e22e">bytes32</span> <span style="color:#a6e22e">node</span>, <span style="color:#a6e22e">address</span> <span style="color:#a6e22e">addr</span>) <span style="color:#a6e22e">external</span> <span style="color:#a6e22e">authorised</span>(<span style="color:#a6e22e">node</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">addresses</span>[<span style="color:#a6e22e">node</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">addr</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">emit</span> <span style="color:#a6e22e">AddrChanged</span>(<span style="color:#a6e22e">node</span>, <span style="color:#a6e22e">addr</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * Returns the address associated with an ENS node.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * @param node The ENS node to query.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     * @return The associated address.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">     */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">addr</span>(<span style="color:#a6e22e">bytes32</span> <span style="color:#a6e22e">node</span>) <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">view</span> <span style="color:#a6e22e">returns</span> (<span style="color:#a6e22e">address</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">addresses</span>[<span style="color:#a6e22e">node</span>];
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">supportsInterface</span>(<span style="color:#a6e22e">bytes4</span> <span style="color:#a6e22e">interfaceID</span>) <span style="color:#66d9ef">public</span> <span style="color:#a6e22e">pure</span> <span style="color:#a6e22e">returns</span>(<span style="color:#a6e22e">bool</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">interfaceID</span> <span style="color:#f92672">==</span> <span style="color:#a6e22e">ADDR_INTERFACE_ID</span> <span style="color:#f92672">||</span> <span style="color:#66d9ef">super</span>.<span style="color:#a6e22e">supportsInterface</span>(<span style="color:#a6e22e">interfaceID</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="2-ens-deployment">2. ENS deployment</h2>
+<p>We fetch the ENS registry and registrar (<a href="https://github.com/ensdomains/ens">@ensdomains/ens</a> on github) and the resolver (<a href="https://github.com/ensdomains/resolvers">@ensdomains/resolver</a> on github) from npm and deploy them at once.</p>
+<h3 id="short-version">Short version</h3>
+<ol>
+<li><code>npm install</code></li>
+<li><code>npm run deployContracts</code> to deploy the registry, registrar, and resolver</li>
+</ol>
+<h3 id="under-the-hood">Under the hood</h3>
+<p>The migration script <code>migrations\2_deploy_ens.js</code> does the following:</p>
+<ol>
+<li>Deploy <code>ENSRegistry</code>. By default the deployer will own the root node <code>0x00</code></li>
+<li>Deploy TLD <code>'eth'</code> registrar. Any label registered here will automatically receive the suffix .eth in the registry resulting in the domain label.eth. The registrar is deployed with parameters:</li>
+</ol>
+<ul>
+<li><code>ensAddr</code>: Address of the ENSRegistry deployed in step 1</li>
+<li><code>node</code>: Namehash, for <code>'eth'</code> this is <code>0x93cdeb708b7545dc668eb9280176169d1c33cfd8ed6f04690a0bcc88a93fc4ae</code></li>
+</ul>
+<ol start="3">
+<li>Set Registrar to be subnode owner of <code>'eth'</code> by calling <code>setSubnodeOwner</code> in the registry with parameters:</li>
+</ol>
+<ul>
+<li><code>node</code>: <code>0x00</code> (initial root node)</li>
+<li><code>label</code>: Label of the node that the registrar should be the owner of, for <code>'eth'</code> the this is <code>keccak256('eth')</code> which is <code>0x4f5b812789fc606be1b3b16908db13fc7a9adf7ca72641f84d75b47069d3d7f0</code>.</li>
+<li><code>owner</code>: Address of the registrar deployed in step 2</li>
+</ul>
+<ol start="4">
+<li>Deploy the <code>PublicResolver</code> which allows owner of domains to set the stored addreess, ABI, etc. The resolver is deployed with the parameter</li>
+</ol>
+<ul>
+<li><code>ens</code>: address of the registry deployed in step 1. Domain ownership will be looked up there.</li>
+</ul>
+<h2 id="3-registering-domains-and-associating-data-with-it">3. Registering domains and associating data with it</h2>
+<p>With the basic infrastructure in place, everybody on the network can now register and resolve domains since we used the publicly accessible <code>FIFSRegistrar</code> and <code>PublicResolver</code>. Say we have a contract <code>Test</code> for which we want to register &ldquo;test.eth&rdquo; and store the ABI. We follow the general rule of thumb of doing computation off-chain if possible and register names and populate the resolver as part of the <code>Test</code> contract&rsquo;s migration script.</p>
+<h3 id="registering-a-domain-with-the-registrar">Registering a domain with the registrar</h3>
+<p>First we register <code>'test.eth'</code> by calling the registrar&rsquo;s register function with the parameters:</p>
+<ul>
+<li><code>label</code>: <code>keccak256('test')</code> = <code>0x9c22ff5f21f0b81b113e63f7db6da94fedef11b2119b4088b89664fb9a3cb658</code></li>
+<li><code>owner</code>: Address of an account, probably the sender of the registration transaction
+To check whether this worked, we can look up the owner of the node (<code>namehash('test.eth')</code> = <code>0xeb4f647bea6caa36333c816d7b46fdcb05f9466ecacc140ea8c66faf15b3d9f1</code>) in the registry.</li>
+</ul>
+<h3 id="setting-a-resolver-in-the-registry">Setting a resolver in the registry</h3>
+<p>Now that we own the node <code>'test.eth'</code> we can change the resolver by calling the registry&rsquo;s <code>setResolver(node)</code> with the address of the resolver contract. Note that this can only be done by the owner we set in the previous step. Calling the registry&rsquo;s resolver function with our node should now return the resolver address.</p>
+<h3 id="store-an-address-and-other-data-with-the-resolver">Store an address and other data with the resolver</h3>
+<p>Since we own the <code>'test.eth'</code> node we now can call <code>resolver.setAddr(node, contractAddress)</code> to store the address with the resolver. Similarly, we can store an ABI, name, etc.</p>
+<h3 id="in-code">In code</h3>
+<p>The test folder contains examples of the calls to the registry, registrar, and resolver described here (some taken from the repositories mentioned above). To demonstrate how this setup can be performed during the migration of a contract the migrations folder also includes the <code>ENSHelper.js</code>. It should be imported in a migration script. Then, it registers a domain, associates the resolver, and stores the contract address and ABI with a single function call (see <code>migrations\example_3_deploy_contract.js</code> for a usage example, remove &rsquo;example_&rsquo; to run).</p>
+<h2 id="4-lookup">4. Lookup</h2>
+<p>Once <code>'test.eth'</code> is properly registered and resolvable, we can look up the associated information in a two step process: First we fetch the resolver that handles the data for our node (<code>registry.resolver(node)</code>). Then, we can query the resolver for the information about our node we are looking for, e.g. <code>resolver.addr(node)</code>.
+Unlike storing records, which is rarely necessary to do from an on-chain contract, reading them is often helpful both from off-chain applications and on-chain contracts. The test at <code>test\testWorkflow.js</code> demonstrates how to get domain records with web3. For on-chain lookup this repo also includes the helper contract <code>ENSReader.sol</code> which can be inherited from to handle registry and registrar lookups on-chain (see <code>test\TestContractWorkflow.sol</code>).
+This repo stores the code referred to by <a href="https://kauri.io/article/30ed03248cc2432ba5565375c4413608/ethereum-name-service-on-private-chains">this tutorial</a> where you will find detailed instructions on how to use it.</p>
+
+</div>
+
+        </div><div id="footer" class="mb-5">
+    <hr>
+    
+    
+    
+</div>
+</body>
+</html>

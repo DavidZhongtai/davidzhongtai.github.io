@@ -8,6 +8,16 @@
     <language>en-us</language><atom:link href="https://davidan.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://davidan.dev/posts/ens/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidan.dev/posts/ens/</guid>
+      <description>This post was forked from a github log. This is simply for reference in a nice to read format as the original link is dead We will cover the following: ​
+Basic ENS architecture Setting up ENS: Deploying the registry, registrar, and resolver contracts Writing to ENS: Registering a name and storing data Reading data from ENS, both on- and off-chain ​ 1. Introduction to the ENS architecture Before going into the technical details, let&amp;rsquo;s briefly recap how the ENS contracts work.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://davidan.dev/professional/ameren/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -71,7 +81,7 @@ Given a text search within context, we should be able to retrieve a list of arti
       
       <guid>https://davidan.dev/blog/</guid>
       <description>Random Thoughts Some excursions into different spaces. I occasionally write about math and computers.
-A Discussion on Pandas and Data Mining (WIP) 12-17-2022 Revisiting a Summer of Side Projects 12-16-2022 Inequality Fun and Their Applications 12-14-2022 A (Fun) Discussion on Harmonic Functions 12-03-2022 Donuts 11-12-2022 Unification in Academic Literature 07-07-2022 A Semester of Research 06-15-2022 Building an NLP-Powered Repository for Cyber Risk Literature 05-13-2022 Scraping Web Data for Academic Literature 02-01-2022 Fake News Detection: Using NLP in the Detection Process (FaDe-Net) 05-12-2021 </description>
+Deploying ENS on a Private Chain 01-03-2022 A Discussion on Pandas and Data Mining (WIP) 12-17-2022 Revisiting a Summer of Side Projects 12-16-2022 Inequality Fun and Their Applications 12-14-2022 A (Fun) Discussion on Harmonic Functions 12-03-2022 Donuts 11-12-2022 Unification in Academic Literature 07-07-2022 A Semester of Research 06-15-2022 Building an NLP-Powered Repository for Cyber Risk Literature 05-13-2022 Scraping Web Data for Academic Literature 02-01-2022 Fake News Detection: Using NLP in the Detection Process (FaDe-Net) 05-12-2021 </description>
     </item>
     
     <item>
@@ -129,7 +139,7 @@ These are the same words I hear every Friday morning from the woman behind the c
       
       <guid>https://davidan.dev/sitemap/</guid>
       <description>Links Down below, you&amp;rsquo;ll find links to every possible page on this site. Feel free to explore!
-Professional Data Scientist Intern @ Ameren Innovation Center Business Analyst @ American Supply Association D.NEXT Lab Research D.An, L.Zheng, Z.Quan: Building an NLP-Powered Repository for Cyber Risk Literature Scraping Web Data for Academic Literature Fake News Detection: Using NLP in the Detection Process (FaDe-Net) Blog A Discussion on Pandas and Data Mining (WIP) Revisiting a Summer of Side Projects Inequality Fun and Their Applications A (Fun) Discussion on Harmonic Functions Donuts The need for a unified cataloging system for academic literature Looking back on a semester of undergraduate research </description>
+Professional Data Scientist Intern @ Ameren Innovation Center Business Analyst @ American Supply Association D.NEXT Lab Research D.An, L.Zheng, Z.Quan: Building an NLP-Powered Repository for Cyber Risk Literature Scraping Web Data for Academic Literature Fake News Detection: Using NLP in the Detection Process (FaDe-Net) Blog Deploying ENS on a Private Chain A Discussion on Pandas and Data Mining (WIP) Revisiting a Summer of Side Projects Inequality Fun and Their Applications A (Fun) Discussion on Harmonic Functions Donuts The need for a unified cataloging system for academic literature Looking back on a semester of undergraduate research </description>
     </item>
     
     <item>

@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://davidan.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title></title>
+      <link>https://davidan.dev/posts/ens/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidan.dev/posts/ens/</guid>
+      <description>This post was forked from a github log. This is simply for reference in a nice to read format as the original link is dead We will cover the following: ​
+Basic ENS architecture Setting up ENS: Deploying the registry, registrar, and resolver contracts Writing to ENS: Registering a name and storing data Reading data from ENS, both on- and off-chain ​ 1. Introduction to the ENS architecture Before going into the technical details, let&amp;rsquo;s briefly recap how the ENS contracts work.</description>
+    </item>
+    
+    <item>
       <title>A Semester of Research</title>
       <link>https://davidan.dev/posts/firstsem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

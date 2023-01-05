@@ -19,6 +19,7 @@ Down below, you'll find links to every possible page on this site. Feel free to 
 
 #### Blog
 
+- [Deploying ENS on a Private Chain](/posts/ens)
 - [A Discussion on Pandas and Data Mining (WIP)](/posts/datamining)
 - [Revisiting a Summer of Side Projects](/posts/sosp)
 - [Inequality Fun and Their Applications](/posts/inequalities)
