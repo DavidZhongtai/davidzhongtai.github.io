@@ -1,4 +1,6 @@
-## This post was forked from a github log. This is simply for reference in a nice to read format as the original link is dead
+## Deploying a Naming System (Ethereum Naming System) on a Private Network
+
+This passage was taken from a GitHub repository which no longer exists and is simply on here for reference purpose
 
 We will cover the following:
 ​

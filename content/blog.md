@@ -7,8 +7,8 @@ title: "Blog"
 Some excursions into different spaces. I occasionally write about math and computers.
 |||
 | :------| -----------:|
-| [Deploying ENS on a Private Chain](/posts/ens) | 01-03-2022 |
-| [A Discussion on Pandas and Data Mining (WIP)](/posts/datamining) | 12-17-2022 |
+| [A Discussion on Pandas and Data Mining](/posts/datamining) | 1-17-2023 |
+| [Deploying ENS on a Private Chain](/posts/ens) | 01-03-2023 |
 | [Revisiting a Summer of Side Projects](/posts/sosp) | 12-16-2022 |
 | [Inequality Fun and Their Applications](/posts/inequalities) | 12-14-2022 |
 | [A (Fun) Discussion on Harmonic Functions](/posts/harmonic) | 12-03-2022 |

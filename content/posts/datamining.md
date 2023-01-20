@@ -2,7 +2,7 @@
 title: Pandas and Data Mining
 ---
 
-# A Discussion on Pandas and Data Mining (WIP)
+# A Discussion on Pandas and Data Mining
 
 At the beginning of any data analytics/data science project, the most usual case is utilizing Pandas to load the data into a object called a DataFrame and perform preprocessing tasks on it. While the Pandas library is convenient and comes with a trove of useful analytic tools, it does have some inefficiencies, many due to the nature of Python. To investigate this, let's look at how Pandas actually works on top of Python. But first, some discussion on Python and C.
 
@@ -31,12 +31,29 @@ dt = np.dtype('>i4')
 True
 ```
 
-Now, we also see that CPython provides an C-API that allows one to release the GIL mentioned earlier. Numpy utilizes many of these macros in order to speed up processing. For example, NumPy utilizes `NPY_BEGIN_THREADS` as well as `NPY_END_THREADS` to denote and acquire the ability to operate and release without the GIL. Now, math operations that require intense compute power are now able to break up and implement multi-threaded computations in C, which is a significant performance improvement itself.
+Now, we also see that CPython provides an C-API that allows one to release the GIL mentioned earlier. Numpy utilizes many of these macros in order to speed up processing. For example, NumPy utilizes `NPY_BEGIN_THREADS`[^1] as well as `NPY_END_THREADS` to denote and acquire the ability to operate and release without the GIL. Now, math operations that require intense compute power are now able to break up and implement multi-threaded computations in C, which is a significant performance improvement itself. Now, that concludes a basic, probably messy synopsis on the relationship between C, Python, and Pandas. Now, onto the more fun data science stuff.
 
 <Maybe add more things on Pyth>
 
 Recently, I covered some of my research as well as briefly mentioning unification within academia and digital cataloging. Data mining itself has become a valuable field due to the commercialization opportunities it holds. Companies can now use these different algorithms to glean valuable insights into customers and trends. However, the challenge itself is the extensive computing power many of these algorithms use. With billions of data points, the cost to continuously train, evaluate, and deploy these algorithms only goes up as data becomes more and more available to us. When working with small datasets, the performance of Python is barely negligible. However, as datasets grow larger and larger, the performance impact is noticable. In most data science related workflows, the common method manipulate data is done with a structure known as a DataFrame. We did mention previously how pandas wraps around NumPy which wraps around C, and thus the performance of DataFrames is heavily dependent on the performance of C.
 
+Because of how Pandas was written, it was done for ease of use instead of focusing heavily on the optimization part of it. In addition to that, because of the flexible nature of it, many paths lead to the same road, i.e. there are many ways to perform such operations and obtain the same result. For small datasets (<100,000 rows), this is not a problem as the hardware performance negates this effect. However, the larger you go, the more significant these issues become. I will cover two different ways to do the same operation, showing how we can take advantage of the things we discussed previously.
+
+One of the most common operations inside of a DataFrame is deriving a new row based on the results of another row. For example, if we wanted to see the result over many different rows, we can sum up all of the entries in the associated row and appended it into a new column. The first approach involves using `.iterrows()` to go through each row and sum it up. In code, that is shown as:
+
+```python
+[np.sum(row[0], row[1]) for _, row in df.iterrows()]
+```
+
+This becomes terribly inefficient as `.iterrows()` is effectively creating a for loop and going through the whole dataset. Imagine if there were millions of entries and having to go through each one. This is not to mention all of the overhead created to do type magic mentioned above and converting between numpy and C. However, we can get rid of that overhead by commanding the interpreter to only use raw values instead.
+
+```python
+df.apply(lambda row: sum_square(row[0], row[1]), raw=True, axis=1 )
+```
+
+By using the parameter `raw=True`, we are able to bypass all the conversion and tell Python to directly map the types instead of converting them. By doing so, we achieve a significant improvement in memory usage and a decrease in overhead. Now, these are simply ways to do so in using Pandas methods. Note that this was just a very brief overview of such methods; there still lies more ways to optimize for large datasets. For cases where some methods aren't applicable, what you can do is compile in Cython or utilize runtime compilers like Numba[^2]. Utilizing parallel processing is also another option; however, you have to be cognizant of the applications of it. There can be two main reasons where it cannot be more efficient and instead can perform the same, if not worse than traditional methods. These reasons are generating overhead and CPU vs. I/O bound applications. For the reader's sake, I will be saving these topics for a future discussion. The main takeaway is that we barely scratched the surface of Python and its implementations and how it relates back to applications in data science. That, will be saved for a future exploration.
+
 [Back to writing](../../blog)
 
-https://numpy.org/doc/stable/reference/c-api/array.html
+[^1]: [nd-array Reference](https://numpy.org/doc/stable/reference/c-api/array.html)
+[^2]: [Numba Reference](https://numba.readthedocs.io/en/stable/user/5minguide.html)
