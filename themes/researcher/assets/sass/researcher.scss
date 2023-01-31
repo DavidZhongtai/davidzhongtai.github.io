@@ -162,7 +162,8 @@ body {
         }
         & td {
             border: none!important;
-            line-height: 1.1;
+            line-height: 1.25;
+            
             @extend %table-cell;
         }
         & tr:nth-child(2n) {

@@ -6,7 +6,7 @@ title = "David An"
 <!--
 {{< figure class="avatar" src="/avatar.jpg" alt="avatar">}} -->
 
-I am currently an undergraduate student at the University of Illinois at Urbana-Champaign studying Mathematics. I work with large database systems and text mining. Over Summer 2022, I worked as a [Data Science Intern @ Ameren](/professional/ameren). Before that, I interned as a Business Analyst @ ASA D.Next Lab. Check out my [blog](/blog) where I write about research and excursions into different topics
+I am currently an undergraduate student at the University of Illinois at Urbana-Champaign studying Mathematics. I work with large database systems and text mining. Over Summer 2022, I worked as a **Data Science Intern @ Ameren**. Before that, I interned as a **Business Analyst @ ASA D.Next Lab**. Check out my [blog](/blog) where I write about research and excursions into different topics in mathematics and computer science! 
 
 <!-- [Business Analyst @ American Supply Association D.Next Lab](/professional/asa) -->
 
@@ -17,7 +17,7 @@ I am currently an undergraduate student at the University of Illinois at Urbana-
     <div class="col" style="margin-left: -1rem;">
     <h2 class = "text-left">Latest Articles</h2>
     <ul>
-    <li style="margin-left: -1rem;"><a href="/posts/pwn">Pwn'ing a Site and What You Can Learn</a></li>
+    <li style="margin-left: -1rem;"><a href="/posts/pwn">Jenkins Security Vulnerability Writeup</a></li>
     <li style="margin-left: -1rem;"><a href="/posts/datamining">A Discussion on Pandas</a></li>
 <li style="margin-left: -1rem;"><a href="/posts/sosp">Revisiting a Summer of Side Projects</a></li>
 
@@ -58,7 +58,8 @@ In chronological order: -->
 Here is a table: -->
 
 | Date       | Event                                                                                                                                                                    |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --- |
+| 01-21-2023 | Found and reported my first security vulnerability. [Read the Writeup!](/posts/pwn)                                                                                      |     |
 | 12-05-2022 | Featured on the Innovations @ Research Park Podcast [Listen Here!](https://podcasts.apple.com/us/podcast/celebrating-research-park-interns/id1557285742?i=1000588843218) |
 | 08-15-2022 | Presented about SOSP22 at the Illinois CS Teaching Workshop [(iCSTW22)](https://mediaspace.illinois.edu/playlist/dedicated/269362552/1_uvpti661/1_ez05ctmp)              |
 | 08-03-2022 | Presented [[1]](/research/nlpsearch) at the Actuarial Research Conference 22 (ARC22)                                                                                     |

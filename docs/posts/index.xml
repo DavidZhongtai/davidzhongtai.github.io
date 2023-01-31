@@ -66,6 +66,16 @@ These are the same words I hear every Friday morning from the woman behind the c
     </item>
     
     <item>
+      <title>Shodan &#43; Jenkins = Pwn&#39;ed</title>
+      <link>https://davidan.dev/posts/pwn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidan.dev/posts/pwn/</guid>
+      <description>Shodan + Jenkins = Pwn&amp;rsquo;ed So, how does it begin? After getting bored one day and browsing Shodan.io, I found some fun things. Turns out, the answer led to a 2-day bender down different rabbit holes eventually leading to this article here and alot of vulnerabilties discovered. So let&amp;rsquo;s get started shall we?
+Before we do this, I do not endorse attempting to break into company systems. This post is not a tutorial or suggestion, please act ethically.</description>
+    </item>
+    
+    <item>
       <title>Summer of Side Projects</title>
       <link>https://davidan.dev/posts/sosp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

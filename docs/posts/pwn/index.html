@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang=""><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZLYXKRVG2"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-84P0KS3QHB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-84P0KS3QHB');
+    </script>
+    <title>Shodan &#43; Jenkins = Pwn&#39;ed</title>
+    <meta name="description" content="Welcome to my life">
+    <meta name="author" content='David An'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css" integrity="sha384-Juol1FqnotbkyZUT5Z7gUPjQ9gzlwCENvUZTpQBAPxtusdwFLRy382PSDx5UUJ4/" crossorigin="anonymous">
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js" integrity="sha384-97gW6UIJxnlKemYavrqDHSX3SiygeOwIZhwyOKRfSaf0JWKRVj9hLASHgFTzT+0O" crossorigin="anonymous"></script>
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
+
+    
+    <link rel="stylesheet" href="/sass/researcher.min.css">
+
+    
+        <link rel="icon" type="image/ico" href="https://davidan.dev/favicon.ico">
+    
+
+    
+        
+    
+</head>
+
+    <body>
+
+
+
+<div class="container mt-5">
+    <nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
+        <a class="navbar-brand mx-0 mr-sm-auto" href="https://davidan.dev/" title="David An">
+          
+          David An
+        </a>
+        <div class="navbar-nav flex-row flex-wrap justify-content-center">
+            
+                
+                
+                    <a class="nav-item nav-link" href="/blog" title="Blog">
+                        Blog
+                    </a>
+                    
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    
+                
+                    <a class="nav-item nav-link" href="/bugs" title="Bugs">
+                        Bugs
+                    </a>
+                    
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    
+                
+                    <a class="nav-item nav-link" href="/contact" title="Contact">
+                        Contact
+                    </a>
+                    
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    
+                
+                    <a class="nav-item nav-link" href="/sitemap" title="Nav">
+                        Nav
+                    </a>
+                    
+                
+            
+        </div>
+    </nav>
+</div>
+<hr>
+<div id="content">
+<div class="container">
+    <h1 id="shodan--jenkins--pwned">Shodan + Jenkins = Pwn&rsquo;ed</h1>
+<p>So, how does it begin? After getting bored one day and browsing Shodan.io, I found some fun things. Turns out, the answer led to a 2-day bender down different rabbit holes eventually leading to this article here and alot of vulnerabilties discovered. So let&rsquo;s get started shall we?</p>
+<p>Before we do this, I do not endorse attempting to break into company systems. This post is not a tutorial or suggestion, please act ethically. I am not liable for any damage caused by people reading this article. All of the various backdoors found along the way were <strong><em>swiftly reported to their corresponding security groups</em></strong>. Because of the nature of data accessed, the company will be referenced as <code>Company X</code>.</p>
+<p>This story is broken into 4 parts, the setup, the exploit, the chase, and the end. Without further ado, lets dive in.</p>
+<h2 id="1-the-setup">1. The Setup</h2>
+<p>Here, we set up the perfect setting and provide the background necessary to understand how much of this works. To provide context, the main tools used are all freely available to anyone who possesses a little bit of tech-savvy and determination. All you need is a nice web browser and a FTP server. In addition to that, we employ a overuse of the words &rsquo;essentially&rsquo; and &lsquo;however&rsquo; to demonstrate the various conclusions drawn from this.</p>
+<h4 id="11-jenkins2">1.1 Jenkins<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></h4>
+<p>Jenkins is probably the core of how this worked. For any software oriented company, their intellectual property is usually their software and algorithms they have designed over time. Through software, it is a common practice to continue pushing out updates and new features in a timley manner. Basically, developers would test their code on a development build while new updates are pushed onto a production build. However, as time goes on, the Continuous Integration and Continous Development (CI/CD) accrues a signifigant amount of overhead for one to do manually. This is where Jenkins comes in.</p>
+<p>Jenkins offers a simple way to set up a continuous integration and continuous delivery environment for almost any combination of languages and source code repositories. In addition to that, it can automate a number of different common developer tasks as well such as updating licenses or <strong>access keys</strong> (more on this later). Essentially, it takes away all of the need to have a significant DevOps team in the form of pipelines, proceesses, and scripts. One other significant feature is allowing the development team to &lsquo;run things&rsquo; (i.e. tests) every time new code is committed into GitHub as well. Every developer can commit to a shared test stack and with that, each commit triggers a build task adn a test task. because of the self contained nature of Jenkins, building and testing fails can swiftly be detected and shutdown without compromising core services and creating different forms of outages.</p>
+<p>However, because of this <em>self-contained nature</em> of Jenkins, it needs some way of accessing code and keys for databases to test various data ingestion pipelines. This is done in the form of various AWS and Github Signing and Access keys that need to be stored <em>on premise</em> and <em>inside the software</em>. Because of this position, Jenkins is a very attractive target for hackers.</p>
+<h4 id="12-shodanio-the-seeing-eye">1.2 Shodan.io: The Seeing Eye</h4>
+<p>Google but for the Internet of Things (IoT). Shodan is a database of billions of publicly available IP addresses that one can scan through. Instead of searching for websites and information, it scans for anything connected to the IoT. This is anything from traffic cameras, exposed servers, smart watches, and even baby monitors. These are household items. As a matter of fact, with enough searching, one can find government systems, energy grid, infrastructure, and other critical systems as well. Essentially, <strong>anything that is connected to the internet can be accessed online</strong>. With it&rsquo;s simple to use and approachable interface, Shodan provides for a valuable tool for IT specialists to observe for publicly facing systems.</p>
+<p>Shodan works by creating a system of randomly generated public IP addresses, pinging it, and indexing the response it recieves in return. Anything connected to the internet has a series of ports that can be accessed at certain point which allow it to transmit data through different places. There are a total of 65,535 ports in all, allowing functions from email, browsers, printers, routers; alot of things. When the system sets a port to open, it opens up this access for anyone to be able to go in without some sort of firewall or authentication system layered on top of it. For example, by setting specific ports open on your machine, it may allow a printer or scanner to communicate and send data back to your computer. When these devices transmit data back and forth, they usually send something known as a &lsquo;banner&rsquo; back and forth which establishes the communication information and protocol. That is only one device. Shodan does this on a much larger scale. Essentially, Shodan works by pinging a random IP addresses, 24/7, 365, and listening for these banners. Some of the time, no information is transmitted, however, when they do return a banner, Shodan will index that banner.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-md" data-lang="md"><span style="display:flex;"><span>HTTP/1.1 200 OK
+</span></span><span style="display:flex;"><span>X-Content-Type-Options: nosniff
+</span></span><span style="display:flex;"><span>X-Hudson-Theme: default
+</span></span><span style="display:flex;"><span>Date: Fri, 23 Dec 2022 21:38:04 GMT
+</span></span><span style="display:flex;"><span>Set-Cookie:[redacted]; Path=/; HttpOnly
+</span></span><span style="display:flex;"><span>X-Hudson: 1.395
+</span></span><span style="display:flex;"><span>Server: Jetty(10.0.12)
+</span></span><span style="display:flex;"><span>Referrer-Policy: same-origin
+</span></span><span style="display:flex;"><span>X-Instance-Identity: [redacted]
+</span></span><span style="display:flex;"><span>Cache-Control: no-cache,no-store,must-revalidate
+</span></span><span style="display:flex;"><span>Expires: Thu, 01 Jan 1970 00:00:00 GMT
+</span></span><span style="display:flex;"><span>Cross-Origin-Opener-Policy: same-origin
+</span></span><span style="display:flex;"><span>X-Jenkins: 2.375.1
+</span></span><span style="display:flex;"><span>X-Jenkins-Session: d936f9ba
+</span></span><span style="display:flex;"><span>X-Frame-Options: sameorigin
+</span></span><span style="display:flex;"><span>Content-Type: text/html;charset=utf-8
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>An example of a response banner</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Anything connected can be found and pinged. Everything from nuclear systems and prison payphones can be found indexed on there by previous researchers. Before you, the reader, decides to freak out and hide in a bunker in fear of total meltdown, keep in mind that these are merely <em>open addresses</em> but does not mean they are unsecured. A majority of them contain some sort of authentication layered on top. However, one can safely assume that a majority still could be defaulted to a credential such as <code>admin</code> and <code>password</code>. What makes it even scarier is that much of the default passwords are usually published online in some form of user manual on company product sites.</p>
+<h4 id="13-wrapping-up-the-setup">1.3 Wrapping Up the Setup</h4>
+<p>We covered Jenkins and Shodan.io and the basic mechanics of how they worked to scan the internet. What can you takeaway from this? The specific tools we used were Safari 16.2 (18614.3.7.1.5), Filezila 3.59.0, Shodan.io, and a little bit of clever prompting.</p>
+<h2 id="2-the-exploit">2. The Exploit</h2>
+<p>Here, we detail how we were able to find a way into different systems and how the whole process worked. Again, I cannot emphasize that this is merely for informational purposes and open access points were reported to corresponding security groups. I am <strong>not liable for anything that happens with this information I bestow on you</strong></p>
+<h4 id="21-finding-a-way-in">2.1 Finding a Way In</h4>
+<p>Jenkins adds a signature on the browser (<code>X-Jenkins</code>) to signify that the current platform utilizes Jenkins for CI/CD. What makes this even more significant is that in most cases, it is in most cases cloud based.<sup id="fnref1:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> Now, when one hear cloud, it is usually a recipe for all of the data to be stored in some centralized location. In that case, what or where could that be stored? Spinning up Shodan, searching &ldquo;X-Jenkins&rdquo; will yield a plethora of exposed Jenkins servers anyone can access. However, much of them were redirects to a web-server login or a nginx 403 error in the cases of deactivated or moved servers.</p>
+<p><img src="/shodan.png" alt="Example Shodan Interface" title="Shodan.io"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>An example of a Shodan query for Jenkins</strong></td>
+</tr>
+</tbody>
+</table>
+<p>But out of the ~176,000+ servers exposed, how many are without a login? By narrowing down the search query down in a fun way, I was able to narrow it down to ~2,000 servers with exposed and logged in Jenkins servers. In around 30-35 minutes, I was able to find a Jenkins server which had a pretty interesting build tree. In those previous 30-35 minutes, looking around on Jenkins would yield years old build tasks or things with meaningless names (presumably tutorials and standard Maven test builds). Usually I ignored these as they would be meaningless and didn&rsquo;t have much significant contribution. The one I stumbled upon was of signifigance as there was a relatively recent build tasks as both defined ios and android builds for QA. Thinking to myself, &ldquo;this might actually be a project of significance.&rdquo;</p>
+<p><img src="/intial_censor.jpg" alt="The Initial Discovery" title="The Find"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>The Initial Discovery</strong></td>
+</tr>
+</tbody>
+</table>
+<p>What was in front of me was the initial root of how things were built. However, all of it sat right in front of me: the <code>BUILDS</code> folder, obviously marked to signify its importance. Clicking on it, was the gold mine that will open up a whole realm of security breaches if not addressed properly</p>
+<p><img src="/build_censor.jpg" alt="The Initial Discovery" title="The Find"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>The Gold Mine</strong></td>
+</tr>
+</tbody>
+</table>
+<p>As you can see, so far, we have encountered no resistance at all. I was not prompted for a password or 2FA mechanism, nor was I prompted with any sort of verification from the system. Because of that, this was the path of minimal resistance. At this point, I was still not confident with the results as it may be a college student&rsquo;s one off side project that they made. While as seen above, recent build and run dates were only mere weeks ago, it required a bit more information to confirm. So here we go, digging around again. So now, what is the worst if I actually clicked on a build? Turns out, alot. Like alot.</p>
+<h4 id="22-how-much-can-we-actually-access">2.2 How Much Can We Actually Access?</h4>
+<p>If you want the short answer: <strong>alot</strong>. If you want the long answer, I talk about the findings and implications here.</p>
+<hr>
+<p>Here, we detail what was the exact information, things that are able to address this, and more. We left off the last section by talking about how someone was able to access builds, but sometimes, that wasn&rsquo;t even useful. In this case, accessing builds became extremely useful. As we mentioned previously, because of the nature of Jenkins, it needed access to the code in order to build things? Where can it find the said code though? There are mainly two ways, providing a SSH token on premise for Jenkins to use and build from automatically with every commit (which is insecure as a malicious actor can gain access to GitHub), or having Jenkins run its own copy of the code inside (which is even more insecure as the source code is stored in a centralized place that can be accessed if not secured properly). Upon clicking on one of the iOS builds and at that moment, I realized no one had enabled the action to <strong>clear the workspace after each run</strong>. This is a huge risk as this means the workspace can persist after subsequent runs meaning <strong>source code remains accessible for anyone with access to Jenkins</strong>. Not only is this an external risk for malicious actors, internal malicious actors are able to access places without authorization too. The only secure part that was worth noting is that it appeared that only the admin was able to run Jenkins actions and clear workspaces and not anyone can run that. However, at this point, it doesn&rsquo;t matter as someone can have unauthorized and almost <strong>full control to a internal system</strong>.</p>
+<p><img src="/file_censor.jpg" alt="The File Tree" title="The Files"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>The File Tree of <code>Company X</code></strong></td>
+</tr>
+</tbody>
+</table>
+<p>So at this point, my mind is racing realizing that I had stumbled upon a relatively significant breach of both company and potentially customer data. Even right now, without digging further, I was able to view <strong>the whole company source code for both production and development</strong>. I discuss how I reached out to people and notified them of the risk later on in Section 3. While one may comment &ldquo;oh that is just some code,&rdquo; it is not simply <em>some code</em>, it was a company&rsquo;s IP. That isn&rsquo;t even the largest risk. Knowing that the source code has to connect somewhere to databases that store customer data and other sensitive information (DOB, credit cards, etc), without digging further, one can assume in the source code there had to lie some sort of references to databases and access tokens.</p>
+<p>Oh wait, someone mentioned access tokens? How convenient. Usually, we as humans, really don&rsquo;t like memorizing 20+ characters to a password for something. Luckily, Jenkins has this <em>great</em> feature to store all of the credentials you need to use so you never have to remember anything ever. Sounds great right? Turns out this is one of the biggest no-nos you should never make when making a secure store for credentials. Looking around, it seemed like the credential menu for Jenkins was enabled as well. Well what can we find there?</p>
+<p><img src="/keys_censor.jpg" alt="All these Keys" title="The Keys"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>All of the Example Keys</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Oh. Turns out we found alot, like alot alot. With this informtion and enough finesse, we can probably discover these keys and potentially breach more information. Knowing that the space was in <code>global</code> as well, it means that there are <strong>probably</strong> private keystores out there (giving a malicious actor a mental map of how other keys are stored). This would have not been a problem if not a few employees, by accident, added their private SSH keys inside of the global keystore by accident. At this point, it was not a technical error but more so a human error. Yummy, we have GitHub tokens now, but honestly, we can&rsquo;t do anything without knowing the GitHub repository location. Of course we can guess different GitHub locations, but can there be an easier way?</p>
+<p>Good thing that Jenkins <strong>keeps logs of all of the runs if they aren&rsquo;t deleted by a workspace cleanup</strong>. But what can we get from that information? Turns out we can get the GitHub repo locations.
+<img src="/github_censor.jpg" alt="Github Repo Location" title="Github Repo"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>Where is the Github?</strong></td>
+</tr>
+</tbody>
+</table>
+<p>With this combination, we were able to see that with the SSH keys along with the location of the repo, A malicious actor could be given full access to the Github Repo and able to sign malicious code under the guise of that person as well.</p>
+<p>Those were the most significant breaches of information that can be found. You may have noticed that there was no mention of any sort of authentication or passwords and I met no resistance to accessing it. This means I was able to cleanly glide through and access a vast amount of personal data as well. In addition to the things listed above, some of the smaller notable finds are <strong>internal developer lists</strong> as well as <strong>console output from build tasks</strong>.
+<img src="/person_censor.jpg" alt="People Lists" title="People Lists"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>Look at all these people</strong></td>
+</tr>
+</tbody>
+</table>
+<p><img src="/console_censor.jpg" alt="Console" title="Console"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>Example Console Output from Build</strong></td>
+</tr>
+</tbody>
+</table>
+<p>At this point, without <strong>any verification</strong>, I was able to compromise both production and development builds and access their source code as well as different tooling tokens, SSH keys, GitHub repository locations, internal developer lists, commit history, file paths, console logs, and probably much more. Given enough time, there could be even more information out there. What makes this even more notable is that this was done in the span of 35 minutes from opening up Shodan to finding the server and compromising it.</p>
+<h2 id="3-the-chase">3. The Chase</h2>
+<p>Stated previously, now, I realized I had stumbled upon something huge. Now the challenge was &ldquo;how do I reach out to them?&rdquo; First, I wanted to confirm that this was the actual <code>Company X.</code> I dug around different code filed until I realized that all of the <code>.swift</code> files were nicely annotated by a developer called M (for privacy) which gave me my first lead.</p>
+<p><img src="/dev_censor.jpg" alt="A Developer" title="The Developer"></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>My First Lead</strong></td>
+</tr>
+</tbody>
+</table>
+<p>By plugging M into LinkedIn, I was quickly able to get a few matches of his work profile. In addition to that, <code>Company X</code>&rsquo;s codebase had well done naming conventions meaning that it wasn&rsquo;t long before I was able to pinpoint the exact company it was. To do a final check, I took a few names from the developer list and recieved matches as well. That&rsquo;s when I know I have found the right company and started finding the right people to contact and notify, in a scene I call <strong>the chase</strong>.</p>
+<h4 id="31-finding-the-people">3.1 Finding the People</h4>
+<p>Thanks to the advent of the Internet, I was able to find specifically a bunch of people to try and contact. My first try was sending my only free LinkedIn InMail to the CTO of <code>Company X</code>. That was a long shot, so I tried contacting other people as well. Since so many people have online blogs and resumes online it wasn&rsquo;t hard to find some phone numbers and emails online and contact them. Soon after, I contacted someone I found, C, and recieved a response telling me to email them on Monday. However, this wasn&rsquo;t a Monday issue. After digging around, I found a person named S who was able to take action right away and put me in touch with all of the right people. Soon after, I got a reply. Bingo! At that point, I had a point of contact and began the process of doing a basic writeup. Here we are with this writeup now.</p>
+<h2 id="4-the-end-and-suggestions">4. The End and Suggestions</h2>
+<p>My first foray into this area of network security and discovering this was completely unexpected. In a short span of a few hours, one is able to expose a variety of sensitive information. When I checked in the morning, I was able to see that the Jenkins server was still up but now it is behind a password wall and fixed for the time being. Wonderful! Here are some common misconfigurations an organization can look for in the future:</p>
+<ul>
+<li>Disable the workspace access for nonadministrator users and restrict console and shell access to trusted users only.</li>
+<li>Make sure that after each runtime, the workspace is cleaned up and all references of any code and keys are wiped from the system. This is also applicable for console output and any automatic logging files. Doing so allows for the system to completely obfuscate the build environment.</li>
+<li>Raise awareness of implementing safe security practices in employees and add procedures in storing keys securely.</li>
+<li>Never storing any configuration files or passwords inside of a Jenkins environment where they can be accessed.</li>
+<li>Resist storing keys inside of Jenkins itself unless absolutely necessary. This goes back to the point of ‘cleaning up your workspace.’ This is a known vulnerability to be able to dump credentials by simply printing them inside of Jenkins</li>
+</ul>
+<p>Well, that&rsquo;s all folks. Again, I cannot emphasize the importance of ethical hacking and reporting bugs whenever you find them. I am not <strong>liable for what you do with this information</strong>, although I strongly recommend <strong>not doing things like this in your spare time</strong>. Please think about your actions before acting on them.</p>
+<h3 id="contact">Contact</h3>
+<p>For any questions pertaining to this, please contact me in the contact menu up above or send me an email with a subject line pertaining to the topic.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><a href="https://www.devopsschool.com/blog/what-is-jenkins-x-and-how-jenkins-x-works/">Jenkins</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+</div>
+
+        </div><div id="footer" class="mb-5">
+    <hr>
+    
+    
+    
+</div>
+</body>
+</html>

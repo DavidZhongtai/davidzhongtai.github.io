@@ -1,12 +1,10 @@
 ---
-title: "Jenkins? More Like Jeepers!"
+title: "Shodan + Jenkins = Pwn'ed"
 ---
 
-# How to Pwn a Website (Ethically)
+# Shodan + Jenkins = Pwn'ed
 
-A wonderful story of how an 18 year old was able to infiltrate a multi-million dollar company via basic techniques with a little bit of effort and why **_you shouldn't do the same_**.
-
-So, how does it begin? After getting bored one day and browsing Shodan.io, I found some fun things. Turns out, the answer led to a 2-day bender down different rabbit holes eventually leading to this article here. So let's get started shall we?
+So, how does it begin? After getting bored one day and browsing Shodan.io, I found some fun things. Turns out, the answer led to a 2-day bender down different rabbit holes eventually leading to this article here and alot of vulnerabilties discovered. So let's get started shall we?
 
 Before we do this, I do not endorse attempting to break into company systems. This post is not a tutorial or suggestion, please act ethically. I am not liable for any damage caused by people reading this article. All of the various backdoors found along the way were **_swiftly reported to their corresponding security groups_**. Because of the nature of data accessed, the company will be referenced as `Company X`.
 
@@ -152,9 +150,11 @@ Thanks to the advent of the Internet, I was able to find specifically a bunch of
 
 My first foray into this area of network security and discovering this was completely unexpected. In a short span of a few hours, one is able to expose a variety of sensitive information. When I checked in the morning, I was able to see that the Jenkins server was still up but now it is behind a password wall and fixed for the time being. Wonderful! Here are some common misconfigurations an organization can look for in the future:
 
-- The Jenkins server is wide open on the internet with all admin rights enabled for anyone who finds it
-- Logins may be restricted to a Github login but was not configured for an organization. For example, Jenkins may require a GitHub login but anyone can log in since Jenkins won't check if that GitHub account belongs to the organization.
+- Disable the workspace access for nonadministrator users and restrict console and shell access to trusted users only.
+- Make sure that after each runtime, the workspace is cleaned up and all references of any code and keys are wiped from the system. This is also applicable for console output and any automatic logging files. Doing so allows for the system to completely obfuscate the build environment. 
+- Raise awareness of implementing safe security practices in employees and add procedures in storing keys securely. 
 - Never storing any configuration files or passwords inside of a Jenkins environment where they can be accessed.
+- Resist storing keys inside of Jenkins itself unless absolutely necessary. This goes back to the point of ‘cleaning up your workspace.’ This is a known vulnerability to be able to dump credentials by simply printing them inside of Jenkins 
 
 Well, that's all folks. Again, I cannot emphasize the importance of ethical hacking and reporting bugs whenever you find them. I am not **liable for what you do with this information**, although I strongly recommend **not doing things like this in your spare time**. Please think about your actions before acting on them.
 

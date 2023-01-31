@@ -7,6 +7,7 @@ title: "Blog"
 Some excursions into different spaces. I occasionally write about math and computers.
 |||
 | :------| -----------:|
+| [How to Pwn a Website Ethically](/posts/pwn) | 1-25-2023 |
 | [A Discussion on Pandas and Data Mining](/posts/datamining) | 1-17-2023 |
 | [Deploying ENS on a Private Chain](/posts/ens) | 01-03-2023 |
 | [Revisiting a Summer of Side Projects](/posts/sosp) | 12-16-2022 |

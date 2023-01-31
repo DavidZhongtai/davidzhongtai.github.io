@@ -60,6 +60,13 @@
                         <span class="nav-item navbar-text mx-1">/</span>
                     
                 
+                    <a class="nav-item nav-link" href="/bugs" title="Bugs">
+                        Bugs
+                    </a>
+                    
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    
+                
                     <a class="nav-item nav-link" href="/contact" title="Contact">
                         Contact
                     </a>
@@ -98,7 +105,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;&gt;&gt;</span> dt<span style="color:#f92672">.</span>type <span style="color:#f92672">is</span> np<span style="color:#f92672">.</span>int32
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">True</span>
 </span></span></code></pre></div><p>Now, we also see that CPython provides an C-API that allows one to release the GIL mentioned earlier. Numpy utilizes many of these macros in order to speed up processing. For example, NumPy utilizes <code>NPY_BEGIN_THREADS</code><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> as well as <code>NPY_END_THREADS</code> to denote and acquire the ability to operate and release without the GIL. Now, math operations that require intense compute power are now able to break up and implement multi-threaded computations in C, which is a significant performance improvement itself. Now, that concludes a basic, probably messy synopsis on the relationship between C, Python, and Pandas. Now, onto the more fun data science stuff.</p>
-<!-- raw HTML omitted -->
+<Maybe add more things on Pyth>
 <p>Recently, I covered some of my research as well as briefly mentioning unification within academia and digital cataloging. Data mining itself has become a valuable field due to the commercialization opportunities it holds. Companies can now use these different algorithms to glean valuable insights into customers and trends. However, the challenge itself is the extensive computing power many of these algorithms use. With billions of data points, the cost to continuously train, evaluate, and deploy these algorithms only goes up as data becomes more and more available to us. When working with small datasets, the performance of Python is barely negligible. However, as datasets grow larger and larger, the performance impact is noticable. In most data science related workflows, the common method manipulate data is done with a structure known as a DataFrame. We did mention previously how pandas wraps around NumPy which wraps around C, and thus the performance of DataFrames is heavily dependent on the performance of C.</p>
 <p>Because of how Pandas was written, it was done for ease of use instead of focusing heavily on the optimization part of it. In addition to that, because of the flexible nature of it, many paths lead to the same road, i.e. there are many ways to perform such operations and obtain the same result. For small datasets (&lt;100,000 rows), this is not a problem as the hardware performance negates this effect. However, the larger you go, the more significant these issues become. I will cover two different ways to do the same operation, showing how we can take advantage of the things we discussed previously.</p>
 <p>One of the most common operations inside of a DataFrame is deriving a new row based on the results of another row. For example, if we wanted to see the result over many different rows, we can sum up all of the entries in the associated row and appended it into a new column. The first approach involves using <code>.iterrows()</code> to go through each row and sum it up. In code, that is shown as:</p>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang=""><head>
-	<meta name="generator" content="Hugo 0.100.0" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZLYXKRVG2"></script>
@@ -13,7 +12,7 @@
 
         gtag('config', 'G-84P0KS3QHB');
     </script>
-    <title>David An</title>
+    <title>Bugs</title>
     <meta name="description" content="Welcome to my life">
     <meta name="author" content='David An'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css" integrity="sha384-Juol1FqnotbkyZUT5Z7gUPjQ9gzlwCENvUZTpQBAPxtusdwFLRy382PSDx5UUJ4/" crossorigin="anonymous">
@@ -35,7 +34,6 @@
         <link rel="icon" type="image/ico" href="https://davidan.dev/favicon.ico">
     
 
-    <link rel="alternate" type="application/rss+xml" href="https://davidan.dev/index.xml" title="David An" />
     
         
     
@@ -88,107 +86,39 @@
 <hr>
 <div id="content">
 <div class="container">
-    <!-- ## Hi, I'm David! -->
-<!--
-<figure class="avatar"><img src="/avatar.jpg"
-         alt="avatar"/>
-</figure>
- -->
-<p>I am currently an undergraduate student at the University of Illinois at Urbana-Champaign studying Mathematics. I work with large database systems and text mining. Over Summer 2022, I worked as a <strong>Data Science Intern @ Ameren</strong>. Before that, I interned as a <strong>Business Analyst @ ASA D.Next Lab</strong>. Check out my <a href="/blog">blog</a> where I write about research and excursions into different topics in mathematics and computer science!</p>
-<!-- [Business Analyst @ American Supply Association D.Next Lab](/professional/asa) -->
-
-
-
-<div class="container">
-  <div class="row">
-    <div class="col" style="margin-left: -1rem;">
-    <h2 class = "text-left">Latest Articles</h2>
-    <ul>
-    <li style="margin-left: -1rem;"><a href="/posts/pwn">Jenkins Security Vulnerability Writeup</a></li>
-    <li style="margin-left: -1rem;"><a href="/posts/datamining">A Discussion on Pandas</a></li>
-<li style="margin-left: -1rem;"><a href="/posts/sosp">Revisiting a Summer of Side Projects</a></li>
-
-</ul>
-    </div>
-    <div class="col" style="margin-left: -1rem;">
-    <h2 class = "text-left">Things I've made</h2>
-    <ul>
-<li style="margin-left: -1rem;"><a href="https://bit.ly/rp-guide22">Guide to Research Park v1.0</a></li>
-<li style="margin-left: -1rem;"><a href="https://r.davidan.dev">R Guide For Statistics</a></li>
-<li style="margin-left: -1rem;"><a href="https://sosp22.com">Summer of Side Projects 2022</a></li>
-</ul>
-    </div>
-  </div>
-</div>
-
-<!-- ## Latest Articles
-
-- [A Discussion on Pandas and Data Mining (WIP)](/posts/datamining)
-- [Revisiting a Summer of Side Projects](/posts/sosp)
-- [Inequality Fun and Their Applications](/posts/inequalities)
-- [A (Fun) Discussion on Harmonic Functions](/posts/harmonic) -->
-<!-- ## Research Experience
-
-In chronological order: -->
-<!-- ## Professional Experience
-
-- [Data Scientist Intern @ Ameren Innovation Center](/professional/ameren)
-- [Business Analyst @ American Supply Association D.NEXT Lab](/professional/asa) -->
-<h2 id="exciting-things">Exciting Things!</h2>
-<!-- This is a [link](http://google.com). Something *italics* and something **bold**.
-
-Here is a table: -->
+    <h2 id="bug-reports">Bug Reports</h2>
+<p>Got bored so here is a running of list of reports and finds in my spare time. All were found accidentally and reported to their respective security groups immediately.</p>
 <table>
 <thead>
 <tr>
+<th>Organization</th>
+<th>Find</th>
 <th>Date</th>
-<th>Event</th>
-<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>01-21-2023</td>
-<td>Found and reported my first security vulnerability. <a href="/posts/pwn">Read the Writeup!</a></td>
-<td></td>
+<td><strong>Cloudera</strong></td>
+<td>In progress, reported on 1-28. The fix and patch is still in progress.</td>
+<td>1-28</td>
 </tr>
 <tr>
-<td>12-05-2022</td>
-<td>Featured on the Innovations @ Research Park Podcast <a href="https://podcasts.apple.com/us/podcast/celebrating-research-park-interns/id1557285742?i=1000588843218">Listen Here!</a></td>
-<td></td>
+<td><strong>AllenAI</strong></td>
+<td>An exposed <code>localhost</code> port allows an actor to access production builds as an elevated user. No user authentication deployment and configuration of builds as a non-admin user. Unauthorized builds allow for credential dumping by printing to console; additionally, Firebase and GCloud credentials were exposed. Reported and fixed within 12 hours of report.</td>
+<td>1-25</td>
 </tr>
 <tr>
-<td>08-15-2022</td>
-<td>Presented about SOSP22 at the Illinois CS Teaching Workshop <a href="https://mediaspace.illinois.edu/playlist/dedicated/269362552/1_uvpti661/1_ez05ctmp">(iCSTW22)</a></td>
-<td></td>
+<td><strong>Catalogic</strong></td>
+<td>An exposed server port allows an actor to access Jenkins build pipelines and internal developer lists without authentication. In addition to that, an actor is given elevated privilege to delete and create workspaces as well as view build log data which included environment variables. Giving unauthorized build access allows for a user to dump credentials without administrative access detailed in <a href="https://www.codurance.com/publications/2019/05/30/accessing-and-dumping-jenkins-credentials">this article</a></td>
+<td>1-23</td>
 </tr>
 <tr>
-<td>08-03-2022</td>
-<td>Presented <a href="/research/nlpsearch">[1]</a> at the Actuarial Research Conference 22 (ARC22)</td>
-<td></td>
-</tr>
-<tr>
-<td>07-29-2022</td>
-<td>Received the 2022 Most Outstanding Undergraduate Intern Award</td>
-<td></td>
+<td><strong>[Redacted]</strong></td>
+<td>Discovered backdoor to allow for access to the whole codebase and pipelines. Build access was disabled, but credentials remained unencrypted and unsecured in credential store. Both iOS and Android development and production builds were exposed. Reported and fixed within 24 hours of report (on a Sunday). The detailed writeup can be found <a href="/posts/pwn">here</a></td>
+<td>1-21</td>
 </tr>
 </tbody>
 </table>
-<!-- 04-27-2022 Presented [[1]](/research/nlpsearch) at the Illinois Undergraduate Research Symposium  -->
-<!--
-Here is a horizontal rule:
-
----
-
-Here is a blockquote:
-
-> To a great mind, nothing is little
-
-Here is a `code` block: -->
-<!-- ```python
-def is_elementary():
-  return True
-``` -->
 
 </div>
 

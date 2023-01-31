@@ -2,14 +2,20 @@
 title: "Sitemap"
 ---
 
-## Links
+#### Fun Stuff
 
-Down below, you'll find links to every possible page on this site. Feel free to explore!
+<!-- - [Bugs](/bugs)
+- [Curriculum Vitae](/resume_an.pdf)
+- [Linkedin](https://www.linkedin.com/in/davidzhongtaian/) -->
 
-#### Professional
+- [R-Guide For Statistics](https://r.davidan.dev)
+- [Summer of Side Projects 2022](https://sosp22.com)
+- [Guide to Research Park 1.0](http://bit.ly/rp-guide22)
+
+<!-- #### Professional
 
 - [Data Scientist Intern @ Ameren Innovation Center](/professional/ameren)
-- [Business Analyst @ American Supply Association D.NEXT Lab](/professional/asa)
+- [Business Analyst @ American Supply Association D.NEXT Lab](/professional/asa) -->
 
 #### Research
 
@@ -19,6 +25,7 @@ Down below, you'll find links to every possible page on this site. Feel free to 
 
 #### Blog
 
+- [How to Pwn a Website Ethically](/posts/pwn)
 - [A Discussion on Pandas and Data Mining](/posts/datamining)
 - [Deploying ENS on a Private Chain](/posts/ens)
 - [A Discussion on Pandas and Data Mining (WIP)](/posts/datamining)
@@ -28,3 +35,9 @@ Down below, you'll find links to every possible page on this site. Feel free to 
 - [Donuts](/posts/donut)
 - [The need for a unified cataloging system for academic literature](/posts/unified)
 - [Looking back on a semester of undergraduate research](/posts/firstsem)
+
+#### News
+
+- [Research Park Innovations Podcast Feature](https://podcasts.apple.com/us/podcast/celebrating-research-park-interns/id1557285742?i=1000588843218)
+- [Illinois CS Teaching Workshop (iCSTW22)](https://mediaspace.illinois.edu/playlist/dedicated/269362552/1_uvpti661/1_ez05ctmp)
+- [Research Park Outstanding Undergraduate Intern Award](https://researchpark.illinois.edu/article/excellence-recognized-at-2022-research-park-intern-awards/)
