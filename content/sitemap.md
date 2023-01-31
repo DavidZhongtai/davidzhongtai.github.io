@@ -25,7 +25,7 @@ title: "Sitemap"
 
 #### Blog
 
-- [How to Pwn a Website Ethically](/posts/pwn)
+<!-- - [How to Pwn a Website Ethically](/posts/pwn) -->
 - [A Discussion on Pandas and Data Mining](/posts/datamining)
 - [Deploying ENS on a Private Chain](/posts/ens)
 - [A Discussion on Pandas and Data Mining (WIP)](/posts/datamining)

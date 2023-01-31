@@ -19,10 +19,7 @@ math = true
     url = "/blog"
     weight = 1
 
-  [[menu.main]]
-    name = "Bugs"
-    url = "/bugs"
-    weight = 1
+  
   
   [[menu.main]]
     name = "Contact"
