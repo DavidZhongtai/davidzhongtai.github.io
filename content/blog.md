@@ -7,7 +7,8 @@ title: "Blog"
 Some excursions into different spaces. I occasionally write about math and computers.
 |||
 | :------| -----------:|
-| [A Discussion on Pandas and Data Mining](/posts/datamining) | 1-17-2023 |
+| [Jenkins Security Vulnerability Writeup](/posts/pwn) | 02-02-2023 |
+| [A Discussion on Pandas and Data Mining](/posts/datamining) | 01-17-2023 |
 | [Deploying ENS on a Private Chain](/posts/ens) | 01-03-2023 |
 | [Revisiting a Summer of Side Projects](/posts/sosp) | 12-16-2022 |
 | [Inequality Fun and Their Applications](/posts/inequalities) | 12-14-2022 |

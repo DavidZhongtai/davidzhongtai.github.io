@@ -20,7 +20,6 @@ math = true
     weight = 1
 
   
-  
   [[menu.main]]
     name = "Contact"
     url = "/contact"
