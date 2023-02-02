@@ -60,6 +60,7 @@ Here is a table: -->
 | Date       | Event                                                                                                                                                                    |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --- |
 |
+|02-02-2023 | Found some cool things with servers and Jenkins [Read the Writeup!](/posts/pwn)
 | 12-05-2022 | Featured on the Innovations @ Research Park Podcast [Listen Here!](https://podcasts.apple.com/us/podcast/celebrating-research-park-interns/id1557285742?i=1000588843218) |
 | 08-15-2022 | Presented about SOSP22 at the Illinois CS Teaching Workshop [(iCSTW22)](https://mediaspace.illinois.edu/playlist/dedicated/269362552/1_uvpti661/1_ez05ctmp)              |
 | 08-03-2022 | Presented [[1]](/research/nlpsearch) at the Actuarial Research Conference 22 (ARC22)                                                                                     |

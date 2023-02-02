@@ -12,8 +12,8 @@
 
         gtag('config', 'G-84P0KS3QHB');
     </script>
-    <title>Shodan &#43; Jenkins = Pwn&#39;ed</title>
-    <meta name="description" content="Welcome to my life">
+    <title>Jenkins Security Vulnerability Writeup</title>
+    <meta name="description" content="David An - Personal Site">
     <meta name="author" content='David An'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css" integrity="sha384-Juol1FqnotbkyZUT5Z7gUPjQ9gzlwCENvUZTpQBAPxtusdwFLRy382PSDx5UUJ4/" crossorigin="anonymous">
 
@@ -79,7 +79,7 @@
 <hr>
 <div id="content">
 <div class="container">
-    <h1 id="shodan--jenkins--pwned">Shodan + Jenkins = Pwn&rsquo;ed</h1>
+    <h1 id="jenkins-security-vulnerability-writeup">Jenkins Security Vulnerability Writeup</h1>
 <p>So, how does it begin? After getting bored one day and browsing Shodan.io, one wonders what&rsquo;s the worst that you can find on there? Turns out, the answer led to a 2-day bender down different rabbit holes eventually leading to this article here and a lot of vulnerabilities discovered. So let&rsquo;s get started shall we?</p>
 <p>Before we do this, I do not endorse attempting to break into company systems. This post is not a tutorial or suggestion, please act ethically. I am not liable for any damage caused by people reading this article. All the various backdoors found along the way were <strong><em>swiftly reported to their corresponding security groups</em></strong>. Because of the nature of data accessed, the company will be referenced as <code>Company X</code>.</p>
 <p>This story is broken into 4 parts, the setup, the exploit, the chase, and the end. Without further ado, lets dive in.</p>

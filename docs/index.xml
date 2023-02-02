@@ -135,22 +135,22 @@ These are the same words I hear every Friday morning from the woman behind the c
     </item>
     
     <item>
+      <title>Jenkins Security Vulnerability Writeup</title>
+      <link>https://davidan.dev/posts/pwn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidan.dev/posts/pwn/</guid>
+      <description>Jenkins Security Vulnerability Writeup So, how does it begin? After getting bored one day and browsing Shodan.io, one wonders what&amp;rsquo;s the worst that you can find on there? Turns out, the answer led to a 2-day bender down different rabbit holes eventually leading to this article here and a lot of vulnerabilities discovered. So let&amp;rsquo;s get started shall we?
+Before we do this, I do not endorse attempting to break into company systems.</description>
+    </item>
+    
+    <item>
       <title>Pandas and Data Mining</title>
       <link>https://davidan.dev/posts/datamining/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://davidan.dev/posts/datamining/</guid>
       <description>A Discussion on Pandas and Data Mining At the beginning of any data analytics/data science project, the most usual case is utilizing Pandas to load the data into a object called a DataFrame and perform preprocessing tasks on it. While the Pandas library is convenient and comes with a trove of useful analytic tools, it does have some inefficiencies, many due to the nature of Python. To investigate this, let&amp;rsquo;s look at how Pandas actually works on top of Python.</description>
-    </item>
-    
-    <item>
-      <title>Shodan &#43; Jenkins = Pwn&#39;ed</title>
-      <link>https://davidan.dev/posts/pwn/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://davidan.dev/posts/pwn/</guid>
-      <description>Shodan + Jenkins = Pwn&amp;rsquo;ed So, how does it begin? After getting bored one day and browsing Shodan.io, one wonders what&amp;rsquo;s the worst that you can find on there? Turns out, the answer led to a 2-day bender down different rabbit holes eventually leading to this article here and a lot of vulnerabilities discovered. So let&amp;rsquo;s get started shall we?
-Before we do this, I do not endorse attempting to break into company systems.</description>
     </item>
     
     <item>

@@ -1,8 +1,9 @@
 ---
-title: "Shodan + Jenkins = Pwn'ed"
+title: "Jenkins Security Vulnerability Writeup"
+description: A foray into network security and some things I've learned. 
 ---
 
-# Shodan + Jenkins = Pwn'ed
+# Jenkins Security Vulnerability Writeup
 
 So, how does it begin? After getting bored one day and browsing Shodan.io, one wonders what's the worst that you can find on there? Turns out, the answer led to a 2-day bender down different rabbit holes eventually leading to this article here and a lot of vulnerabilities discovered. So let's get started shall we?
 
