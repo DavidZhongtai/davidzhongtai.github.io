@@ -25,7 +25,7 @@ title: "Sitemap"
 
 #### Blog
 
-- [Jenkins + Shodan = Pwn'ed](/posts/pwn)
+- [Jenkins Security Vulnerability Writeup](/posts/pwn)
 - [A Discussion on Pandas and Data Mining](/posts/datamining)
 - [Deploying ENS on a Private Chain](/posts/ens)
 - [A Discussion on Pandas and Data Mining (WIP)](/posts/datamining)
