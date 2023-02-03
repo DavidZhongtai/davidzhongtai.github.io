@@ -1,6 +1,9 @@
-+++
-title = "David An"
-+++
+---
+title: "David An"
+thumbnail: "/thubmal.jpeg"
+header: 
+  image: "/thubmal.jpeg"
+---
 
 <!-- ## Hi, I'm David! -->
 <!--
@@ -17,9 +20,10 @@ I am currently an undergraduate student at the University of Illinois at Urbana-
     <div class="col" style="margin-left: -1rem;">
     <h2 class = "text-left">Latest Articles</h2>
     <ul>
+    <li style="margin-left: -1rem;"><a href="/posts/fermi">Fermi Questions and Chairs (WIP)</a></li>
     <li style="margin-left: -1rem;"><a href="/posts/pwn">Jenkins Security Vulnerability Writeup</a></li>
     <li style="margin-left: -1rem;"><a href="/posts/datamining">A Discussion on Pandas</a></li>
-<li style="margin-left: -1rem;"><a href="/posts/sosp">Revisiting a Summer of Side Projects</a></li>
+
 
 </ul>
     </div>
