@@ -7,7 +7,7 @@ title: "Blog"
 Some excursions into different spaces. I occasionally write about math and computers.
 |||
 | :------| -----------:|
-| [Fermi Questions and Chairs](/posts/fermi) | 02-xx-2023 |
+|
 | [Jenkins Security Vulnerability Writeup](/posts/pwn) | 02-02-2023 |
 | [A Discussion on Pandas and Data Mining](/posts/datamining) | 01-17-2023 |
 | [Deploying ENS on a Private Chain](/posts/ens) | 01-03-2023 |
