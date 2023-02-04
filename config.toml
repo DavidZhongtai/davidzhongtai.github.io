@@ -10,6 +10,8 @@ math = true
   description = "David An - Personal Site" 
   favicon = "favicon.ico"
   googleAnalytics = "G-84P0KS3QHB"
+  type = "Website"
+  imgpath = "https://davidan.dev/thubmal.jpeg"
 
 [menu]
 
