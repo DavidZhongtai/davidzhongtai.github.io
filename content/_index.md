@@ -68,7 +68,8 @@ Here is a table: -->
 | 12-05-2022 | Featured on the Innovations @ Research Park Podcast [Listen Here!](https://podcasts.apple.com/us/podcast/celebrating-research-park-interns/id1557285742?i=1000588843218) |
 | 08-15-2022 | Presented about SOSP22 at the Illinois CS Teaching Workshop [(iCSTW22)](https://mediaspace.illinois.edu/playlist/dedicated/269362552/1_uvpti661/1_ez05ctmp)              |
 | 08-03-2022 | Presented [[1]](/research/nlpsearch) at the Actuarial Research Conference 22 (ARC22)                                                                                     |
-| 07-29-2022 | Received the 2022 Most Outstanding Undergraduate Intern Award                                                                                                            |
+| 07-29-2022 | Received the 2022 Most Outstanding Undergraduate [Intern Award](https://researchpark.illinois.edu/article/excellence-recognized-at-2022-research-park-intern-awards/)
+                                                                                                         |
 
 <!-- 04-27-2022 Presented [[1]](/research/nlpsearch) at the Illinois Undergraduate Research Symposium  -->
 <!--
