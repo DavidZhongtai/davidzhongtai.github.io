@@ -8,6 +8,17 @@
     <language>en-us</language><atom:link href="https://davidan.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://davidan.dev/news/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidan.dev/news/</guid>
+      <description>News Archive [08-03-2022]
+I presented my research at the Actuarial Research Conference 2022. This was research throughout two semesters about building felxible big data processing systems for academic literature. I write a bit more in detail about my research here [07-29-2022]
+I recieved the Most Outstanding Undergraduate Intern Award within Research Park. Research Park is a place on campus where companies have R&amp;D offices as well as 800+ total undergraduate interns.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://davidan.dev/posts/ens/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -111,7 +122,7 @@ Organization Find Date Cloudera In progress, reported on 1-28. The fix and patch
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://davidan.dev/contact/</guid>
-      <description> Email: davidzhongtaian at gmail dot com Phone: 878-two nine five-0080 Resume: Some things I do Linkedin: Here </description>
+      <description> Email: davidzhongtaian(at)gmail(dot)com Phone: 878-two nine five-0080 Resume: Some things I do Linkedin: @davidzan </description>
     </item>
     
     <item>

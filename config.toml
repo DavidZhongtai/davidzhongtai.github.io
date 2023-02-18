@@ -21,6 +21,10 @@ math = true
     url = "/blog"
     weight = 1
 
+  [[menu.main]]
+    name = "News"
+    url = "/news"
+    weight = 1
   
   [[menu.main]]
     name = "Contact"

@@ -5,7 +5,7 @@ header:
   image: "/thubmal.jpeg"
 ---
 
-<!-- ## Hi, I'm David! -->
+## Hi, I'm David!
 <!--
 {{< figure class="avatar" src="/avatar.jpg" alt="avatar">}} -->
 
@@ -55,12 +55,27 @@ In chronological order: -->
 - [Data Scientist Intern @ Ameren Innovation Center](/professional/ameren)
 - [Business Analyst @ American Supply Association D.NEXT Lab](/professional/asa) -->
 
-## Exciting Things!
+## Recent News
+**[02-02-2023]**
+<div style="margin-left: 1em;">
+Recently found a cool server vulnerability which was responsibly reported to the organization. This resulted in some nice merch and a bug bounty payout. <a href="/posts/pwn">Read more here!</a>
 
-<!-- This is a [link](http://google.com). Something *italics* and something **bold**.
+</div>
+<br>
 
-Here is a table: -->
+**[12-05-2022]**
+<div style="margin-left: 1em;">
+I was invited onto the Innovations @ Research Park Podcast to talk about my  recent experiences working at the University of Illinois Research Park over the summer at Ameren. <a href="https://podcasts.apple.com/us/podcast/celebrating-research-park-interns/id1557285742?i=1000588843218">Listen to the podcast.</a>
+</div>
+<br>
 
+**[08-15-2022]**
+<div style="margin-left: 1em;">
+Over the summer, me and some other friends organized a <a href="https://sosp22.com">Summer of Side Projects Initiative.</a> Our goal was to teach all things tech to students. We were also invited to present at the Illinois CS Teaching Workshop in August. <a href="https://mediaspace.illinois.edu/playlist/dedicated/269362552/1_uvpti661/1_ez05ctmp">Watch our talk here.</a>
+</div>
+<br>
+<a href="/news">-> Read older news here</a>
+<!-- 
 | Date       | Event                                                                                                                                                                    |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --- |
 |
@@ -69,7 +84,7 @@ Here is a table: -->
 | 08-15-2022 | Presented about SOSP22 at the Illinois CS Teaching Workshop [(iCSTW22)](https://mediaspace.illinois.edu/playlist/dedicated/269362552/1_uvpti661/1_ez05ctmp)              |
 | 08-03-2022 | Presented [[1]](/research/nlpsearch) at the Actuarial Research Conference 22 (ARC22)                                                                                     |
 | 07-29-2022 | Received the 2022 Most Outstanding Undergraduate [Intern Award](https://researchpark.illinois.edu/article/excellence-recognized-at-2022-research-park-intern-awards/)
-                                                                                                         |
+                                                                                                         | -->
 
 <!-- 04-27-2022 Presented [[1]](/research/nlpsearch) at the Illinois Undergraduate Research Symposium  -->
 <!--
