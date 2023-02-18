@@ -63,6 +63,12 @@ Recently found a cool server vulnerability which was responsibly reported to the
 </div>
 <br>
 
+**[01-15-2022]**
+<div style="margin-left: 1em;">
+I recently returned back to my high school to talk about my experiences and some of my tips after 2 years in <a href="https://www.facebook.com/photo/?fbid=634562562008631&set=a.520490016749220">college</a>
+</div>
+<br>
+
 **[12-05-2022]**
 <div style="margin-left: 1em;">
 I was invited onto the Innovations @ Research Park Podcast to talk about my  recent experiences working at the University of Illinois Research Park over the summer at Ameren. <a href="https://podcasts.apple.com/us/podcast/celebrating-research-park-interns/id1557285742?i=1000588843218">Listen to the podcast.</a>
