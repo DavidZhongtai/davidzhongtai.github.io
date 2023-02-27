@@ -56,16 +56,17 @@ In chronological order: -->
 - [Business Analyst @ American Supply Association D.NEXT Lab](/professional/asa) -->
 
 ## Recent News
-**[02-02-2023]**
+**[02-26-2023]**
 <div style="margin-left: 1em;">
-Recently found a cool server vulnerability which was responsibly reported to the organization. This resulted in some nice merch and a bug bounty payout. <a href="/posts/pwn">Read more here!</a>
+I recently joined a DEI discussion committee on behalf of Institute of Electrical and Electronics Engineers (IEEE) Region 5. 
 
 </div>
 <br>
 
-**[01-15-2022]**
+**[02-02-2023]**
 <div style="margin-left: 1em;">
-I recently returned back to my high school to talk about my experiences and some of my tips after 2 years in <a href="https://www.facebook.com/photo/?fbid=634562562008631&set=a.520490016749220">college</a>
+Recently found a cool server vulnerability which was responsibly reported to the organization. This resulted in some nice merch and a bug bounty payout. <a href="/posts/pwn">Read more here!</a>
+
 </div>
 <br>
 
