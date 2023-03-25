@@ -24,7 +24,7 @@ title: "Sitemap"
 - [Fake News Detection: Using NLP in the Detection Process (FaDe-Net)](research/fadenet)
 
 #### Blog
-
+- [The Influence of Lunch Items on Crypto](/posts/bovik)
 - [Jenkins Security Vulnerability Writeup](/posts/pwn)
 - [A Discussion on Pandas and Data Mining](/posts/datamining)
 - [Deploying ENS on a Private Chain](/posts/ens)
