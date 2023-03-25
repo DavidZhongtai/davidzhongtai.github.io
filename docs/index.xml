@@ -19,17 +19,6 @@ Over the summer, me and some other friends organized a Summer of Side Projects I
     
     <item>
       <title></title>
-      <link>https://davidan.dev/posts/bovik/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://davidan.dev/posts/bovik/</guid>
-      <description>The Influence of Lunch Items on Cryptocurrency in the United States *This post is pending for SIGBOVIK 0x7e7*
-For some background information, SIGBOVIK is a yearly scientific conference hosted by Carnegie Mellon University where participants are able to flex their lesser-known research muscles. These are the dank-memers of academia.
-Abstract In this paper, we introduce the discovery and exploration of the influence of common every day lunch items on cryptocurrency trends.</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://davidan.dev/posts/ens/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -183,6 +172,17 @@ These are the same words I hear every Friday morning from the woman behind the c
       <guid>https://davidan.dev/posts/pwn/</guid>
       <description>Jenkins Security Vulnerability Writeup So, how does it begin? After getting bored one day and browsing Shodan.io, one wonders what&amp;rsquo;s the worst that you can find on there? Turns out, the answer led to a 2-day bender down different rabbit holes eventually leading to this article here and a lot of vulnerabilities discovered. So let&amp;rsquo;s get started shall we?
 Before we do this, I do not endorse attempting to break into company systems.</description>
+    </item>
+    
+    <item>
+      <title>Lunch and Crypto</title>
+      <link>https://davidan.dev/posts/bovik/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidan.dev/posts/bovik/</guid>
+      <description>The Influence of Lunch Items on Cryptocurrency in the United States *This post is pending for SIGBOVIK 0x7e7*
+For some background information, SIGBOVIK is a yearly scientific conference hosted by Carnegie Mellon University where participants are able to flex their lesser-known research muscles. These are the dank-memers of academia.
+Abstract In this paper, we introduce the discovery and exploration of the influence of common every day lunch items on cryptocurrency trends.</description>
     </item>
     
     <item>

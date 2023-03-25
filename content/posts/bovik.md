@@ -1,3 +1,7 @@
+---
+title: "Lunch and Crypto"
+---
+
 # The Influence of Lunch Items on Cryptocurrency in the United States
 
 \***This post is pending for SIGBOVIK 0x7e7**\*
