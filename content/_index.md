@@ -9,7 +9,7 @@ header:
 <!--
 {{< figure class="avatar" src="/avatar.jpg" alt="avatar">}} -->
 
-I am currently an undergraduate student at the University of Illinois at Urbana-Champaign studying Mathematics. I work with large database systems and text mining. Over Summer 2022, I worked as a **Data Science Intern @ Ameren**. Before that, I interned as a **Business Analyst @ ASA D.Next Lab**. Check out my [blog](/blog) where I write about research and excursions into different topics in mathematics and computer science! You can find my resume and socials in the [contacts](/contact) page. 
+I am currently an undergraduate student at the University of Illinois at Urbana-Champaign studying Mathematics. I work with large database systems and text mining. Over Summer 2022, I worked as a **Data Science Intern @ Ameren**. Before that, I interned as a **Business Analyst @ ASA D.Next Lab**. Check out my [blog](/blog) where I write about research and excursions into different topics in mathematics and computer science! You can find my resume and socials in the [contacts](/contact) page.
 
 <!-- [Business Analyst @ American Supply Association D.Next Lab](/professional/asa) -->
 
