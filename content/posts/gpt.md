@@ -3,7 +3,12 @@ title: "Adversial AI and ChatGPT, Examples From the Wild"
 ---
 
 # Adversial AI and Attacking Snapchat's My AI 
+
+**UPDATE**: This article was covered in the [Fortune Magazine article](https://fortune.com/2023/04/21/snap-chat-my-ai-lies-location-data-a-i-ethics/) "Snap’s ‘My AI’ chatbot tells users it doesn’t know their location. It does." on 04-21-23! 
 #### A short excursion into the craze of ChatGPT
+
+
+
 In this article, we cover a basic introduction into LLMs, ChatGPT, and a real life example of Snapchat. 
 
 ChatGPT, the newest craze in a series of innovations regarding artificial intelligence. It seems like every day we hear about a new piece of software released. Few months before, GPT-3 shocked the world with its lifelike ability to hold conversations. As a result, this software enthralled the world--becoming one of the fastest pieces of technology to reach 1m users. 

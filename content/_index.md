@@ -55,6 +55,12 @@ In chronological order: -->
 - [Business Analyst @ American Supply Association D.NEXT Lab](/professional/asa) -->
 
 ## Recent News
+**[04-21-2023]**
+<div style="margin-left: 1em;">
+I was featured on the front page of Fortune Magazine for some interesting research into the security concerns of Snapchat's MyAI. Really cool experience. <a href="https://fortune.com/2023/04/21/snap-chat-my-ai-lies-location-data-a-i-ethics/">Read the article on Fortune!</a>
+</div>
+<br>
+
 **[02-26-2023]**
 <div style="margin-left: 1em;">
 I recently joined a DEI discussion committee on behalf of Institute of Electrical and Electronics Engineers (IEEE) Region 5. 
@@ -67,12 +73,7 @@ I recently joined a DEI discussion committee on behalf of Institute of Electrica
 Recently found a cool server vulnerability which was responsibly reported to the organization. This resulted in some nice merch and a bug bounty payout. <a href="/posts/pwn">Read more here!</a>
 
 </div>
-<br>
 
-**[12-05-2022]**
-<div style="margin-left: 1em;">
-I was invited onto the Innovations @ Research Park Podcast to talk about my  recent experiences working at the University of Illinois Research Park over the summer at Ameren. <a href="https://podcasts.apple.com/us/podcast/celebrating-research-park-interns/id1557285742?i=1000588843218">Listen to the podcast.</a>
-</div>
 <br>
 <a href="/news">-> Read older news here</a>
 <!-- 

@@ -13,8 +13,9 @@
       
       <guid>https://davidan.dev/news/</guid>
       <description>News Archive [01-15-2022]
-I recently returned back to my high school to talk about my experiences and some of my tips after 2 years in college [08-15-2022]
-Over the summer, me and some other friends organized a Summer of Side Projects Initiative. Our goal was to teach all things tech to students. We were also invited to present at the Illinois CS Teaching Workshop in August. Watch our talk here. [08-03-2022]</description>
+I recently returned back to my high school to talk about my experiences and some of my tips after 2 years in college [12-05-2022]
+I was invited onto the Innovations @ Research Park Podcast to talk about my recent experiences working at the University of Illinois Research Park over the summer at Ameren. Listen to the podcast. [08-15-2022]
+Over the summer, me and some other friends organized a Summer of Side Projects Initiative.</description>
     </item>
     
     <item>
@@ -102,8 +103,9 @@ It&amp;rsquo;s July in central Illinois. I lace up my white bike cleats, marred 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://davidan.dev/posts/gpt/</guid>
-      <description>Adversial AI and Attacking Snapchat&amp;rsquo;s My AI A short excursion into the craze of ChatGPT In this article, we cover a basic introduction into LLMs, ChatGPT, and a real life example of Snapchat.
-ChatGPT, the newest craze in a series of innovations regarding artificial intelligence. It seems like every day we hear about a new piece of software released. Few months before, GPT-3 shocked the world with its lifelike ability to hold conversations.</description>
+      <description>Adversial AI and Attacking Snapchat&amp;rsquo;s My AI UPDATE: This article was covered in the Fortune Magazine article &amp;ldquo;Snap’s ‘My AI’ chatbot tells users it doesn’t know their location. It does.&amp;rdquo; on 04-21-23!
+A short excursion into the craze of ChatGPT In this article, we cover a basic introduction into LLMs, ChatGPT, and a real life example of Snapchat.
+ChatGPT, the newest craze in a series of innovations regarding artificial intelligence. It seems like every day we hear about a new piece of software released.</description>
     </item>
     
     <item>
@@ -210,7 +212,7 @@ Abstract In this paper, we introduce the discovery and exploration of the influe
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://davidan.dev/sitemap/</guid>
-      <description>Fun Stuff R-Guide For Statistics Summer of Side Projects 2022 Guide to Research Park 1.0 Research D.An, L.Zheng, Z.Quan: Building an NLP-Powered Repository for Cyber Risk Literature Scraping Web Data for Academic Literature Fake News Detection: Using NLP in the Detection Process (FaDe-Net) Blog 3,000 Miles of Solitude The Influence of Lunch Items on Crypto Jenkins Security Vulnerability Writeup A Discussion on Pandas and Data Mining Deploying ENS on a Private Chain A Discussion on Pandas and Data Mining (WIP) Revisiting a Summer of Side Projects Inequality Fun and Their Applications A (Fun) Discussion on Harmonic Functions Donuts The need for a unified cataloging system for academic literature Looking back on a semester of undergraduate research News Research Park Innovations Podcast Feature Illinois CS Teaching Workshop (iCSTW22) Research Park Outstanding Undergraduate Intern Award </description>
+      <description>Fun Stuff R-Guide For Statistics Summer of Side Projects 2022 Guide to Research Park 1.0 News Fortune Article: Snapchat MyAI Location Security Research Park Innovations Podcast Feature Illinois CS Teaching Workshop (iCSTW22) Research Park Outstanding Undergraduate Intern Award Blog Adversial AI and Attacking Snapchat&amp;rsquo;s My AI 3,000 Miles of Solitude The Influence of Lunch Items on Crypto Jenkins Security Vulnerability Writeup A Discussion on Pandas and Data Mining Deploying ENS on a Private Chain A Discussion on Pandas and Data Mining (WIP) Revisiting a Summer of Side Projects Inequality Fun and Their Applications A (Fun) Discussion on Harmonic Functions Donuts The need for a unified cataloging system for academic literature Looking back on a semester of undergraduate research Research D.</description>
     </item>
     
     <item>
