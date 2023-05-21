@@ -17,12 +17,12 @@ title: "Sitemap"
 - [Data Scientist Intern @ Ameren Innovation Center](/professional/ameren)
 - [Business Analyst @ American Supply Association D.NEXT Lab](/professional/asa) -->
 
-#### News
+<!-- #### News
 
 - [Fortune Article: Snapchat MyAI Location Security](https://fortune.com/2023/04/21/snap-chat-my-ai-lies-location-data-a-i-ethics/)
 - [Research Park Innovations Podcast Feature](https://podcasts.apple.com/us/podcast/celebrating-research-park-interns/id1557285742?i=1000588843218)
 - [Illinois CS Teaching Workshop (iCSTW22)](https://mediaspace.illinois.edu/playlist/dedicated/269362552/1_uvpti661/1_ez05ctmp)
-- [Research Park Outstanding Undergraduate Intern Award](https://researchpark.illinois.edu/article/excellence-recognized-at-2022-research-park-intern-awards/)
+- [Research Park Outstanding Undergraduate Intern Award](https://researchpark.illinois.edu/article/excellence-recognized-at-2022-research-park-intern-awards/) -->
 
 #### Blog
 - [Adversial AI and Attacking Snapchat's My AI](/posts/gpt)

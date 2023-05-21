@@ -27,14 +27,11 @@ math = true
     weight = 1
   
   [[menu.main]]
-    name = "Contact"
-    url = "/contact"
+    name = "About"
+    url = "/about"
     weight = 2
 
-  [[menu.main]]
-    name = "Nav"
-    url = "/sitemap"
-    weight = 3
+
 
 [markup.goldmark.parser.attribute]
   block = true

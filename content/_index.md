@@ -9,8 +9,9 @@ header:
 <!--
 {{< figure class="avatar" src="/avatar.jpg" alt="avatar">}} -->
 <!-- <a href="https://www.google.com/" style="color: black; text-decoration: underline;text-decoration-style: dotted;">custom link</a> -->
-I am a [**Software Developer @ Red Cell Partners**](https://redcellpartners.com). My previous roles include being a [**Data Science Intern @ Ameren**](https://researchpark.illinois.edu/tenant_directory/ameren-innovation-center/) in Summer 2022 and a [**Business Analyst Intern @ ASA D.Next Lab**](https://www.asa.net/Innovation/DNext-Innovation-Lab) in Fall 2021 and Spring 2022. I enjoy tinkering with large database systems, text mining, and different security topics in my spare time. Check out my [blog](/blog) where I write about research and excursions into different topics in mathematics and computer science! 
+I am currently a [Software Developer @ Red Cell Partners](https://redcellpartners.com). I enjoy tinkering with large database systems, text mining, and computer security in my spare time. Check out my [blog](/blog) where I write about topics in mathematics and computer science or my [**about page**](/about) for a list of past experiences! 
 
+<!-- My previous roles include being a [**Data Science Intern @ Ameren**](https://researchpark.illinois.edu/tenant_directory/ameren-innovation-center/) in Summer 2022 and a [**Business Analyst Intern @ ASA D.Next Lab**](https://www.asa.net/Innovation/DNext-Innovation-Lab)in Fall 2021 and Spring 2022. -->
 <!-- [Business Analyst @ American Supply Association D.Next Lab](/professional/asa) -->
 
 {{< rawhtml >}}
@@ -30,7 +31,7 @@ I am a [**Software Developer @ Red Cell Partners**](https://redcellpartners.com)
     <h2 class = "text-left">Things I've made</h2>
     <ul>
 <li style="margin-left: -1rem;"><a href="https://bit.ly/rp-guide22">Guide to Research Park v1.0</a></li>
-<li style="margin-left: -1rem;"><a href="https://r.davidan.dev">R Guide For Statistics</a></li>
+<!-- <li style="margin-left: -1rem;"><a href="https://r.davidan.dev">R Guide For Statistics</a></li> -->
 <li style="margin-left: -1rem;"><a href="https://sosp22.com">Summer of Side Projects 2022</a></li>
 </ul>
     </div>
