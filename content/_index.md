@@ -8,8 +8,8 @@ header:
 ## Hi, I'm David!
 <!--
 {{< figure class="avatar" src="/avatar.jpg" alt="avatar">}} -->
-
-I am currently an undergraduate student at the University of Illinois at Urbana-Champaign studying Mathematics. I enjoy tinkering with large database systems, text mining, and different security topics in my spare time. Over Summer 2022, I worked as a **Data Science Intern @ Ameren**. Before that, I interned as a **Business Analyst @ ASA D.Next Lab**. Check out my [blog](/blog) where I write about research and excursions into different topics in mathematics and computer science! 
+<!-- <a href="https://www.google.com/" style="color: black; text-decoration: underline;text-decoration-style: dotted;">custom link</a> -->
+I am a [**Software Developer @ Red Cell Partners**](https://redcellpartners.com). My previous roles include being a [**Data Science Intern @ Ameren**](https://researchpark.illinois.edu/tenant_directory/ameren-innovation-center/) in Summer 2022 and a [**Business Analyst Intern @ ASA D.Next Lab**](https://www.asa.net/Innovation/DNext-Innovation-Lab) in Fall 2021 and Spring 2022. I enjoy tinkering with large database systems, text mining, and different security topics in my spare time. Check out my [blog](/blog) where I write about research and excursions into different topics in mathematics and computer science! 
 
 <!-- [Business Analyst @ American Supply Association D.Next Lab](/professional/asa) -->
 
