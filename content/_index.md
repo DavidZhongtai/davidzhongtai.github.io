@@ -9,7 +9,7 @@ header:
 <!--
 {{< figure class="avatar" src="/avatar.jpg" alt="avatar">}} -->
 <!-- <a href="https://www.google.com/" style="color: black; text-decoration: underline;text-decoration-style: dotted;">custom link</a> -->
-I am currently a [Software Developer @ Red Cell Partners](https://redcellpartners.com). I enjoy tinkering with large database systems, text mining, and computer security in my spare time. Check out my [blog](/blog) where I write about topics in mathematics and computer science or my [**about page**](/about) for a list of past experiences! 
+I am currently a [Software Developer @ Red Cell Partners](https://redcellpartners.com). I enjoy tinkering with large database systems, text mining, and computer security in my spare time. Check out my [blog](/blog) where I write about topics in mathematics and computer science or my [**about page**](/about) for a list of past experiences and contact information! 
 
 <!-- My previous roles include being a [**Data Science Intern @ Ameren**](https://researchpark.illinois.edu/tenant_directory/ameren-innovation-center/) in Summer 2022 and a [**Business Analyst Intern @ ASA D.Next Lab**](https://www.asa.net/Innovation/DNext-Innovation-Lab)in Fall 2021 and Spring 2022. -->
 <!-- [Business Analyst @ American Supply Association D.Next Lab](/professional/asa) -->
