@@ -98,6 +98,17 @@ It&amp;rsquo;s July in central Illinois. I lace up my white bike cleats, marred 
     </item>
     
     <item>
+      <title>About Me</title>
+      <link>https://davidan.dev/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidan.dev/about/</guid>
+      <description>Email: davidzhongtaian(at)gmail(dot)com
+Linkedin: @davidzan
+Talks + Presentations [05-23-2023] Women in Computer Science Summer Opportunities! Slides [04-30-2023] SIGPwny Open Source INTelligence (OSINT) Presentation Slides [04-19-2023] CS222: Software Design Lab Seminar Slides [10-03-2022] Disruption Lab Recruiting Seminar Slides [09-16-2022] CS 100: Computer Science Orientation Talk Slides [08-16-2022] Building Community in Online Learning (iCSTW 2022) Slides, Recording News Features Fortune: Snap’s ‘My AI’ chatbot tells users it doesn’t know their location. Link Research Park Innovations Podcast Episode Link Research Park Outstanding Undergraduate Intern Award Link Research + Side Fun Natural Phenomena of Roots of Cubics in the Complex Field Paper The Influence of Lunch Items on Cryptocurrency in the United States Paper Building an NLP-Powered Repository for Cyber Risk Literature Link Scraping Web Data for Academic Literature Link Volunteering + Teaching IEEE Region 5 Diversity Equity and Inclusion Committee Feb.</description>
+    </item>
+    
+    <item>
       <title>Adversial AI and ChatGPT, Examples From the Wild</title>
       <link>https://davidan.dev/posts/gpt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -126,17 +137,6 @@ Adversial AI and Attacking Snapchat&amp;rsquo;s My AI 04-19-2023 3,000 Miles of 
       <guid>https://davidan.dev/bugs/</guid>
       <description>Bug Reports Got bored so here is a running of list of reports and finds in my spare time. All were found accidentally and reported to their respective security groups immediately.
 Organization Find Date Cloudera In progress, reported on 1-28. The fix and patch is still in progress. 1-28 AllenAI An exposed localhost port allows an actor to access production builds as an elevated user. No user authentication deployment and configuration of builds as a non-admin user.</description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>https://davidan.dev/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://davidan.dev/about/</guid>
-      <description>Email: davidzhongtaian(at)gmail(dot)com
-Linkedin: @davidzan
-Talks + Presentations [05-23-2023] Women in Computer Science Summer Opportunities! Slides [04-30-2023] SIGPwny Open Source INTelligence (OSINT) Presentation Slides [04-19-2023] CS222: Software Design Lab Seminar Slides [10-03-2022] Disruption Lab Recruiting Seminar Slides [09-16-2022] CS 100: Computer Science Orientation Talk Slides [08-16-2022] Building Community in Online Learning (iCSTW 2022) Slides, Recording News Features Fortune: Snap’s ‘My AI’ chatbot tells users it doesn’t know their location. Link Research Park Innovations Podcast Episode Link Research Park Outstanding Undergraduate Intern Award Link Research + Side Fun Natural Phenomena of Roots of Cubics in the Complex Field Paper The Influence of Lunch Items on Cryptocurrency in the United States Paper Building an NLP-Powered Repository for Cyber Risk Literature Link Scraping Web Data for Academic Literature Link Volunteering + Teaching IEEE Region 5 Diversity Equity and Inclusion Committee Feb.</description>
     </item>
     
     <item>

@@ -1,5 +1,5 @@
 +++
-title = "Contact"
+title = "About Me"
 +++
 
 Email: davidzhongtaian(at)gmail(dot)com
