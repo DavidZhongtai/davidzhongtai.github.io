@@ -30,7 +30,6 @@ title: "Sitemap"
 - [The Influence of Lunch Items on Crypto](/posts/bovik)
 - [Jenkins Security Vulnerability Writeup](/posts/pwn)
 - [A Discussion on Pandas and Data Mining](/posts/datamining)
-- [Deploying ENS on a Private Chain](/posts/ens)
 - [A Discussion on Pandas and Data Mining (WIP)](/posts/datamining)
 - [Revisiting a Summer of Side Projects](/posts/sosp)
 - [Inequality Fun and Their Applications](/posts/inequalities)
