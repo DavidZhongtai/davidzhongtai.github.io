@@ -30,6 +30,7 @@ I am currently a [Software Developer @ Red Cell Partners](https://redcellpartner
     <div class="col" style="margin-left: -1rem;">
     <h2 class = "text-left">Things I've made</h2>
     <ul>
+<li style="margin-left: -1rem;"><a href="https://careersprep.io">CareersPrep.io</a></li>
 <li style="margin-left: -1rem;"><a href="https://bit.ly/rp-guide22">Guide to Research Park v1.0</a></li>
 <!-- <li style="margin-left: -1rem;"><a href="https://r.davidan.dev">R Guide For Statistics</a></li> -->
 <li style="margin-left: -1rem;"><a href="https://sosp22.com">Summer of Side Projects 2022</a></li>
@@ -56,16 +57,16 @@ In chronological order: -->
 - [Business Analyst @ American Supply Association D.NEXT Lab](/professional/asa) -->
 
 ## Recent News
-**[04-21-2023]**
+**[06-25-2023]**
 <div style="margin-left: 1em;">
-I was featured on the front page of Fortune Magazine for some interesting research into the security concerns of Snapchat's MyAI. Really cool experience. <a href="https://fortune.com/2023/04/21/snap-chat-my-ai-lies-location-data-a-i-ethics/">Read the article on Fortune!</a>
+I recently launched and am working in <a href="https://careersprep.io">CareersPrep.io</a>, an all-in-one career-prep resource for early career and new graduate people. 
+
 </div>
 <br>
 
-**[02-26-2023]**
+**[04-21-2023]**
 <div style="margin-left: 1em;">
-I recently joined a DEI discussion committee on behalf of Institute of Electrical and Electronics Engineers (IEEE) Region 5. 
-
+I was featured on the front page of Fortune Magazine for some interesting research into the security concerns of Snapchat's MyAI. Really cool experience. <a href="https://fortune.com/2023/04/21/snap-chat-my-ai-lies-location-data-a-i-ethics/">Read the article on Fortune!</a>
 </div>
 <br>
 
