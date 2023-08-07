@@ -8,6 +8,7 @@ Some excursions into different spaces. I occasionally write about math and compu
 |||
 | :------| -----------:|
 |
+| [Life For the Past 3 Months!](/posts/catchup) | 08-06-2023 |
 | [Adversial AI and Attacking Snapchat's My AI](/posts/gpt) | 04-19-2023 |
 | [3,000 Miles of Solitude](/posts/bike) | 04-03-2023 |
 | [The Influence of Lunch Items on Crypto](/posts/bovik) | 03-24-2023 |

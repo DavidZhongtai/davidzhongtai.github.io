@@ -21,9 +21,9 @@ I am currently a [Software Developer @ Red Cell Partners](https://redcellpartner
     <div class="col" style="margin-left: -1rem;">
     <h2 class = "text-left">Latest Articles</h2>
     <ul>
+    <li style="margin-left: -1rem;"><a href="/posts/catchup">Life For the Past 3 Months!</a></li>
     <li style="margin-left: -1rem;"><a href="/posts/gpt">Attacking Snapchat's My AI</a></li>
-    <li style="margin-left: -1rem;"><a href="/posts/bike">3,000 Miles of Solitude</a></li>
-    
+    <!-- <li style="margin-left: -1rem;"><a href="/posts/bike">3,000 Miles of Solitude</a></li> -->
     <li style="margin-left: -1rem;"><a href="/posts/pwn">Jenkins Security Vulnerability Writeup</a></li>
 </ul>
     </div>
