@@ -4,11 +4,11 @@ It's been 2.5 months since I graduated, and approximately 3-ish months since the
 
 ***Some short things lately:*** 
 
-- I finished up my honors project studying the graphical representation of polynomials in the complex plane and will put some small fun writeup on it soon! While you can read the [paper here](/paper.pdf), I plan on making it much more accessible and interactive in a future writeup. 
-
 - In May, I ended up in the ER after a bike crash during finals week 🤠
 
 - In that same May, I graduated with a B.S. in Mathematics and started working full time at Red Cell Partners
+
+- I finished up my honors project studying the graphical representation of polynomials in the complex plane and will put some small fun writeup on it soon! While you can read the [paper here](/paper.pdf), I plan on making it much more accessible and interactive in a future writeup. 
 
 ***On the fun computer stuff:***
 
