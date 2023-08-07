@@ -1,0 +1,1 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QWhat's next:\nIn September, I'm travelling to the University of Pennsylvania to help mentor their hackathon--PennApps\\E$"}
