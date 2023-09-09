@@ -18,6 +18,15 @@ Basic ENS architecture Setting up ENS: Deploying the registry, registrar, and re
     </item>
     
     <item>
+      <title></title>
+      <link>https://davidan.dev/posts/uiuctf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidan.dev/posts/uiuctf/</guid>
+      <description>UIUCTF23 Challenge Writeups! A long overdue set of writeups (solutions) for UIUCTF23. Recently I had the opportunity to help run UIUCTF 2023, a student-run capture the flag (CTF) event with some awesome folk in SIGPwny. The part I worked on mainly centered around open source intelligence (OSINT) techniques. In this post, we go over some solutions to the OSINT suite as some tips and tricks to approaching these challenges in CTFs.</description>
+    </item>
+    
+    <item>
       <title>3,000 Miles of Solitude</title>
       <link>https://davidan.dev/posts/bike/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

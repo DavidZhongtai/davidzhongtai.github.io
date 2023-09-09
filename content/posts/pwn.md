@@ -163,4 +163,6 @@ Well, that's all folks. Again, I cannot emphasize the importance of ethical hack
 
 For any questions pertaining to this, please contact me in the contact menu up above or send me an email with a subject line pertaining to the topic.
 
+[Back to writing](../../blog)
+
 [^2]: [Jenkins](https://www.devopsschool.com/blog/what-is-jenkins-x-and-how-jenkins-x-works/)

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang=""><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZLYXKRVG2"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-84P0KS3QHB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-84P0KS3QHB');
+    </script>
+    <title></title>
+    
+    <meta name="description" content="David An - Personal Site">
+    <meta name="author" content='David An'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css" integrity="sha384-Juol1FqnotbkyZUT5Z7gUPjQ9gzlwCENvUZTpQBAPxtusdwFLRy382PSDx5UUJ4/" crossorigin="anonymous">
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js" integrity="sha384-97gW6UIJxnlKemYavrqDHSX3SiygeOwIZhwyOKRfSaf0JWKRVj9hLASHgFTzT+0O" crossorigin="anonymous"></script>
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
+
+    
+    <link rel="stylesheet" href="/sass/researcher.min.css">
+
+    
+        <link rel="icon" type="image/ico" href="https://davidan.dev/favicon.ico">
+    
+
+    
+        
+    
+</head>
+
+    <body>
+
+
+
+<div class="container mt-5">
+    <nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
+        <a class="navbar-brand mx-0 mr-sm-auto" href="https://davidan.dev/" title="David An">
+          
+          David An
+        </a>
+        <div class="navbar-nav flex-row flex-wrap justify-content-center">
+            
+                
+                
+                    <a class="nav-item nav-link" href="/blog" title="Blog">
+                        Blog
+                    </a>
+                    
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    
+                
+                    <a class="nav-item nav-link" href="/news" title="News">
+                        News
+                    </a>
+                    
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    
+                
+                    <a class="nav-item nav-link" href="/about" title="About">
+                        About
+                    </a>
+                    
+                
+            
+        </div>
+    </nav>
+</div>
+<hr>
+<div id="content">
+<div class="container">
+    <h1 id="uiuctf23-challenge-writeups">UIUCTF23 Challenge Writeups!</h1>
+<p>A long overdue set of writeups (solutions) for UIUCTF23. Recently I had the opportunity to help run UIUCTF 2023, a student-run capture the flag (CTF) event with some awesome folk in SIGPwny. The part I worked on mainly centered around open source intelligence (OSINT) techniques. In this post, we go over some solutions to the OSINT suite as some tips and tricks to approaching these challenges in CTFs.</p>
+<h3 id="designing-the-challenges">Designing the Challenges</h3>
+<p>One of the biggest things I wanted to do while designing these challenges were to be able to tell a story along all the challenges. This set of challenges revolved around the theme of historical figures/places and took the player around different locations in New York and Chicago. Another thing to consider is making sure that these challenges are written in a manner that the first few are approachable and encourage them to approach more challenges. Additionally, it&rsquo;s important to make sure that the challenges are not meant to be written in a guessy manner: they have a clear-cut answer and there are not many potential answers.</p>
+<p>The challenges revolved around from different aspects from Google searches and EXIF data extraction to Zip code encoding and online sleuthing.</p>
+<h3 id="finding-artifacts-1">Finding Artifacts 1</h3>
+<blockquote>
+<p>David is on a trip to collect and document some of the world’s greatest artifacts. He is looking for a coveted bronze statue of the “Excellent One” in New York City. What museum is this located at? The flag format is the location name in lowercase, separated by underscores. For example: uiuctf{statue_of_liberty}</p>
+</blockquote>
+<p>The problem description gives us a general approach to be able to find out where we can get such information. Usually, the first way we want to approach such questions is to just give a brief Google search to see if any information pops up. In our case, we see that by pulling certain keywords out to get a query of: <code>Bronze Statue “Excellent One” in New York City</code>:</p>
+<p><img src="/uiuctf/excellent.png" alt="Picture of Chal 1"></p>
+<p>With that, we get the flag of <code>uiuctf{rubin_museum_of_art}</code></p>
+<h3 id="finding-artifacts-2">Finding Artifacts 2</h3>
+<blockquote>
+<p>New York City is known for its sprawling subway system. However, none of that would have been possible without modern earth-moving equipment. Find where the first ever shovel was used to start digging the subway. Flag format should be in uiuctf{name_of_museum}</p>
+</blockquote>
+<p>In the same approach as Finding Artifacts 1, we can do a quick Google search to find potential leads to dig deeper into. Pulling out keywords, we see that by searching <code>First shovel used to dig subway in NYC</code>, we get that:</p>
+<p><img src="/uiuctf/shovel1.png" alt="Shovel 1"></p>
+<p>However, knowing that, it&rsquo;s not enough since we need to find out where the shovel is actually kept on display. Since we already know it is the <em>Tiffany Silver Memorial Shovel</em>, we get that it is located in the <code>uiuctf{museum_of_the_city_of_new_york}</code></p>
+<h3 id="whats-for-dinner">What&rsquo;s For Dinner</h3>
+<blockquote>
+<p>Jonah Explorer, world renowned, recently landed in the city of Chicago, so you fly there to try and catch him. He was spotted at a joyful Italian restaurant in West Loop. You miss him narrowly but find out that he uses a well known social network and and loves documenting his travels and reviewing his food. Find his online profile.</p>
+</blockquote>
+<p>This one becomes more challenging. Now, you can&rsquo;t take the traditional approach of Googling and getting a direct flag/answer. However, you can see that the main thing to start with is an Italian restauraunt inside of the West Loop.</p>
+<p><img src="/uiuctf/r1.png" alt="R1"></p>
+<p>However, knowing the clue of it being a &ldquo;joyful&rdquo; restaurant, we are able to narrow it down to &ldquo;Gioia Chicago&rdquo; after searching <code>Joyful Italian restaurunt in West Loop Chicago.</code> From there, we know the following facts:</p>
+<ul>
+<li>He uses a well known social network</li>
+<li>He loves documenting his travels and reviewing his food.</li>
+</ul>
+<p>THe keyword here is &ldquo;reviewing food.&rdquo; The two main platforms that come to mind for food review are Yelp and Tripadvisor. Let&rsquo;s start by checking those. In Yelp, we see that there are many reviews but how do we narrow them down? By looking through the reviews, we see that Jonah Explorer has left a review with his twitter handle as well!!</p>
+<p><img src="/uiuctf/yelp2.png" alt="Yelp2"></p>
+<p>After obtaining the twitter handle, it becomes smooth sailing from here. We are easily able to extrapolate the tweets from the handle, thus granting us the flag from the first tweet <code>uiuctf{i_like_spaghetti}</code></p>
+<h3 id="jonahs-journal">Jonah&rsquo;s Journal</h3>
+<blockquote>
+<p>After dinner, Jonah took notes into an online notebook and pushed his changes there. His usernames have been relatively consistent but what country is he going to next? Flag should be in format uiuctf{country_name}</p>
+</blockquote>
+<p>This was a new take on a challenge. With barely any clues on where to start, the only two main pieces of information are that he &ldquo;pushed his changes&rdquo; and that the usernames have been &ldquo;relatively consistent.&rdquo; If you solved &ldquo;What&rsquo;s For Dinner&rdquo; before this challenge, it is fairly straightforward to finish this section.</p>
+<p>The main hint here is that the source if first online, second the term &ldquo;pushed his changes&rdquo; suggests that the platform is on GitHub. Since we assume that the player has laready solved &ldquo;What&rsquo;s for Dinner,&rdquo; they are able to see that his GitHub handle is the same as his twitter <code>jonahexplorer</code> with one main repo named <code>adventurecodes</code>. Opening it we see that a potential location is China. However, trying out <code>uiuctf{china}</code>, we don&rsquo;t get a correct result.</p>
+<p><img src="/uiuctf/jona1.png" alt="Jonah1"></p>
+<p>Looking at it closer, we have another branch. Opening up the branch and commit history, we see a different commit as well with the final flag of <code>uiuctf{italy}</code></p>
+<p><img src="/uiuctf/jona2.png" alt="Jonah2"></p>
+<h3 id="first-class-mail">First Class Mail</h3>
+<blockquote>
+<p>Jonah posted a picture online with random things on a table. Can you find out what zip code he is located in? Flag format should be uiuctf{zipcode}, ex: uiuctf{12345}.</p>
+</blockquote>
+<p><img src="/uiuctf/chal.jpg" alt="chal"></p>
+<p>The first obvious trial is the address on the mail in the picture. However, this is merely a honeypot solution intended to distract the user from the true solution. When you look in the middle of the picture, you see a barcode reminiscent of what you see on letters. You can use PostNet encodings to decode it as well.</p>
+<p><img src="/uiuctf/zip.png" alt="zipcode"></p>
+<p>Thus getting us the flag <code>uiuctf{60661}</code></p>
+<h3 id="finding-jonah">Finding Jonah</h3>
+<blockquote>
+<p>Jonah offered a reward to whoever can find out what hotel he is staying in. Based on the past information (chals), can you find out what the hotel he stayed at was? Flag should be uiuctf{hotel_name_inn}</p>
+</blockquote>
+<p><img src="/uiuctf/chicago.jpeg" alt="chicago"></p>
+<p>The last challenge gives us a picture and we need to find out where the hotel Jonah is staying at is located. At this point, hopefully one has completed all the challenges previously and this can narrow it down.</p>
+<p>In the top right corner of the picture, you can see that there is a Boeing logo there. By using that, we are able to narrow down the region of where the hotel is at based on the proximity it is located. Addtiaionally, if one has completed the previous challenges, they know that the region to look at is West Loop.</p>
+<p><img src="/uiuctf/hotel.png" alt="hotels"></p>
+<p>Using an online map service, we can see that there are different hotels around but only one has a close proximity that makes sense in proximity to the Chicago office. That is the Hilton, thus giving us the flag <code>uiuctf{hilton}</code> or <code>uiuctf{hampton_inn}</code></p>
+<h3 id="ending-notes">Ending Notes</h3>
+<p>Next up, FallCTF in September 23.</p>
+<p><a href="../../blog">Back to writing</a></p>
+
+</div>
+
+        </div><div id="footer" class="mb-5">
+    <hr>
+    
+    
+    
+</div>
+</body>
+</html>

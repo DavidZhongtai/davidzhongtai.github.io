@@ -66,3 +66,5 @@ This exploratory study opens up a whole new realm of studies for the trends in c
 This paper would have **also** not been possible if it weren't for the technology known as blockchain. Essentially, a blockchain can be categorized as a spicy linked list. Knowing how to handle this data structure is essential to becoming a web3.0 master. Because the linked list data structure is covered in all beginner college-level algorithms classes, transitively, all college students are masters of the blockchain.
 
 ***Upon publication, the paper will effectively be minted onto the blockchain.***
+
+[Back to writing](../../blog)

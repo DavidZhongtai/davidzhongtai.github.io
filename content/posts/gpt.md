@@ -56,4 +56,6 @@ What a revelation, it looks like that My AI actually keeps the location data ins
 
 As shown above prompt injection itself goes a long way in revealing details that it shouldn't in systems. To this end, it serves as a cautionary tale to companies wanting to hop on this wave without fully studying the security of it. Prompt injection itself will remain around for a while as we try to grapple with this new technology. Companies should do due diligence that what they are releasing is responsible, safe, and creates a smooth user experience for everyone involved. 
 
+[Back to writing](../../blog)
+
 [^1]: [Daniel Kang's Article](https://ddkang.github.io/blog/2023/02/14/attacks/)

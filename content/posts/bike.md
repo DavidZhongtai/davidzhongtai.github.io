@@ -46,3 +46,5 @@ A bike ride heading east. The bone-chilling cold of the fog gives way as the war
 Being alone hasn't bothered me, instead acting as a break from the social front that is put up during the day. On the next bike ride, I pass someone; black Trek, red helmet, and built like a college student. For a second I consider slowing and asking to join them. In one moment, he veers to the left and I go straight through the intersection. 
 
 And then he's gone. 
+
+[Back to writing](../../blog)

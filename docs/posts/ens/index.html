@@ -298,6 +298,7 @@ To check whether this worked, we can look up the owner of the node (<code>nameha
 <p>Once <code>'test.eth'</code> is properly registered and resolvable, we can look up the associated information in a two step process: First we fetch the resolver that handles the data for our node (<code>registry.resolver(node)</code>). Then, we can query the resolver for the information about our node we are looking for, e.g. <code>resolver.addr(node)</code>.
 Unlike storing records, which is rarely necessary to do from an on-chain contract, reading them is often helpful both from off-chain applications and on-chain contracts. The test at <code>test\testWorkflow.js</code> demonstrates how to get domain records with web3. For on-chain lookup this repo also includes the helper contract <code>ENSReader.sol</code> which can be inherited from to handle registry and registrar lookups on-chain (see <code>test\TestContractWorkflow.sol</code>).
 This repo stores the code referred to by <a href="https://kauri.io/article/30ed03248cc2432ba5565375c4413608/ethereum-name-service-on-private-chains">this tutorial</a> where you will find detailed instructions on how to use it.</p>
+<p><a href="../../blog">Back to writing</a></p>
 
 </div>
 

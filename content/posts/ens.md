@@ -252,3 +252,5 @@ The test folder contains examples of the calls to the registry, registrar, and r
 Once `'test.eth'` is properly registered and resolvable, we can look up the associated information in a two step process: First we fetch the resolver that handles the data for our node (`registry.resolver(node)`). Then, we can query the resolver for the information about our node we are looking for, e.g. `resolver.addr(node)`.
 Unlike storing records, which is rarely necessary to do from an on-chain contract, reading them is often helpful both from off-chain applications and on-chain contracts. The test at `test\testWorkflow.js` demonstrates how to get domain records with web3. For on-chain lookup this repo also includes the helper contract `ENSReader.sol` which can be inherited from to handle registry and registrar lookups on-chain (see `test\TestContractWorkflow.sol`).
 This repo stores the code referred to by [this tutorial](https://kauri.io/article/30ed03248cc2432ba5565375c4413608/ethereum-name-service-on-private-chains) where you will find detailed instructions on how to use it.
+
+[Back to writing](../../blog)

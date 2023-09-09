@@ -28,3 +28,5 @@ It's been 2.5 months since I graduated, and approximately 3-ish months since the
 - Travel with friends and family :O
 
 I'll be steadily catching up all the content from May-July so stay tuned for that with the first being my writeup and solutions from UIUCTF23!! 
+
+[Back to writing](../../blog)
