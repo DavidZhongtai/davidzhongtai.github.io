@@ -18,9 +18,11 @@ Linkedin: [@davidzan](https://www.linkedin.com/in/davidzan/)
 
 | News Features ||
 | :----------- | -----------: |
-|Fortune: Snap’s ‘My AI’ chatbot tells users it doesn’t know their location.|[Link](https://fortune.com/2023/04/21/snap-chat-my-ai-lies-location-data-a-i-ethics/)|
-|Research Park Innovations Podcast Episode|[Link](https://podcasts.apple.com/us/podcast/celebrating-research-park-interns/id1557285742?i=1000588843218)|
-|Research Park Outstanding Undergraduate Intern Award|[Link](https://researchpark.illinois.edu/article/excellence-recognized-at-2022-research-park-intern-awards/)|
+|[2023] Fortune: Snap’s ‘My AI’ tells users it doesn’t know their location.|[Link](https://fortune.com/2023/04/21/snap-chat-my-ai-lies-location-data-a-i-ethics/)|
+|[2023] Early College Program Propels David An’s Educational Journey|[Link](https://westmoreland.edu/news/david-an-early-college-program.html)|
+|[2022] Research Park Innovations Podcast Episode|[Link](https://podcasts.apple.com/us/podcast/celebrating-research-park-interns/id1557285742?i=1000588843218)|
+|[2022] Research Park Outstanding Undergraduate Intern Award|[Link](https://researchpark.illinois.edu/article/excellence-recognized-at-2022-research-park-intern-awards/)|
+|[2020] High School Junior Earns Degree Through Early College Program|[Link](https://westmoreland.edu/news/high-school-junior-earns-degree-through-westmorelands-early-college-program.html)|
 
 | Research + Side Fun ||
 | :----------- | -----------: |
@@ -31,6 +33,7 @@ Linkedin: [@davidzan](https://www.linkedin.com/in/davidzan/)
 
 |Volunteering + Teaching||
 | :----------- | -----------:|
+| PennApps, HackMIT, UIUC FallCTF Mentoring + Judging | Sep. 2023 |
 |IEEE Region 5 Diversity Equity and Inclusion Committee|Feb. 2023 - Mar. 2023|
 |STAT 400 Course Assistant|Aug. 2022 - May 2023|
 |Summer of Side Projects 2022 Program Coordinator |May 2022 - Aug. 2022|
