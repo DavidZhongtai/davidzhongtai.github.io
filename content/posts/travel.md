@@ -4,7 +4,7 @@ title: "On Traveling"
 
 # 1 Month and 7 Cities Later 
 
-Flights start blending together one after one. Washington D.C. used to seem like a world away but now is a quick afternoon drive. Early morning drives to the airport only to make it through security before the sun rises and the Dunkin' opens. Paying an inexcusable $4.18 for a 16oz. bottle of water, only to be down it moments later. 
+Flights start blending together one after one. Washington D.C. used to seem like a world away but now is a quick afternoon drive. Early morning drives to the airport only to make it through security before the sun rises and the Dunkin' opens. Paying an inexcusable $4.18 for a 16oz. bottle of water, only to down it moments later. 
 
 Those lines have described the past month making my way around the east coast. I really should have been home, but something in me can't just stay in one place at a time, constantly having the need to move around from place to place, not staying for more than three days in a city. 
 
