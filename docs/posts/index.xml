@@ -38,6 +38,15 @@ David An ✍🏻 - I recently graduated with a degree in Mathematics at the Univ
     
     <item>
       <title></title>
+      <link>https://davidan.dev/posts/sites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidan.dev/posts/sites/</guid>
+      <description>How I Made This Site (And You Can Too!) This article is part one of a two-article series. In the first part, we will focus on setting up the bare basics of how to set up a site and creating articles to view for yourself. In the second part, we focus on the basics of deploying it for the whole internet to see. Throughout the articles, we try to make it as easy as possible, so anyone without a heavy technical background can set one up themselves.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://davidan.dev/posts/uiuctf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
