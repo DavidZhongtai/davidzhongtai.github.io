@@ -8,6 +8,7 @@ Some excursions into different spaces. I occasionally write about math and compu
 |||
 | :------| -----------:|
 |
+| [On Travel](/posts/travel) | 11-06-2023 |
 | [Life For the Past 3 Months!](/posts/catchup) | 08-06-2023 |
 | [UIUCTF'23 OSINT Writeups](/posts/uiuctf) | 07-04-2023 |
 | [Adversial AI and Attacking Snapchat's My AI](/posts/gpt) | 04-19-2023 |
