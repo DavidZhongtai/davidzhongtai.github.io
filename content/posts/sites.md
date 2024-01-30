@@ -4,6 +4,8 @@ This article is part one of a two-article series. In the first part, we will foc
 
 ### Why a Site? 
 
+Having your own personal website is like having an online home where you get to show off who you are and what you're all about. It's a cool way to share your achievements, skills, and interests with the world. Think of it as your digital resume and a place to tell your story the way you want. Regardless of the profession, major, topic you are studying or working in, a digital site allows you to effectively showcase *you* in the digital world!
+
 ### Prerequisites: 
 
 Before we begin, we install the necessary pieces of software necessary to continue through the rest of the article. 
