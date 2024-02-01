@@ -24,12 +24,17 @@ math = true
   [[menu.main]]
     name = "News"
     url = "/news"
-    weight = 1
+    weight = 2
+
+  [[menu.main]]
+    name = "Readings"
+    url = "/readinglist"
+    weight = 3
   
   [[menu.main]]
     name = "About"
     url = "/about"
-    weight = 2
+    weight = 4
 
 
 
