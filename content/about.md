@@ -2,9 +2,13 @@
 title = "About Me"
 +++
 
-Email: davidzhongtaian(at)gmail(dot)com
+I graduated from the University of Illinois Urbana Champaign with a B.S. in Mathematics, finishing my degree in two years (2021-2023). During that time, I organized and hosted many events catered to undergraduates in the topics of recruiting, job search, and extracurriculars. I enjoy traveling to mentor and judge hackathons at different universities while continuing to give workshops and talks around the East Coast. I tinker with large database systems, text mining, and computer security in my spare time.
 
-Linkedin: [@davidzan](https://www.linkedin.com/in/davidzan/)
+In 2024, I will be starting to pursue my Masters in Business Administration (MBA) at Carnegie Mellon University
+
+**Email**: davidzhongtaian(at)gmail(dot)com
+
+**Linkedin**: [@davidzan](https://www.linkedin.com/in/davidzan/)
 <!-- - Twitter: [@davidzhongtai](https://twitter.com/davidzhongtai) -->
 
 | Talks + Presentations ||
