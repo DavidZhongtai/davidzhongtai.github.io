@@ -60,7 +60,7 @@ In chronological order: -->
 - [Business Analyst @ American Supply Association D.NEXT Lab](/professional/asa) -->
 
 ## Recent News
-**[06-25-2023]**
+**[10-25-2023]**
 <div style="margin-left: 1em;">
 I recently launched and am working on <a href="https://careersprep.io">CareersPrep.io</a>, an all-in-one career-prep resource for early career and new graduate people. 
 
