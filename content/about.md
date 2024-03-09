@@ -13,6 +13,7 @@ In 2024, I will be starting to pursue my Masters in Business Administration (MBA
 
 | Talks + Presentations ||
 | :----------- | -----------: |
+| [10-23-2023] Technica - Cracking the {Code} Presentation      | [Slides](/technica.pdf)      |
 | [05-23-2023] Women in Computer Science Summer Opportunities!      | [Slides](/wcs.pdf)      |
 |[04-30-2023] SIGPwny Open Source INTelligence (OSINT) Presentation| [Slides](/pwny.pdf)|
 | [04-19-2023] CS222: Software Design Lab Seminar  | [Slides](/cs222.pdf)        |
