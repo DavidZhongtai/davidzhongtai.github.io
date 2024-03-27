@@ -101,7 +101,7 @@ Recruiting Resources https://kristina.substack.com/p/how-to-write-a-rockstar-res
       
       <guid>https://davidan.dev/readinglist/</guid>
       <description>My Reading List Here is a collection of fun reads and interesting thoughts that I accumulate. The content can range from short and long reads to novels and reference books. The opinions here are my own thoughts and a way to share what I am currently reading. The provided is just a recent list of books but you can view the complete list here
-Technical Reads Building Microservices, Sam Newman</description>
+Books The DevOps Handbook, Gene Kim and Others</description>
     </item>
     
     <item>
@@ -110,9 +110,9 @@ Technical Reads Building Microservices, Sam Newman</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://davidan.dev/readings/all-extended/</guid>
-      <description>Extended Readings + Reviews For condensed reviews on my readings, please visit this link here
-Technical Reads Building Microservices, Sam Newman
-Thought this was a really good (albeit short) book on the basics of building microservice applications. The book covered alot of relevant topics related to scoping, designing, deploying these microservices and also covers some of the &#34;people capital&#34; when scoping projects. Overall a nice read that doesn&#39;t get too heavily technical and &#34;</description>
+      <description>Extended Readings + Reviews For a condensed list view of all my readings, please visit this link here
+Technical Books The DevOps Handbook, Gene Kim and Others
+Kim&#39;s DevOps Handbook presents itself as a solid guide to get a comprehensive understanding of the state of DevOps. The book presents itself as a wide variety of topics with real case studies baked into each chapter. While it doesn&#39;t get into the specifics, it builds a great overall understanding and allows the reader to gain an understanding of the landscape of devops.</description>
     </item>
     
     <item>
@@ -121,8 +121,8 @@ Thought this was a really good (albeit short) book on the basics of building mic
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://davidan.dev/readings/all/</guid>
-      <description>All Readings For extended reviews on my readings, please visit this link here
-Technical Reads Building Microservices, Sam Newman Robust Python, Patrick Viafore Longform Reads Alone at the Edge of the World, Cassidy Randall </description>
+      <description>All Readings For extended reviews on my readings, please visit this link here. Note that the titles in bold are the ones currently being read.
+Technical Books The DevOps Handbook, Gene Kim and Others Building Microservices, Sam Newman Robust Python, Patrick Viafore Zero Trust Networks, Evan Gilman and Doug Barth Building Secure and Reliable Systems, Heather Adkins and Others Other Books The Creative Act: A Way Of Being, Rick Rubin Start with Why, Simon Sinek Longform Reads + Blog Posts (Almost) Every infrastructure decision I endorse or regret after 4 years running infrastructure at a startup Alone at the Edge of the World, Cassidy Randall </description>
     </item>
     
     <item>
