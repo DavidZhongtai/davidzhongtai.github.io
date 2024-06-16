@@ -36,7 +36,7 @@ I am currently doing [Software @ Red Cell Partners](https://redcellpartners.com)
 <li style="margin-left: -1rem;"><a href="https://careersprep.io">CareersPrep.io</a></li>
 <li style="margin-left: -1rem;"><a href="/posts/r">Guide to Research Park v1.0</a></li>
 <!-- <li style="margin-left: -1rem;"><a href="https://r.davidan.dev">R Guide For Statistics</a></li> -->
-<li style="margin-left: -1rem;"><a href="https://sosp22.com">Summer of Side Projects 2022</a></li>
+<!-- <li style="margin-left: -1rem;"><a href="https://sosp22.com">Summer of Side Projects 2022</a></li> -->
 </ul>
     </div>
   </div>
@@ -60,9 +60,9 @@ In chronological order: -->
 - [Business Analyst @ American Supply Association D.NEXT Lab](/professional/asa) -->
 
 ## Recent News
-**[10-25-2023]**
+**[2-21-2024]**
 <div style="margin-left: 1em;">
-I recently launched and am working on <a href="https://careersprep.io">CareersPrep.io</a>, an all-in-one career-prep resource for early career and new graduate people. 
+I decided to start documenting some of the books and content I am reading <a href="/readings/all">into a reading list here</a>. The intent for this is to become a centralized place for all of my various readings + thoughts. 
 
 </div>
 <br>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang=""><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZLYXKRVG2"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-84P0KS3QHB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-84P0KS3QHB');
+    </script>
+    <title></title>
+    
+    <meta name="description" content="David An - Personal Site">
+    <meta name="author" content='David An'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css" integrity="sha384-Juol1FqnotbkyZUT5Z7gUPjQ9gzlwCENvUZTpQBAPxtusdwFLRy382PSDx5UUJ4/" crossorigin="anonymous">
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js" integrity="sha384-97gW6UIJxnlKemYavrqDHSX3SiygeOwIZhwyOKRfSaf0JWKRVj9hLASHgFTzT+0O" crossorigin="anonymous"></script>
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
+
+    
+    <link rel="stylesheet" href="/sass/researcher.min.css">
+
+    
+        <link rel="icon" type="image/ico" href="https://davidan.dev/favicon.ico">
+    
+
+    
+        
+    
+</head>
+
+    <body>
+
+
+
+<div class="container mt-5">
+    <nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
+        <a class="navbar-brand mx-0 mr-sm-auto" href="https://davidan.dev/" title="David An">
+          
+          David An
+        </a>
+        <div class="navbar-nav flex-row flex-wrap justify-content-center">
+            
+                
+                
+                    <a class="nav-item nav-link" href="/blog" title="Blog">
+                        Blog
+                    </a>
+                    
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    
+                
+                    <a class="nav-item nav-link" href="/news" title="News">
+                        News
+                    </a>
+                    
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    
+                
+                    <a class="nav-item nav-link" href="/readings/all" title="Readings">
+                        Readings
+                    </a>
+                    
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    
+                
+                    <a class="nav-item nav-link" href="/about" title="About">
+                        About
+                    </a>
+                    
+                
+            
+        </div>
+    </nav>
+</div>
+<hr>
+<div id="content">
+<div class="container">
+    <h1 id="scaling-nosql-databases-a-primer">Scaling NoSQL Databases: A Primer</h1>
+<p>In today&rsquo;s day and age, organizations have more data than ever. On a smaller scale, developers are building startups serving large amounts of data to customers. All of these use cases require both the efficient storage and transmission of data. If a backend database goes down, a service can&rsquo;t be used, customers can&rsquo;t reach their app, and a myriad of issues appear.</p>
+<p>To accommodate for this ever-growing thirst for data, many techniques have been developed to help address these issues. In this article, we mainly discuss two approaches: horizontal and vertical scaling. Before we get started, let&rsquo;s establish what we are referring to when we mention the term <code>database scaling</code>. Over the course of this post, database scaling refers to the act of scaling the database to accommodate an increase in read or write capacity.</p>
+<h3 id="horizontal-scaling">Horizontal Scaling</h3>
+<p>Horizontal scaling, also known as &ldquo;scaling out,&rdquo; involves adding more machines to your existing pool of resources. Instead of upgrading a single server (as in vertical scaling), you distribute your data and load across multiple servers. This approach is particularly well-suited for NoSQL databases, which are often designed with horizontal scalability in mind.
+When you horizontally scale a NoSQL database, you&rsquo;re essentially partitioning your data across multiple nodes. Each node holds a subset of the data, allowing for parallel processing and improved performance. This distribution is typically handled by a process called sharding.</p>
+<h4 id="sharding">Sharding</h4>
+<p>Sharding is a method of splitting your data into smaller, more manageable pieces called shards. Each shard is then placed on a different server. The key to effective sharding lies in choosing the right shard key—the attribute by which you divide your data.
+For example, in a social media application, you might shard user data based on user IDs. Users with IDs 1-1,000,000 might go to Shard A, 1,000,001-2,000,000 to Shard B, and so on. This way, when a request comes in for a specific user, the system knows exactly which shard to query, reducing the amount of data that needs to be scanned.</p>
+<h4 id="benefits-of-horizontal-scaling">Benefits of Horizontal Scaling</h4>
+<ul>
+<li>Improved Availability: With data distributed across multiple nodes, your system becomes more resilient. If one node fails, the others can continue to serve requests.</li>
+<li>Better Performance: By spreading the load across multiple machines, you can handle more concurrent operations and reduce response times.
+Easier to Scale: Adding new nodes to the cluster is often simpler and more cost-effective than upgrading a single, powerful server.</li>
+</ul>
+<h4 id="challenges">Challenges</h4>
+<p>Despite its advantages, horizontal scaling isn&rsquo;t without its challenges:</p>
+<ul>
+<li>Increased Complexity: Managing a distributed system requires sophisticated tools and expertise. Issues like data consistency and network partitions become more prominent.</li>
+<li>Data Replication: To ensure high availability, data is often replicated across nodes. This replication can introduce latency and consistency issues if not managed properly.</li>
+<li>Cross-Shard Queries: Queries that span multiple shards can be slower and more complex to execute compared to single-shard queries.</li>
+</ul>
+<h3 id="vertical-scaling">Vertical Scaling</h3>
+<p>Vertical scaling, often referred to as &ldquo;scaling up,&rdquo; is the process of increasing the capacity of a single server by adding more resources such as CPU, RAM, or storage. This approach focuses on boosting the power of an individual machine rather than distributing the load across multiple servers.</p>
+<h4 id="how-vertical-scaling-works">How Vertical Scaling Works</h4>
+<p>When you vertically scale a database, you&rsquo;re essentially upgrading its hardware. This could mean switching from a dual-core to a quad-core processor, increasing RAM from 16GB to 32GB, or replacing HDDs with SSDs for faster I/O operations. The goal is to enhance the performance of the existing server to handle increased load.</p>
+<h4 id="benefits-of-vertical-scaling">Benefits of Vertical Scaling</h4>
+<ul>
+<li>Simplicity: Vertical scaling is straightforward—you&rsquo;re dealing with a single server, which means less complexity in terms of data distribution and system architecture.</li>
+<li>Data Consistency: Since all data resides on one machine, maintaining data consistency is easier compared to distributed systems.</li>
+<li>Lower Latency: With all resources in one place, there&rsquo;s no network overhead between nodes, which can lead to lower latency for complex queries.</li>
+<li>Software Compatibility: Many traditional Relational Database Management Systems (RDBMS) are designed with vertical scaling in mind, making it a natural fit for these systems.</li>
+</ul>
+<h4 id="limitations">Limitations</h4>
+<p>Despite its advantages, vertical scaling has several limitations:</p>
+<ul>
+<li>Hardware Limits: There&rsquo;s a ceiling to how much you can upgrade a single machine. Eventually, you&rsquo;ll hit the maximum available CPU, RAM, or storage capacity.</li>
+<li>Cost: High-end hardware can be expensive, and the cost often increases non-linearly with performance gains.</li>
+<li>Single Point of Failure: Relying on a single server means that if it goes down, your entire system becomes unavailable.</li>
+<li>Downtime for Upgrades: Hardware upgrades often require taking the server offline, which can lead to service interruptions.</li>
+</ul>
+<h3 id="comparing-horizontal-and-vertical-scaling">Comparing Horizontal and Vertical Scaling</h3>
+<p>Both scaling strategies have their place in database management, and the choice often depends on your specific requirements:</p>
+<ul>
+<li>Scalability: Horizontal scaling offers practically limitless scalability by adding more machines to the cluster. Vertical scaling is bound by the maximum capacity of a single server.</li>
+<li>Flexibility: Horizontal scaling allows for incremental, on-demand scaling. You can add or remove nodes as needed. Vertical scaling often involves significant upgrades and can be less granular.</li>
+<li>Application Design: Some applications are better suited for one approach over the other. Horizontal scaling works well for distributed systems and microservices architectures, while vertical scaling might be preferred for monolithic applications with complex transactions.</li>
+<li>Data Model: NoSQL databases are generally designed for horizontal scalability, leveraging techniques like sharding effectively. Traditional SQL databases often start with vertical scaling, though many now support some form of horizontal scaling as well.</li>
+<li>Operational Complexity: Vertical scaling is simpler to manage but has higher downtime risks. Horizontal scaling offers better fault tolerance but requires more sophisticated operational tools and strategies.</li>
+</ul>
+<p>In practice, many organizations adopt a hybrid approach, combining both vertical and horizontal scaling strategies. They might vertically scale to a certain point and then begin scaling horizontally when they reach hardware limits or when the cost-benefit ratio shifts.</p>
+<p>The key is to understand your application&rsquo;s requirements, growth projections, and the characteristics of your chosen database system. This knowledge will guide you in developing a scaling strategy that ensures optimal performance, availability, and cost-efficiency as your data needs evolve.</p>
+
+</div>
+
+        </div><div id="footer" class="mb-5">
+    <hr>
+    
+    
+    
+</div>
+</body>
+</html>

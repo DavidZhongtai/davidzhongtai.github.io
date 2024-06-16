@@ -5,6 +5,8 @@
     <loc>https://davidan.dev/news/</loc>
     <priority>0</priority>
   </url><url>
+    <loc>https://davidan.dev/posts/db/</loc>
+  </url><url>
     <loc>https://davidan.dev/posts/ens/</loc>
   </url><url>
     <loc>https://davidan.dev/posts/pm/</loc>

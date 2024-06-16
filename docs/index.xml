@@ -20,6 +20,16 @@ Over the summer, me and some other friends organized a Summer of Side Projects I
     
     <item>
       <title></title>
+      <link>https://davidan.dev/posts/db/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidan.dev/posts/db/</guid>
+      <description>Scaling NoSQL Databases: A Primer In today&amp;rsquo;s day and age, organizations have more data than ever. On a smaller scale, developers are building startups serving large amounts of data to customers. All of these use cases require both the efficient storage and transmission of data. If a backend database goes down, a service can&amp;rsquo;t be used, customers can&amp;rsquo;t reach their app, and a myriad of issues appear.
+To accommodate for this ever-growing thirst for data, many techniques have been developed to help address these issues.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://davidan.dev/posts/ens/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -202,7 +212,7 @@ ChatGPT, the newest craze in a series of innovations regarding artificial intell
       
       <guid>https://davidan.dev/blog/</guid>
       <description>Random Thoughts Some excursions into different spaces. I occasionally write about math and computers.
-On Travel 11-06-2023 Life For the Past 3 Months! 08-06-2023 UIUCTF&#39;23 OSINT Writeups 07-04-2023 Adversial AI and Attacking Snapchat&amp;rsquo;s My AI 04-19-2023 3,000 Miles of Solitude 04-03-2023 The Influence of Lunch Items on Crypto 03-24-2023 Jenkins Security Vulnerability Writeup 02-02-2023 A Discussion on Pandas and Data Mining 01-17-2023 Revisiting a Summer of Side Projects 12-16-2022 Inequality Fun and Their Applications 12-14-2022 A (Fun) Discussion on Harmonic Functions 12-03-2022 Donuts 11-12-2022 Unification in Academic Literature 07-07-2022 A Semester of Research 06-15-2022 Building an NLP-Powered Repository for Cyber Risk Literature 05-13-2022 Scraping Web Data for Academic Literature 02-01-2022 Fake News Detection: Using NLP in the Detection Process (FaDe-Net) 05-12-2021 </description>
+Horizontal and Vertical Database Scaling 03-06-2023 On Travel 11-06-2023 Life For the Past 3 Months! 08-06-2023 UIUCTF&#39;23 OSINT Writeups 07-04-2023 Adversial AI and Attacking Snapchat&amp;rsquo;s My AI 04-19-2023 3,000 Miles of Solitude 04-03-2023 The Influence of Lunch Items on Crypto 03-24-2023 Jenkins Security Vulnerability Writeup 02-02-2023 A Discussion on Pandas and Data Mining 01-17-2023 Revisiting a Summer of Side Projects 12-16-2022 Inequality Fun and Their Applications 12-14-2022 A (Fun) Discussion on Harmonic Functions 12-03-2022 Donuts 11-12-2022 Unification in Academic Literature 07-07-2022 A Semester of Research 06-15-2022 Building an NLP-Powered Repository for Cyber Risk Literature 05-13-2022 Scraping Web Data for Academic Literature 02-01-2022 Fake News Detection: Using NLP in the Detection Process (FaDe-Net) 05-12-2021 </description>
     </item>
     
     <item>

@@ -8,6 +8,7 @@ Some excursions into different spaces. I occasionally write about math and compu
 |||
 | :------| -----------:|
 |
+| [Horizontal and Vertical Database Scaling](/posts/db) | 03-06-2023 |
 | [On Travel](/posts/travel) | 11-06-2023 |
 | [Life For the Past 3 Months!](/posts/catchup) | 08-06-2023 |
 | [UIUCTF'23 OSINT Writeups](/posts/uiuctf) | 07-04-2023 |
