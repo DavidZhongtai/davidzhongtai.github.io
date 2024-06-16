@@ -18,7 +18,7 @@ For example, in a social media application, you might shard user data based on u
 
 - Improved Availability: With data distributed across multiple nodes, your system becomes more resilient. If one node fails, the others can continue to serve requests.
 - Better Performance: By spreading the load across multiple machines, you can handle more concurrent operations and reduce response times.
-  Easier to Scale: Adding new nodes to the cluster is often simpler and more cost-effective than upgrading a single, powerful server.
+- Easier to Scale: Adding new nodes to the cluster is often simpler and more cost-effective than upgrading a single, powerful server.
 
 #### Challenges
 
