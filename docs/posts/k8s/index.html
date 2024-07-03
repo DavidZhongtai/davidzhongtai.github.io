@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang=""><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZLYXKRVG2"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-84P0KS3QHB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-84P0KS3QHB');
+    </script>
+    <title></title>
+    
+    <meta name="description" content="David An - Personal Site">
+    <meta name="author" content='David An'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css" integrity="sha384-Juol1FqnotbkyZUT5Z7gUPjQ9gzlwCENvUZTpQBAPxtusdwFLRy382PSDx5UUJ4/" crossorigin="anonymous">
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js" integrity="sha384-97gW6UIJxnlKemYavrqDHSX3SiygeOwIZhwyOKRfSaf0JWKRVj9hLASHgFTzT+0O" crossorigin="anonymous"></script>
+
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
+
+    
+    <link rel="stylesheet" href="/sass/researcher.min.css">
+
+    
+        <link rel="icon" type="image/ico" href="https://davidan.dev/favicon.ico">
+    
+
+    
+        
+    
+</head>
+
+    <body>
+
+
+
+<div class="container mt-5">
+    <nav class="navbar navbar-expand-sm flex-column flex-sm-row text-nowrap p-0">
+        <a class="navbar-brand mx-0 mr-sm-auto" href="https://davidan.dev/" title="David An">
+          
+          David An
+        </a>
+        <div class="navbar-nav flex-row flex-wrap justify-content-center">
+            
+                
+                
+                    <a class="nav-item nav-link" href="/blog" title="Blog">
+                        Blog
+                    </a>
+                    
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    
+                
+                    <a class="nav-item nav-link" href="/news" title="News">
+                        News
+                    </a>
+                    
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    
+                
+                    <a class="nav-item nav-link" href="/readings/all" title="Readings">
+                        Readings
+                    </a>
+                    
+                        <span class="nav-item navbar-text mx-1">/</span>
+                    
+                
+                    <a class="nav-item nav-link" href="/about" title="About">
+                        About
+                    </a>
+                    
+                
+            
+        </div>
+    </nav>
+</div>
+<hr>
+<div id="content">
+<div class="container">
+    <h1 id="understanding-kubernetes-security-a-comprehensive-review">Understanding Kubernetes Security: A Comprehensive Review</h1>
+<p>Kubernetes is now widely used for managing containerized applications. As more organizations adopt it, understanding its security aspects becomes crucial. This paper examines the key security challenges in Kubernetes and suggests ways to address them.</p>
+<h2 id="basic-concepts-of-kubernetes-security">Basic Concepts of Kubernetes Security</h2>
+<p>Kubernetes operates across many computers, often in different locations. This spread-out nature makes security more complex. Kubernetes also constantly creates and removes small units of work called pods. This constant change means that old security methods designed for unchanging systems don&rsquo;t work well.</p>
+<p>When using Kubernetes with cloud services, both the cloud provider and the Kubernetes administrator share responsibility for security. Kubernetes also changes rapidly, with new features and updates released often. Keeping up with these changes and understanding their security implications is an ongoing task.</p>
+<h2 id="securing-the-core-cluster-security">Securing the Core: Cluster Security</h2>
+<p>The heart of a Kubernetes system is its cluster. Protecting this core is essential. The main control point, called the API server, needs strong security. This includes using robust methods to verify who is accessing it, like certificates or secure tokens. It also means controlling what each user or program can do, using a system called Role-Based Access Control (RBAC).</p>
+<p>Kubernetes stores its data in a database called etcd. This data must be encrypted when it&rsquo;s saved (at rest) and when it&rsquo;s being sent (in transit). Only authorized systems and users should access etcd.</p>
+<p>Each computer (node) in the cluster runs a program called kubelet. This program must be set up to require proper identification and permissions from anything trying to use it. It should only have the minimum permissions needed to do its job.</p>
+<p>Network policies in Kubernetes control how pods (small units of the application) talk to each other. By default, Kubernetes allows all pods to communicate freely. This open setting is often not safe. Instead, rules should be set up to allow only necessary communication.</p>
+<h2 id="building-blocks-container-and-image-security">Building Blocks: Container and Image Security</h2>
+<p>In Kubernetes, applications run in containers. These containers are built from images, which are like blueprints. Regularly checking these images for known security problems is important. This checking should be part of the process of building and deploying applications.</p>
+<p>Only trusted images should be allowed to run. This means using images from approved sources and ensuring they haven&rsquo;t been tampered with. Using minimal base images with only necessary components can reduce potential security weaknesses.</p>
+<p>When possible, containers should run as a non-administrator (non-root) user. This limits the damage if a container is compromised. Making the container&rsquo;s file system read-only can also prevent harmful changes.</p>
+<h2 id="active-defense-runtime-security">Active Defense: Runtime Security</h2>
+<p>Even with secure setups, it&rsquo;s crucial to watch for unusual activities while applications are running. Kubernetes offers tools like Pod Security Policies or Pod Security Admission to enforce security rules. These tools control things like preventing containers from running with high-level permissions or accessing the host system directly.</p>
+<p>Detailed logging of all requests to the API server helps track what&rsquo;s happening in the cluster. This information is vital for investigating any security events. Special security tools can also be used to detect strange behavior in running containers in real-time.</p>
+<h2 id="protecting-secrets">Protecting Secrets</h2>
+<p>Applications often need secret information like passwords or API keys. Kubernetes provides a feature called Secrets to manage this information. However, by default, Secrets are not stored securely. Encrypting Secrets when they&rsquo;re saved is important.</p>
+<p>For higher security, external systems designed specifically for managing secrets can be used. These might be special hardware devices or cloud services. Following the principle of least privilege, each part of the application should only have access to the secrets it needs, and nothing more.</p>
+<h2 id="controlling-access-and-securing-networks">Controlling Access and Securing Networks</h2>
+<p>Strong authentication (proving who you are) and authorization (determining what you can do) are key to Kubernetes security. Using multi-factor authentication and short-lived access tokens is recommended. Access permissions should be specific, giving users and programs only the access they need for their tasks.</p>
+<p>Network security in Kubernetes is challenging due to its distributed nature. The choice of networking solution affects available security features. Carefully controlling incoming (ingress) and outgoing (egress) network traffic is essential. Using a service mesh can provide more detailed control and encryption of network communication between services.</p>
+<h2 id="ongoing-security-efforts">Ongoing Security Efforts</h2>
+<p>Kubernetes security is not a one-time task. Regular security checks, like scanning for vulnerabilities and ensuring compliance with security standards, are necessary. Periodic tests where experts try to find weaknesses (penetration testing) can uncover issues that automated tools miss.</p>
+<p>Having a clear plan for responding to security incidents is crucial. This plan should be practiced regularly. Keeping all parts of the system updated with security patches is also vital.</p>
+<p>The security of the entire process of building and deploying applications (the supply chain) matters too. Using version control, requiring code reviews, and tracking all components of the applications help maintain security.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Securing a Kubernetes environment involves many interconnected aspects. It requires protecting the core infrastructure, ensuring the security of containers, monitoring running applications, managing secrets safely, controlling access tightly, and securing network communications. While the technical aspects are critical, fostering a culture of security awareness among all team members is equally important.</p>
+<p>As Kubernetes continues to evolve, so do its security challenges and solutions. Staying informed about these changes and adapting security practices accordingly is essential for maintaining a strong security posture in Kubernetes deployments.</p>
+
+</div>
+
+        </div><div id="footer" class="mb-5">
+    <hr>
+    
+    
+    
+</div>
+</body>
+</html>

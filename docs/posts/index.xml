@@ -29,6 +29,16 @@ Basic ENS architecture Setting up ENS: Deploying the registry, registrar, and re
     
     <item>
       <title></title>
+      <link>https://davidan.dev/posts/k8s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://davidan.dev/posts/k8s/</guid>
+      <description>Understanding Kubernetes Security: A Comprehensive Review Kubernetes is now widely used for managing containerized applications. As more organizations adopt it, understanding its security aspects becomes crucial. This paper examines the key security challenges in Kubernetes and suggests ways to address them.
+Basic Concepts of Kubernetes Security Kubernetes operates across many computers, often in different locations. This spread-out nature makes security more complex. Kubernetes also constantly creates and removes small units of work called pods.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://davidan.dev/posts/pm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
