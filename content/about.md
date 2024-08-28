@@ -2,7 +2,7 @@
 title = "About Me"
 +++
 
-I graduated from the University of Illinois Urbana Champaign with a B.S. in Mathematics, finishing my degree in two years (2021-2023). During that time, I organized and hosted many events catered to undergraduates in the topics of recruiting, job search, and extracurriculars. I enjoy traveling to mentor and judge hackathons at different universities while continuing to give workshops and talks around the East Coast. I tinker with large database systems, text mining, and computer security in my spare time
+I graduated from the University of Illinois Urbana Champaign with a B.S. in Mathematics, finishing my degree in two years (2021-2023). During that time, I organized and hosted many events catered to undergraduates in the topics of recruiting, job search, and extracurriculars. I enjoy traveling to mentor and judge hackathons at different universities while continuing to give workshops and talks around the East Coast. I tinker with large database systems, text mining, and computer security in my spare time.
 
 **Email**: davidzhongtaian(at)gmail(dot)com
 
@@ -44,7 +44,7 @@ I graduated from the University of Illinois Urbana Champaign with a B.S. in Math
 
 | Professional Experience               |                       |
 | :------------------------------------ | --------------------: |
-| Red Cell Partners Software Engineer   |   Jun. 2023 - Present |
+| Red Cell Partners (Eyris) Software Engineer   |   Jun. 2023 - Present |
 | Red Cell Partners Software Contractor | Sep. 2022 - Jun. 2023 |
 | Ameren Data Scientist Intern          |  May 2022 - Aug. 2022 |
 | Illinois Risk (iRisk) Lab Researcher  | Apr. 2022 - Aug. 2022 |
