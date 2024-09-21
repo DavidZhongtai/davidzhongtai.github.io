@@ -20,8 +20,6 @@ It's been 2.5 months since I graduated, and approximately 3-ish months since the
 
 - Shoutout to Charlotte ([@charlotte-fondren](https://www.linkedin.com/in/charlotte-fondren/)) for showing me AWS certifications. I took bias for action and became a certified Solutions Architect Associate!!
 
-- Me and Monica ([@monica-para](https://www.linkedin.com/in/monica-para/)) recently launched [CareersPrep.io](https://careersprep.io) to help consolidate resources and opportunities for other students in new grad and internship recruiting. We can't wait to take this and our experience/knowledge in front of bigger audiences in the fall!! 
-
 ***What's next:*** 
 - In early September, I'm travelling to the University of Pennsylvania to be a mentor their hackathon: PennApps. In late September, I'm heading up north to Boston to be a judge at HackMIT. Extremely excited for both of those opportunities. 
 

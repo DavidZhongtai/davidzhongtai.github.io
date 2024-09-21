@@ -32,7 +32,7 @@ I recieved the Most Outstanding Undergraduate Intern Award within Research Park.
 
 **[07-15-2022]**
 <div style="margin-left: 1em;">
-Me and <a href="https://www.linkedin.com/in/monica-para/">Monica Para</a> released our first "Guide to Research Park" targeted to undergrads of the University of Illinois at Urbana Champaign. This guide was also presented at CS100 Orientation for incoming freshman in the CS program. You can read the whole guide <a href="https://bit.ly/rp-guide22">here.</a>
+I released the first "Guide to Research Park" targeted to undergrads of the University of Illinois at Urbana Champaign. This guide was also presented at CS100 Orientation for incoming freshman in the CS program. You can read the whole guide <a href="https://bit.ly/rp-guide22">here.</a>
 </div>
 <br>
 

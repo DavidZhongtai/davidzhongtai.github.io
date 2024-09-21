@@ -2,8 +2,6 @@
 
 ### **About Us**
 
-**[Monica Para](https://www.linkedin.com/in/monica-para/) 🦝** - I recently graduated with a degree in CS + Advertising at the University of Illinois and am currently a software engineer on a trading team. My past experiences lie in event marketing and teaching students computing fundamentals through Kode With Klossy and UIUC’s CS 124 course. 
-
 **[David An](https://www.linkedin.com/in/davidzan/) ✍🏻** - I recently graduated with a degree in Mathematics at the University of Illinois and also currently work as a software engineer as well! I have past experience in creating material directed towards undergraduate recruiting and early stage careers. I am passionate about online branding, creating communities around different ideas and digital storytelling.
 
 ### **Understanding How PM Aligns in Tech**
@@ -22,7 +20,7 @@
     - chrome extension to make applying easier
 
 
-📌 This was a great resource Monica taught me about on how to prep good stories for interviews. I’ve used [this template since](/outline.pdf)
+📌 This was a great resource that was taught me about on how to prep good stories for interviews. I’ve used [this template since](/outline.pdf)
 
 
 > Before an interview, I usually read past interview experiences on `Glassdoor, Reddit, and Blind` to get an understanding what to expect beforehand. Also, there’s some Youtubers that talk about their recruiting processes for [X] role at [X] company that I found valuable
@@ -78,8 +76,6 @@
 - [https://www.linkedin.com/in/jalonniweaver/](https://www.linkedin.com/in/jalonniweaver/)
     - not really PM oriented, but she gives a lot of *slay* advice from a recruiting perspective and also is from Texas
 - [https://www.linkedin.com/in/jonathan-wonsulting/](https://www.linkedin.com/in/jonathan-wonsulting/)
-- [https://www.linkedin.com/in/camille-mejia/](https://www.linkedin.com/in/camille-mejia/)
-    - she gave me (Mon) some good advice during PM recruitment; she’s now a FT Product Manager at Microsoft NYC
 
 
 > Follow **campus recruiters and program managers** in companies you’re interested in as they usually post when they’re hiring + good opportunity to reach out to those folks

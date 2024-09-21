@@ -9,8 +9,6 @@ We created this guide to address the growing interest in Research Park and the c
 
 Feel free to reach out to us at any time if you have any questions:
 
-**[Monica Para](https://www.linkedin.com/in/monica-para/) 🦝** - I recently graduated with a degree in CS + Advertising at the University of Illinois and am currently a software engineer on a trading team. My past experiences lie in event marketing and teaching students computing fundamentals through Kode With Klossy and UIUC’s CS 124 course. 
-
 **[David An](https://www.linkedin.com/in/davidzan/) ✍🏻** - I recently graduated with a degree in Mathematics at the University of Illinois and also currently work as a software engineer as well! I have past experience in creating material directed towards undergraduate recruiting and early stage careers. I am passionate about online branding, creating communities around different ideas and digital storytelling.
 
 We’re currently working on a new project [CareersPrep.io](https://careersprep.io), with a goal of providing high quality career resources targeted towards undergraduates and early career people. Feel free to reach out if you want to contribute or wanna check it out :\)\) 
