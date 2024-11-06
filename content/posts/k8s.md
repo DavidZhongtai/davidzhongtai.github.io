@@ -9,7 +9,7 @@ Kubernetes operates across many computers, often in different locations. This sp
 
 When using Kubernetes with cloud services, both the cloud provider and the Kubernetes administrator share responsibility for security. Kubernetes also changes rapidly, with new features and updates released often. Keeping up with these changes and understanding their security implications is an ongoing task.
 
-## Securing the Core: Cluster Security
+## Cluster Security
 
 The heart of a Kubernetes system is its cluster. Protecting this core is essential. The main control point, called the API server, needs strong security. This includes using robust methods to verify who is accessing it, like certificates or secure tokens. It also means controlling what each user or program can do, using a system called Role-Based Access Control (RBAC).
 
@@ -19,7 +19,7 @@ Each computer (node) in the cluster runs a program called kubelet. This program 
 
 Network policies in Kubernetes control how pods (small units of the application) talk to each other. By default, Kubernetes allows all pods to communicate freely. This open setting is often not safe. Instead, rules should be set up to allow only necessary communication.
 
-## Building Blocks: Container and Image Security
+## Container and Image Security
 
 In Kubernetes, applications run in containers. These containers are built from images, which are like blueprints. Regularly checking these images for known security problems is important. This checking should be part of the process of building and deploying applications.
 
@@ -27,11 +27,11 @@ Only trusted images should be allowed to run. This means using images from appro
 
 When possible, containers should run as a non-administrator (non-root) user. This limits the damage if a container is compromised. Making the container's file system read-only can also prevent harmful changes.
 
-## Active Defense: Runtime Security
+## Runtime Security
 
 Even with secure setups, it's crucial to watch for unusual activities while applications are running. Kubernetes offers tools like Pod Security Policies or Pod Security Admission to enforce security rules. These tools control things like preventing containers from running with high-level permissions or accessing the host system directly.
 
-Detailed logging of all requests to the API server helps track what's happening in the cluster. This information is vital for investigating any security events. Special security tools can also be used to detect strange behavior in running containers in real-time.
+Detailed logging of all requests to the API server helps track what's happening in the cluster. This information is vital for investigating any security events. 
 
 ## Protecting Secrets
 
@@ -55,6 +55,6 @@ The security of the entire process of building and deploying applications (the s
 
 ## Conclusion
 
-Securing a Kubernetes environment involves many interconnected aspects. It requires protecting the core infrastructure, ensuring the security of containers, monitoring running applications, managing secrets safely, controlling access tightly, and securing network communications. While the technical aspects are critical, fostering a culture of security awareness among all team members is equally important.
+Securing a Kubernetes environment involves many interconnected aspects. It requires protecting the core infrastructure, ensuring the security of containers, and monitoring running applications.
 
 As Kubernetes continues to evolve, so do its security challenges and solutions. Staying informed about these changes and adapting security practices accordingly is essential for maintaining a strong security posture in Kubernetes deployments.
