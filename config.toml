@@ -28,7 +28,7 @@ math = true
 
   [[menu.main]]
     name = "Readings"
-    url = "/readings/all"
+    url = "/readinglist"
     weight = 3
   
   [[menu.main]]

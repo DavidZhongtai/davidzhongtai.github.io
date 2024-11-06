@@ -9,7 +9,7 @@ header:
 <!--
 {{< figure class="avatar" src="/avatar.jpg" alt="avatar">}} -->
 <!-- <a href="https://www.google.com/" style="color: black; text-decoration: underline;text-decoration-style: dotted;">custom link</a> -->
-I am currently doing [Software @ Eyris](https://redcellpartners.com).  Check out my [blog](/blog) where I write about topics in mathematics and computer science, my [readings](/readinglist) to see what I'm currently reading, or my [**about page**](/about) for a list of experiences, short bio, and contact information! 
+I am currently working on [Software @ Red Cell Partners](https://redcellpartners.com) across areas in national security, cyber, and healthcare.  Check out my [blog](/blog) where I write about topics in mathematics and computer science, my [readings](/readinglist) to see what I'm currently reading, or my [**about page**](/about) for a list of experiences, short bio, and contact information! 
 
  <!-- I tinker with large database systems, text mining, and computer security in my spare time. -->
 <!-- My previous roles include being a [**Data Science Intern @ Ameren**](https://researchpark.illinois.edu/tenant_directory/ameren-innovation-center/) in Summer 2022 and a [**Business Analyst Intern @ ASA D.Next Lab**](https://www.asa.net/Innovation/DNext-Innovation-Lab)in Fall 2021 and Spring 2022. -->
@@ -23,7 +23,7 @@ I am currently doing [Software @ Eyris](https://redcellpartners.com).  Check out
     <h2 class = "text-left">Latest Articles</h2>
     <ul>
     <!-- <li style="margin-left: -1rem;"><a href="/posts/sites">How I Made This Site (And You Can Too!)</a></li> -->
-    <li style="margin-left: -1rem;"><a href="/posts/travel">On Travel</a></li>
+    <li style="margin-left: -1rem;"><a href="/posts/k8s">An Intro to Kubernetes Security</a></li>
     <li style="margin-left: -1rem;"><a href="/posts/gpt">Attacking Snapchat's My AI</a></li>
     <li style="margin-left: -1rem;"><a href="/posts/bike">3,000 Miles of Solitude</a></li>
     <!-- <li style="margin-left: -1rem;"><a href="/posts/pwn">Jenkins Security Vulnerability Writeup</a></li> -->

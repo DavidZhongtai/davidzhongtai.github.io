@@ -121,7 +121,7 @@ Recruiting Resources https://kristina.substack.com/p/how-to-write-a-rockstar-res
       
       <guid>https://davidan.dev/readinglist/</guid>
       <description>My Reading List Here is a collection of fun reads and interesting thoughts that I accumulate. The content can range from short and long reads to novels and reference books. The opinions here are my own thoughts and a way to share what I am currently reading. The provided is just a recent list of books but you can view the complete list here
-Books The DevOps Handbook, Gene Kim and Others</description>
+Books The Design of Everyday Things</description>
     </item>
     
     <item>
@@ -142,7 +142,7 @@ Kim&#39;s DevOps Handbook presents itself as a solid guide to get a comprehensiv
       
       <guid>https://davidan.dev/readings/all/</guid>
       <description>All Readings For extended reviews on my readings, please visit this link here. Note that the titles in bold are the ones currently being read.
-Technical Books The DevOps Handbook, Gene Kim and Others Building Microservices, Sam Newman Robust Python, Patrick Viafore Zero Trust Networks, Evan Gilman and Doug Barth Building Secure and Reliable Systems, Heather Adkins and Others Other Books The Creative Act: A Way Of Being, Rick Rubin Start with Why, Simon Sinek Longform Reads + Blog Posts (Almost) Every infrastructure decision I endorse or regret after 4 years running infrastructure at a startup Alone at the Edge of the World, Cassidy Randall </description>
+Technical Books The DevOps Handbook, Gene Kim and Others Building Microservices, Sam Newman Robust Python, Patrick Viafore Zero Trust Networks, Evan Gilman and Doug Barth Building Secure and Reliable Systems, Heather Adkins and Others Other Books The Design of Everyday Things The Creative Act: A Way Of Being, Rick Rubin Start with Why, Simon Sinek Longform Reads + Blog Posts (Almost) Every infrastructure decision I endorse or regret after 4 years running infrastructure at a startup Alone at the Edge of the World, Cassidy Randall </description>
     </item>
     
     <item>
@@ -222,7 +222,7 @@ ChatGPT, the newest craze in a series of innovations regarding artificial intell
       
       <guid>https://davidan.dev/blog/</guid>
       <description>Random Thoughts Some excursions into different spaces. I occasionally write about math and computers.
-Horizontal and Vertical Database Scaling 03-06-2024 On Travel 11-06-2023 Life For the Past 3 Months! 08-06-2023 UIUCTF&#39;23 OSINT Writeups 07-04-2023 Adversial AI and Attacking Snapchat&#39;s My AI 04-19-2023 3,000 Miles of Solitude 04-03-2023 The Influence of Lunch Items on Crypto 03-24-2023 Jenkins Security Vulnerability Writeup 02-02-2023 A Discussion on Pandas and Data Mining 01-17-2023 Revisiting a Summer of Side Projects 12-16-2022 Inequality Fun and Their Applications 12-14-2022 A (Fun) Discussion on Harmonic Functions 12-03-2022 Donuts 11-12-2022 Unification in Academic Literature 07-07-2022 A Semester of Research 06-15-2022 Building an NLP-Powered Repository for Cyber Risk Literature 05-13-2022 Scraping Web Data for Academic Literature 02-01-2022 Fake News Detection: Using NLP in the Detection Process (FaDe-Net) 05-12-2021 </description>
+An Intro to Kubernetes Security 07-06-2024 Horizontal and Vertical Database Scaling 03-06-2024 On Travel 11-06-2023 Life For the Past 3 Months! 08-06-2023 UIUCTF&#39;23 OSINT Writeups 07-04-2023 Adversial AI and Attacking Snapchat&#39;s My AI 04-19-2023 3,000 Miles of Solitude 04-03-2023 The Influence of Lunch Items on Crypto 03-24-2023 Jenkins Security Vulnerability Writeup 02-02-2023 A Discussion on Pandas and Data Mining 01-17-2023 Revisiting a Summer of Side Projects 12-16-2022 Inequality Fun and Their Applications 12-14-2022 A (Fun) Discussion on Harmonic Functions 12-03-2022 Donuts 11-12-2022 Unification in Academic Literature 07-07-2022 A Semester of Research 06-15-2022 Building an NLP-Powered Repository for Cyber Risk Literature 05-13-2022 Scraping Web Data for Academic Literature 02-01-2022 Fake News Detection: Using NLP in the Detection Process (FaDe-Net) 05-12-2021 </description>
     </item>
     
     <item>

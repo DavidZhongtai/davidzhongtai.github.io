@@ -8,6 +8,7 @@ Some excursions into different spaces. I occasionally write about math and compu
 |                                                                                      |            |
 | :----------------------------------------------------------------------------------- | ---------: |
 |                                                                                      |            |
+| [An Intro to Kubernetes Security](/posts/k8s)                                   | 07-06-2024 |
 | [Horizontal and Vertical Database Scaling](/posts/db)                                   | 03-06-2024 |
 | [On Travel](/posts/travel)                                                              | 11-06-2023 |
 | [Life For the Past 3 Months!](/posts/catchup)                                           | 08-06-2023 |

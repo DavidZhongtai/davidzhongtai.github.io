@@ -10,6 +10,7 @@ For extended reviews on my readings, please visit [this link here](/readings/all
 - [Building Secure and Reliable Systems, Heather Adkins and Others](https://sre.google/books/building-secure-reliable-systems/)
 
 ### Other Books
+- **[The Design of Everyday Things](https://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp/0465050654/ref=asc_df_0465050654/?tag=hyprod-20&linkCode=df0&hvadid=693630454234&hvpos=&hvnetw=g&hvrand=6478094397919394984&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9005888&hvtargid=pla-416263148589&psc=1&mcid=7a0715432f8537eebf305578a025ace8&tag=hyprod-20&linkCode=df0&hvadid=693630454234&hvpos=&hvnetw=g&hvrand=6478094397919394984&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9005888&hvtargid=pla-416263148589&psc=1)**
 - **[The Creative Act: A Way Of Being, Rick Rubin](https://www.penguinrandomhouse.com/books/717356/the-creative-act-by-rick-rubin/)**
 - **[Start with Why, Simon Sinek](https://simonsinek.com/books/start-with-why/)**
 
